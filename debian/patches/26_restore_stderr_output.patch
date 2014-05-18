@@ -1,0 +1,25 @@
+--- a/libgksu/libgksu.c
++++ b/libgksu/libgksu.c
+@@ -3046,9 +3046,6 @@
+ #ifdef SUDO_FORKPTY
+       if (error)
+         close(fdpty);
+-#else
+-      if (error)
+-        fclose(infile);
+ #endif
+ 
+       cmdline = g_strdup("sudo");
+@@ -3067,6 +3064,12 @@
+       if (context->sn_context)
+ 	gksu_context_launch_complete (context);
+ 
++      while (read (parent_pipe[0], buffer, 255) > 0)
++	{
++	  fprintf (stderr, "%s", buffer);
++	  bzero(buffer, 256);
++	}
++
+       /* if the process is still active waitpid() on it */
+       if (pid_exited != pid)
+ 	waitpid(pid, &status, 0);

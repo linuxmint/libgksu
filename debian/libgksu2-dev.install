@@ -1,0 +1,5 @@
+usr/lib/libgksu2.so
+usr/lib/libgksu2.a
+usr/include/libgksu/
+usr/lib/pkgconfig/
+docs/html/* usr/share/doc/libgksu2-dev/html/

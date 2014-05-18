@@ -1,0 +1,53 @@
+Source: libgksu
+Section: admin
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Gustavo Noronha Silva <kov@debian.org>
+Uploaders: @GNOME_TEAM@
+Build-Depends: cdbs,
+               debhelper (>= 8),
+               libgtk2.0-dev (>= 2.12),
+               libgconf2-dev,
+               libstartup-notification0-dev,
+               libgnome-keyring-dev,
+               gettext,
+               dh-autoreconf,
+               gtk-doc-tools,
+               gnome-pkg-tools (>= 0.10),
+               libgtop2-dev,
+               libglib2.0-doc,
+               intltool
+Standards-Version: 3.9.2
+Homepage: http://www.nongnu.org/gksu
+XS-Debian-Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnome/packages/unstable/libgksu/
+XS-Debian-Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/packages/unstable/libgksu/
+
+Package: libgksu2-0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         xauth | xbase-clients
+Recommends: sudo
+Description: library providing su and sudo functionality
+ This library comes from the gksu program. It provides a simple
+ API to use su and sudo in programs that need to execute tasks
+ as other user. It provides X authentication facilities for running
+ programs in an X session.
+
+Package: libgksu2-dev
+Section: libdevel
+Architecture: any
+Depends: ${misc:Depends},
+         libglib2.0-dev,
+         libgksu2-0 (= ${binary:Version}),
+         libgnome-keyring-dev,
+         libgconf2-dev,
+         libstartup-notification0-dev
+Description: library providing su and sudo functionality (development files)
+ This library comes from the gksu program. It provides a simple
+ API to use su and sudo in programs that need to execute tasks
+ as other user. It provides X authentication facilities for running
+ programs in an X session.
+ .
+ This package contains the development files.

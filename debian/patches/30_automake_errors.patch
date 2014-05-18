@@ -1,0 +1,65 @@
+Description: Fix various errors with current automake
+Author: Colin Watson <cjwatson@ubuntu.com>
+Forwarded: no
+Last-Update: 2014-01-03
+
+Index: b/configure.ac
+===================================================================
+--- a/configure.ac
++++ b/configure.ac
+@@ -40,8 +40,12 @@
+ AC_PATH_PROG(GCONFTOOL, gconftool-2)
+ AM_GCONF_SOURCE_2
+ 
++PKG_CHECK_MODULES(GLIB, [glib-2.0])
++PKG_CHECK_MODULES(GTK, [gtk+-2.0])
+ PKG_CHECK_MODULES(LIBGKSU, [gtk+-2.0 >= 2.4.0, gconf-2.0, libstartup-notification-1.0, gnome-keyring-1, libgtop-2.0])
+ PKG_CHECK_MODULES(GKSU_PROPERTIES, [gtk+-2.0 >= 2.12, gconf-2.0])
++PKG_CHECK_MODULES(LIBGKSUUI, [gtk+-2.0, gconf-2.0, x11])
++PKG_CHECK_MODULES(TEST_GKSUUI, [glib-2.0, x11])
+ 
+ # Checks for library functions.
+ ALL_LINGUAS="ca cs da de es eu fr hu it ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"
+Index: b/libgksu/Makefile.am
+===================================================================
+--- a/libgksu/Makefile.am
++++ b/libgksu/Makefile.am
+@@ -26,15 +26,15 @@
+ pkgconfigdir = ${libdir}/pkgconfig
+ pkgconfig_DATA = libgksu2.pc
+ 
+-pkglibdir = ${libdir}/${PACKAGE}
+-pkglib_PROGRAMS = gksu-run-helper
++pkglibexecdir = ${libdir}/${PACKAGE}
++pkglibexec_PROGRAMS = gksu-run-helper
+ gksu_run_helper_LDFLAGS =
+-gksu_run_helper_LDADD = `pkg-config --libs glib-2.0`
++gksu_run_helper_LDADD = $(GLIB_LIBS)
+ gksu_run_helper_SOURCES = gksu-run-helper.c
+ 
+ noinst_PROGRAMS = test-gksu
+ test_gksu_SOURCES = test-gksu.c
+-test_gksu_LDADD = libgksu2.la `pkg-config --libs gtk+-2.0`
++test_gksu_LDADD = libgksu2.la $(GTK_LIBS)
+ test_gksu_LDFLAGS =
+ 
+ EXTRA_DIST = libgksu.ver
+Index: b/libgksuui/Makefile.am
+===================================================================
+--- a/libgksuui/Makefile.am
++++ b/libgksuui/Makefile.am
+@@ -5,12 +5,12 @@
+ noinst_LTLIBRARIES = libgksuui1.0.la
+ libgksuui1_0_la_SOURCES = gksuui-dialog.c
+ libgksuui1_0_la_LDFLAGS = -Wl,-O1
+-libgksuui1_0_la_LIBADD = `pkg-config --libs gtk+-2.0 gconf-2.0 x11` -lm
++libgksuui1_0_la_LIBADD = $(LIBGKSUUI_LIBS) -lm
+ 
+ noinst_HEADERS = defines.h gksuui.h gksuui-dialog.h
+ includedir = ${prefix}/include/$(PACKAGE)
+ 
+ noinst_PROGRAMS = test-gksuui
+ test_gksuui_SOURCES = test-gksuui.c
+-test_gksuui_LDADD = libgksuui1.0.la `pkg-config --libs glib-2.0 x11` -lm
++test_gksuui_LDADD = libgksuui1.0.la $(TEST_GKSUUI) -lm
+ test_gksuui_LDFLAGS =

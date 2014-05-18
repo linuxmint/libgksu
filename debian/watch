@@ -1,0 +1,3 @@
+version=3
+http://people.debian.org/~kov/gksu/libgksu-(.*)\.tar\.gz \
+	debian uupdate

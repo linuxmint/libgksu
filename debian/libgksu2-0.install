@@ -1,0 +1,9 @@
+usr/lib/libgksu2.so.*
+usr/lib/libgksu/
+usr/share/locale/
+usr/share/pixmaps/
+usr/bin/
+etc/gconf/schemas/gksu.schemas
+usr/share/libgksu/
+usr/share/man
+debian/gconf-defaults.* usr/share/libgksu/debian/

@@ -1,0 +1,1425 @@
+<!-- ##### SECTION ./tmpl/eval-plural.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/eval-plural.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/eval-plural.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/eval-plural.sgml:Title ##### -->
+eval-plural
+
+
+<!-- ##### SECTION ./tmpl/gettextP.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gettextP.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gettextP.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gettextP.sgml:Title ##### -->
+gettextP
+
+
+<!-- ##### SECTION ./tmpl/gksu-context.sgml:Long_Description ##### -->
+<para>
+Everything that is done by libgksu needs to know a lot of stuff
+about what to run, as what user to run and some more information,
+as X authentication information and such. All that information is
+contained in a GksuContext.
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-context.sgml:See_Also ##### -->
+<para>
+For convenience Gtk+2.0 widgets to request the user's password take a
+look at libgksuui1.0 and its API reference.
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-context.sgml:Short_Description ##### -->
+Handler that contains all the necessary information for a 
+program to be run by the libgksu library.
+
+
+<!-- ##### SECTION ./tmpl/gksu-context.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu-context.sgml:Title ##### -->
+GksuContext - run programs as other users with su or sudo
+
+
+<!-- ##### SECTION ./tmpl/gksu-main.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-main.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-main.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu-main.sgml:Title ##### -->
+gksu-main
+
+
+<!-- ##### SECTION ./tmpl/gksu-private.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-private.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-private.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu-private.sgml:Title ##### -->
+gksu-private
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml.sgml:Title ##### -->
+GKSu Hackers Utility Functions Guide
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml.sgml:Title ##### -->
+GKSu Hackers Internals Guide
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu-sections.txt.sgml:Title ##### -->
+Authorization stuff
+
+
+<!-- ##### SECTION ./tmpl/gksu.sgml:Long_Description ##### -->
+<para>
+This is a library to help with authorization to run priviledged
+applications from within graphical programs.
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu.sgml:See_Also ##### -->
+<para>
+You may also want to check kdesu, which does pretty much
+the same job for KDE as this library tries to do for Gtk+
+stuff.
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksu.sgml:Short_Description ##### -->
+GKSu - Authorization library with a UI
+
+
+<!-- ##### SECTION ./tmpl/gksu.sgml:Stability_Level ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksu.sgml:Title ##### -->
+gksu.c
+
+
+<!-- ##### SECTION ./tmpl/gksutil.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksutil.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gksutil.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gksutil.sgml:Title ##### -->
+gksutil
+
+
+<!-- ##### SECTION ./tmpl/gmo.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gmo.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/gmo.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/gmo.sgml:Title ##### -->
+gmo
+
+
+<!-- ##### SECTION ./tmpl/hash-string.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/hash-string.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/hash-string.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/hash-string.sgml:Title ##### -->
+hash-string
+
+
+<!-- ##### SECTION ./tmpl/internals.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/internals.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/internals.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/internals.sgml:Title ##### -->
+GKSu Hackers Internals Guide
+
+
+<!-- ##### SECTION ./tmpl/loadinfo.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/loadinfo.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/loadinfo.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/loadinfo.sgml:Title ##### -->
+loadinfo
+
+
+<!-- ##### SECTION ./tmpl/localcharset.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/localcharset.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/localcharset.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/localcharset.sgml:Title ##### -->
+localcharset
+
+
+<!-- ##### SECTION ./tmpl/os2compat.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/os2compat.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/os2compat.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/os2compat.sgml:Title ##### -->
+os2compat
+
+
+<!-- ##### SECTION ./tmpl/plural-exp.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/plural-exp.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/plural-exp.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/plural-exp.sgml:Title ##### -->
+plural-exp
+
+
+<!-- ##### SECTION ./tmpl/printf-args.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/printf-args.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/printf-args.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/printf-args.sgml:Title ##### -->
+printf-args
+
+
+<!-- ##### SECTION ./tmpl/printf-parse.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/printf-parse.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/printf-parse.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/printf-parse.sgml:Title ##### -->
+printf-parse
+
+
+<!-- ##### SECTION ./tmpl/relocatable.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/relocatable.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/relocatable.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/relocatable.sgml:Title ##### -->
+relocatable
+
+
+<!-- ##### SECTION ./tmpl/util.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/util.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/util.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/util.sgml:Title ##### -->
+GKSu Hackers Utility Functions Guide
+
+
+<!-- ##### SECTION ./tmpl/vasnprintf.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/vasnprintf.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/vasnprintf.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/vasnprintf.sgml:Title ##### -->
+vasnprintf
+
+
+<!-- ##### SECTION ./tmpl/vasnwprintf.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/vasnwprintf.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/vasnwprintf.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/vasnwprintf.sgml:Title ##### -->
+vasnwprintf
+
+
+<!-- ##### SECTION ./tmpl/wprintf-parse.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/wprintf-parse.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/wprintf-parse.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/wprintf-parse.sgml:Title ##### -->
+wprintf-parse
+
+
+<!-- ##### SECTION ./tmpl/xsize.sgml:Long_Description ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/xsize.sgml:See_Also ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### SECTION ./tmpl/xsize.sgml:Short_Description ##### -->
+
+
+
+<!-- ##### SECTION ./tmpl/xsize.sgml:Title ##### -->
+xsize
+
+
+<!-- ##### MACRO ARG_NONE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO CEN_AUDIENCE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO CEN_REVISION ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO CEN_SPECIAL ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO CEN_SPECIFIC ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO CEN_SPONSOR ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION EXTRACT_PLURAL_EXPRESSION ##### -->
+<para>
+
+</para>
+
+@nullentry: 
+@pluralp: 
+
+<!-- ##### MACRO FLAG_ALT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO FLAG_GROUP ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO FLAG_LEFT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO FLAG_SHOWSIGN ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO FLAG_SPACE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO FLAG_ZERO ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION FREE_EXPRESSION ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO GERMANIC_PLURAL ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO GKSU_CONTEXT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO GKSU_CONTEXT_CLASS ##### -->
+<para>
+
+</para>
+
+@klass: 
+
+<!-- ##### MACRO GKSU_CONTEXT_GET_CLASS ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO GKSU_CONTEXT_TYPE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO GKSU_IS_CONTEXT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO GKSU_TYPE_CONTEXT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### STRUCT GkConf ##### -->
+<para>
+This is the structure that holds most GKSu configuration
+settings but should not be accessed directly, use the
+getter/setter functions instead.
+</para>
+
+@xauth: 
+@display: 
+@title: 
+@message: 
+@icon: 
+@user: 
+@command: 
+@login_shell: 
+@keep_env: 
+@grab: 
+@debug: 
+@ssh_fwd: 
+
+<!-- ##### STRUCT GksuContext ##### -->
+<para>
+
+</para>
+
+@parent: 
+@xauth: 
+@dir: 
+@display: 
+@user: 
+@password: 
+@command: 
+@login_shell: 
+@keep_env: 
+@debug: 
+@ssh_fwd: 
+
+<!-- ##### MACRO HASHWORDBITS ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO HAVE_STRCASECMP ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO IS_GKSU_CONTEXT ##### -->
+<para>
+
+</para>
+
+@obj: 
+
+<!-- ##### MACRO LC_MESSAGES_COMPAT ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO LIBDIR ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO LOCALEDIR ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO LOCALE_ALIAS_PATH ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO MO_REVISION_NUMBER ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO MO_REVISION_NUMBER_WITH_SYSDEP_I ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO PATH_SEPARATOR ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO PLURAL_PARSE ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO RELOCATABLE_DLL_EXPORTED ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO SEGMENTS_END ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO SWAP ##### -->
+<para>
+
+</para>
+
+@i: 
+
+<!-- ##### MACRO TERRITORY ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO UINT_MAX ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO UINT_MAX_32_BITS ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO W ##### -->
+<para>
+
+</para>
+
+@flag: 
+@data: 
+
+<!-- ##### MACRO XPG_CODESET ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO XPG_MODIFIER ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO XPG_NORM_CODESET ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO XPG_SPECIFIC ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO ZERO ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### ENUM arg_type ##### -->
+<para>
+
+</para>
+
+@TYPE_NONE: 
+@TYPE_SCHAR: 
+@TYPE_UCHAR: 
+@TYPE_SHORT: 
+@TYPE_USHORT: 
+@TYPE_INT: 
+@TYPE_UINT: 
+@TYPE_LONGINT: 
+@TYPE_ULONGINT: 
+@TYPE_ULONGLONGINT: 
+@TYPE_COUNT_SCHAR_POINTER: 
+@TYPE_COUNT_SHORT_POINTER: 
+@TYPE_COUNT_INT_POINTER: 
+@TYPE_COUNT_LONGINT_POINTER: 
+@TYPE_COUNT_LONGLONGINT_POINTER: 
+
+<!-- ##### FUNCTION ask_pass_ok_cb ##### -->
+<para>
+
+</para>
+
+@w: 
+@data: 
+
+<!-- ##### FUNCTION asnprintf ##### -->
+<para>
+
+</para>
+
+@resultbuf: 
+@lengthp: 
+@format: 
+@Returns: 
+
+<!-- ##### FUNCTION asnwprintf ##### -->
+<para>
+
+</para>
+
+@resultbuf: 
+@lengthp: 
+@format: 
+@Varargs: 
+@Returns: 
+
+<!-- ##### MACRO attribute_hidden ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION compute_curr_prefix ##### -->
+<para>
+
+</para>
+
+@orig_installprefix: 
+@orig_installdir: 
+@curr_pathname: 
+@Returns: 
+
+<!-- ##### FUNCTION conv_from_utf8 ##### -->
+<para>
+
+</para>
+
+@msg: 
+@Returns: 
+
+<!-- ##### FUNCTION conv_to_utf8 ##### -->
+<para>
+
+</para>
+
+@msg: 
+@Returns: 
+
+<!-- ##### FUNCTION copy ##### -->
+<para>
+
+</para>
+
+@fn: 
+@dir: 
+
+<!-- ##### FUNCTION full_write ##### -->
+<para>
+
+</para>
+
+@d: 
+@buf: 
+@nbytes: 
+@Returns: 
+
+<!-- ##### MACRO getenv ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION gk_dialog ##### -->
+<para>
+
+</para>
+
+@type: 
+@format: 
+@Varargs: 
+
+<!-- ##### FUNCTION gksu_check_init ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_ask_and_run ##### -->
+<para>
+
+</para>
+
+@context: 
+@ask_pass: 
+@user_data: 
+@error: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_get_icon ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_get_password ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_get_ssh_fwd ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_get_title ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_get_type ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_run ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_run_full ##### -->
+<para>
+
+</para>
+
+@context: 
+@ask_pass: 
+@user_data: 
+@pass_not_needed: 
+@pnn_user_data: 
+@error: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_set_icon ##### -->
+<para>
+
+</para>
+
+@context: 
+@icon: 
+
+<!-- ##### FUNCTION gksu_context_set_password ##### -->
+<para>
+
+</para>
+
+@context: 
+@password: 
+
+<!-- ##### FUNCTION gksu_context_set_ssh_fwd ##### -->
+<para>
+
+</para>
+
+@context: 
+@value: 
+
+<!-- ##### FUNCTION gksu_context_set_title ##### -->
+<para>
+
+</para>
+
+@context: 
+@format: 
+@Varargs: 
+
+<!-- ##### FUNCTION gksu_context_sudo_run ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_sudo_run_full ##### -->
+<para>
+
+</para>
+
+@context: 
+@ask_pass: 
+@user_data: 
+@pass_not_needed: 
+@pnn_user_data: 
+@error: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_sudo_try_need_password ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_context_try_need_password ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_conf ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_debug ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_grab ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_icon ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_keep_env ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_login_shell ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_message ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_ssh_fwd ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_title ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_get_user ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION gksu_init ##### -->
+<para>
+
+</para>
+
+@argc: 
+@argv: 
+@Returns: 
+
+<!-- ##### FUNCTION gksu_secure_free ##### -->
+<para>
+
+</para>
+
+@string: 
+
+<!-- ##### FUNCTION gksu_set_debug ##### -->
+<para>
+
+</para>
+
+@value: 
+
+<!-- ##### FUNCTION gksu_set_grab ##### -->
+<para>
+
+</para>
+
+@value: 
+
+<!-- ##### FUNCTION gksu_set_icon ##### -->
+<para>
+
+</para>
+
+@icon: 
+
+<!-- ##### FUNCTION gksu_set_keep_env ##### -->
+<para>
+
+</para>
+
+@value: 
+
+<!-- ##### FUNCTION gksu_set_login_shell ##### -->
+<para>
+
+</para>
+
+@value: 
+
+<!-- ##### FUNCTION gksu_set_message ##### -->
+<para>
+
+</para>
+
+@message: 
+
+<!-- ##### FUNCTION gksu_set_ssh_fwd ##### -->
+<para>
+
+</para>
+
+@value: 
+
+<!-- ##### FUNCTION gksu_set_title ##### -->
+<para>
+
+</para>
+
+@title: 
+
+<!-- ##### FUNCTION gksu_set_user ##### -->
+<para>
+
+</para>
+
+@username: 
+
+<!-- ##### FUNCTION gksu_sudo_run ##### -->
+<para>
+
+</para>
+
+@context: 
+@error: 
+@Returns: 
+@command: 
+@password: 
+
+<!-- ##### FUNCTION if ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### MACRO internal_function ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION libintl_dcigettext ##### -->
+<para>
+
+</para>
+
+@__domainname: 
+@__msgid1: 
+@__msgid2: 
+@__plural: 
+@__n: 
+@__category: 
+@Returns: 
+
+<!-- ##### FUNCTION locale_charset ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### TYPEDEF nls_uint32 ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION plural_eval ##### -->
+<para>
+
+</para>
+
+@pexp: 
+@Returns: 
+
+<!-- ##### FUNCTION prepare_xauth ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION printf_fetchargs ##### -->
+<para>
+
+</para>
+
+@args: 
+@a: 
+@Returns: 
+
+<!-- ##### FUNCTION printf_parse ##### -->
+<para>
+
+</para>
+
+@format: 
+@d: 
+@a: 
+@Returns: 
+
+<!-- ##### FUNCTION relocate ##### -->
+<para>
+
+</para>
+
+@pathname: 
+@Returns: 
+
+<!-- ##### FUNCTION report_failed_grab ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO size_in_bounds_p ##### -->
+<para>
+
+</para>
+
+@SIZE: 
+
+<!-- ##### MACRO size_overflow_p ##### -->
+<para>
+
+</para>
+
+@SIZE: 
+
+<!-- ##### MACRO strcasecmp ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### MACRO strncasecmp ##### -->
+<para>
+
+</para>
+
+
+<!-- ##### FUNCTION sudo_prepare_xauth ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### FUNCTION vasnprintf ##### -->
+<para>
+
+</para>
+
+@resultbuf: 
+@lengthp: 
+@format: 
+@Returns: 
+
+<!-- ##### FUNCTION vasnwprintf ##### -->
+<para>
+
+</para>
+
+@resultbuf: 
+@lengthp: 
+@format: 
+@args: 
+@Returns: 
+
+<!-- ##### FUNCTION wprintf_parse ##### -->
+<para>
+
+</para>
+
+@format: 
+@d: 
+@a: 
+@Returns: 
+
+<!-- ##### MACRO xcast_size_t ##### -->
+<para>
+
+</para>
+
+@N: 
+
+<!-- ##### FUNCTION xsum ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+<!-- ##### MACRO xtimes ##### -->
+<para>
+
+</para>
+
+@N: 
+@ELSIZE: 
+

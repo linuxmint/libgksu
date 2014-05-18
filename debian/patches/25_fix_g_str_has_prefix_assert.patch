@@ -1,0 +1,11 @@
+--- a/libgksu/libgksu.c
++++ b/libgksu/libgksu.c
+@@ -3097,7 +3097,7 @@
+ 
+       if (WEXITSTATUS(status))
+ 	{
+-          if (g_str_has_prefix(child_stderr, "Sorry, user "))
++          if (child_stderr && g_str_has_prefix(child_stderr, "Sorry, user "))
+             {
+               g_set_error (error, gksu_quark, GKSU_ERROR_NOT_ALLOWED,
+                            _("The underlying authorization mechanism (sudo) "

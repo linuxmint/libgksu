@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<!DOCTYPE refentry PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<refentry id="libgksu-API-Reference">
+<refmeta>
+<refentrytitle role="top_of_page" id="libgksu-API-Reference.top_of_page">API Reference</refentrytitle>
+<manvolnum>3</manvolnum>
+<refmiscinfo>LIBGKSU Library</refmiscinfo>
+</refmeta>
+
+<refnamediv>
+<refname>API Reference</refname>
+<refpurpose>This API provides functions to provide su and sudo functionality to
+its users.</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="libgksu-API-Reference.synopsis" role="synopsis">
+<title role="synopsis.title">Synopsis</title>
+
+<synopsis>
+enum                <link linkend="GksuError">GksuError</link>;
+<link linkend="GksuContext">GksuContext</link>*        <link linkend="gksu-context-new">gksu_context_new</link>                    (void);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-user">gksu_context_set_user</link>               (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *username);
+const <link linkend="gchar">gchar</link> *       <link linkend="gksu-context-get-user">gksu_context_get_user</link>               (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-command">gksu_context_set_command</link>            (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *command);
+const <link linkend="gchar">gchar</link> *       <link linkend="gksu-context-get-command">gksu_context_get_command</link>            (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-keep-env">gksu_context_set_keep_env</link>           (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-context-get-keep-env">gksu_context_get_keep_env</link>           (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="gchar">gchar</link> *             <link linkend="gksu-context-get-description">gksu_context_get_description</link>        (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-description">gksu_context_set_description</link>        (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *description);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-message">gksu_context_set_message</link>            (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *message);
+<link linkend="gchar">gchar</link> *             <link linkend="gksu-context-get-message">gksu_context_get_message</link>            (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-login-shell">gksu_context_set_login_shell</link>        (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-context-get-login-shell">gksu_context_get_login_shell</link>        (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-grab">gksu_context_set_grab</link>               (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-context-get-grab">gksu_context_get_grab</link>               (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-set-debug">gksu_context_set_debug</link>              (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-context-get-debug">gksu_context_get_debug</link>              (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="void">void</link>                <link linkend="gksu-context-free">gksu_context_free</link>                   (<link linkend="GksuContext">GksuContext</link> *context);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-run">gksu_run</link>                            (<link linkend="gchar">gchar</link> *command_line,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-run-full">gksu_run_full</link>                       (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="GksuAskPassFunc">GksuAskPassFunc</link> ask_pass,
+                                                         <link linkend="gpointer">gpointer</link> ask_pass_data,
+                                                         <link linkend="GksuPassNotNeededFunc">GksuPassNotNeededFunc</link> pass_not_needed,
+                                                         <link linkend="gpointer">gpointer</link> pass_not_needed_data,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-su">gksu_su</link>                             (<link linkend="gchar">gchar</link> *command_line,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-su-full">gksu_su_full</link>                        (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="GksuAskPassFunc">GksuAskPassFunc</link> ask_pass,
+                                                         <link linkend="gpointer">gpointer</link> ask_pass_data,
+                                                         <link linkend="GksuPassNotNeededFunc">GksuPassNotNeededFunc</link> pass_not_needed,
+                                                         <link linkend="gpointer">gpointer</link> pass_not_needed_data,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-sudo">gksu_sudo</link>                           (<link linkend="gchar">gchar</link> *command_line,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gboolean">gboolean</link>            <link linkend="gksu-sudo-full">gksu_sudo_full</link>                      (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="GksuAskPassFunc">GksuAskPassFunc</link> ask_pass,
+                                                         <link linkend="gpointer">gpointer</link> ask_pass_data,
+                                                         <link linkend="GksuPassNotNeededFunc">GksuPassNotNeededFunc</link> pass_not_needed,
+                                                         <link linkend="gpointer">gpointer</link> pass_not_needed_data,
+                                                         <link linkend="GError">GError</link> **error);
+<link linkend="gchar">gchar</link> *             <link linkend="gksu-ask-password">gksu_ask_password</link>                   (<link linkend="GError">GError</link> **error);
+<link linkend="gchar">gchar</link> *             <link linkend="gksu-ask-password-full">gksu_ask_password_full</link>              (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *prompt,
+                                                         <link linkend="GError">GError</link> **error);
+</synopsis>
+</refsynopsisdiv>
+
+
+
+
+
+
+
+
+
+<refsect1 id="libgksu-API-Reference.description" role="desc">
+<title role="desc.title">Description</title>
+<para>
+</para>
+</refsect1>
+
+<refsect1 id="libgksu-API-Reference.details" role="details">
+<title role="details.title">Details</title>
+<refsect2 id="GksuError" role="enum">
+<title>enum GksuError</title>
+<indexterm zone="GksuError"><primary sortas="GksuError">GksuError</primary></indexterm><programlisting>typedef enum
+{
+  GKSU_ERROR_XAUTH,
+  GKSU_ERROR_HELPER,
+  GKSU_ERROR_NOCOMMAND,
+  GKSU_ERROR_NOPASSWORD,
+  GKSU_ERROR_FORK,
+  GKSU_ERROR_EXEC,
+  GKSU_ERROR_PIPE,
+  GKSU_ERROR_PIPEREAD,
+  GKSU_ERROR_WRONGPASS,
+  GKSU_ERROR_CHILDFAILED,
+  GKSU_ERROR_NOT_ALLOWED,
+  GKSU_ERROR_CANCELED,
+  GKSU_ERROR_WRONGAUTOPASS
+} GksuError;
+</programlisting>
+<para>
+</para></refsect2>
+<refsect2 id="gksu-context-new" role="function">
+<title>gksu_context_new ()</title>
+<indexterm zone="gksu-context-new"><primary sortas="gksu_context_new">gksu_context_new</primary></indexterm><programlisting><link linkend="GksuContext">GksuContext</link>*        gksu_context_new                    (void);</programlisting>
+<para>
+This function should be used when creating a new <link linkend="GksuContext"><type>GksuContext</type></link> to
+pass to gksu_su_full or gksu_sudo_full. The <link linkend="GksuContext"><type>GksuContext</type></link> must be
+freed with gksu_context_free.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a newly allocated <link linkend="GksuContext"><type>GksuContext</type></link>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-user" role="function">
+<title>gksu_context_set_user ()</title>
+<indexterm zone="gksu-context-set-user"><primary sortas="gksu_context_set_user">gksu_context_set_user</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_user               (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *username);</programlisting>
+<para>
+Sets up what user the command will be run as. The default
+is root, but you can run the command as any user.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>username</parameter>&#160;:</term>
+<listitem><simpara> the target username
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-user" role="function">
+<title>gksu_context_get_user ()</title>
+<indexterm zone="gksu-context-get-user"><primary sortas="gksu_context_get_user">gksu_context_get_user</primary></indexterm><programlisting>const <link linkend="gchar">gchar</link> *       gksu_context_get_user               (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Gets the user the command will be run as, as set
+by gksu_context_set_user.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> from which to grab the information
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a string with the user or NULL if not set.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-command" role="function">
+<title>gksu_context_set_command ()</title>
+<indexterm zone="gksu-context-set-command"><primary sortas="gksu_context_set_command">gksu_context_set_command</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_command            (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *command);</programlisting>
+<para>
+Sets up what command will run with the target user.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>command</parameter>&#160;:</term>
+<listitem><simpara> the command that shall be ran
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-command" role="function">
+<title>gksu_context_get_command ()</title>
+<indexterm zone="gksu-context-get-command"><primary sortas="gksu_context_get_command">gksu_context_get_command</primary></indexterm><programlisting>const <link linkend="gchar">gchar</link> *       gksu_context_get_command            (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Gets the command that will be run, as set by
+gksu_context_set_command.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> from which to grab the information
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a string with the command or NULL if not set.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-keep-env" role="function">
+<title>gksu_context_set_keep_env ()</title>
+<indexterm zone="gksu-context-set-keep-env"><primary sortas="gksu_context_set_keep_env">gksu_context_set_keep_env</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_keep_env           (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);</programlisting>
+<para>
+Should the environment be kept as it is? Defaults to
+TRUE. Notice that setting this to FALSE may cause the
+X authorization stuff to fail.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>value</parameter>&#160;:</term>
+<listitem><simpara> TRUE or FALSE
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-keep-env" role="function">
+<title>gksu_context_get_keep_env ()</title>
+<indexterm zone="gksu-context-get-keep-env"><primary sortas="gksu_context_get_keep_env">gksu_context_get_keep_env</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_context_get_keep_env           (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Finds out if the environment in which the program will be
+run will be reset.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> from which to grab the information
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if the environment is going to be kept,
+FALSE otherwise.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-description" role="function">
+<title>gksu_context_get_description ()</title>
+<indexterm zone="gksu-context-get-description"><primary sortas="gksu_context_get_description">gksu_context_get_description</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             gksu_context_get_description        (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Get the description that the window will have when the
+default function for requesting the password is
+called.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to get the description from.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a string with the description or NULL if not set.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-description" role="function">
+<title>gksu_context_set_description ()</title>
+<indexterm zone="gksu-context-set-description"><primary sortas="gksu_context_set_description">gksu_context_set_description</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_description        (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *description);</programlisting>
+<para>
+Set the nice name for the action that is being run that the window
+that asks for the password will have.  This is only meant to be
+used if the default window is used, of course.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>description</parameter>&#160;:</term>
+<listitem><simpara> a string to set the description for
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-message" role="function">
+<title>gksu_context_set_message ()</title>
+<indexterm zone="gksu-context-set-message"><primary sortas="gksu_context_set_message">gksu_context_set_message</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_message            (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *message);</programlisting>
+<para>
+Set the message that the window that asks for the password will have.
+This is only meant to be used if the default window is used, of course.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>message</parameter>&#160;:</term>
+<listitem><simpara> a string to set the message for
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-message" role="function">
+<title>gksu_context_get_message ()</title>
+<indexterm zone="gksu-context-get-message"><primary sortas="gksu_context_get_message">gksu_context_get_message</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             gksu_context_get_message            (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Get the message that the window will have when the
+default function for requesting the password is
+called.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to get the message from.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a string with the message or NULL if not set.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-login-shell" role="function">
+<title>gksu_context_set_login_shell ()</title>
+<indexterm zone="gksu-context-set-login-shell"><primary sortas="gksu_context_set_login_shell">gksu_context_set_login_shell</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_login_shell        (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);</programlisting>
+<para>
+Should the shell in which the command will be run be
+a login shell?</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>value</parameter>&#160;:</term>
+<listitem><simpara> TRUE or FALSE
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-login-shell" role="function">
+<title>gksu_context_get_login_shell ()</title>
+<indexterm zone="gksu-context-get-login-shell"><primary sortas="gksu_context_get_login_shell">gksu_context_get_login_shell</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_context_get_login_shell        (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Finds out if the shell created by the underlying su process
+will be a login shell.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> from which to grab the information
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if the shell will be a login shell, FALSE otherwise.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-grab" role="function">
+<title>gksu_context_set_grab ()</title>
+<indexterm zone="gksu-context-set-grab"><primary sortas="gksu_context_set_grab">gksu_context_set_grab</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_grab               (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);</programlisting>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>value</parameter>&#160;:</term>
+<listitem><simpara>
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-grab" role="function">
+<title>gksu_context_get_grab ()</title>
+<indexterm zone="gksu-context-get-grab"><primary sortas="gksu_context_get_grab">gksu_context_get_grab</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_context_get_grab               (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Returns TRUE if gksu has been asked to do a grab on keyboard and mouse
+when asking for the password.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to ask whether a grab will be done.
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if yes, FALSE otherwise.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-set-debug" role="function">
+<title>gksu_context_set_debug ()</title>
+<indexterm zone="gksu-context-set-debug"><primary sortas="gksu_context_set_debug">gksu_context_set_debug</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_set_debug              (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gboolean">gboolean</link> value);</programlisting>
+<para>
+Set up if debuging information should be printed.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> you want to modify
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>value</parameter>&#160;:</term>
+<listitem><simpara> TRUE or FALSE
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-get-debug" role="function">
+<title>gksu_context_get_debug ()</title>
+<indexterm zone="gksu-context-get-debug"><primary sortas="gksu_context_get_debug">gksu_context_get_debug</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_context_get_debug              (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Finds out if the library is configured to print debuging
+information.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> from which to grab the information
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if it is, FALSE otherwise.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-context-free" role="function">
+<title>gksu_context_free ()</title>
+<indexterm zone="gksu-context-free"><primary sortas="gksu_context_free">gksu_context_free</primary></indexterm><programlisting><link linkend="void">void</link>                gksu_context_free                   (<link linkend="GksuContext">GksuContext</link> *context);</programlisting>
+<para>
+Frees the given <link linkend="GksuContext"><type>GksuContext</type></link>.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> the <link linkend="GksuContext"><type>GksuContext</type></link> to be freed.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-run" role="function">
+<title>gksu_run ()</title>
+<indexterm zone="gksu-run"><primary sortas="gksu_run">gksu_run</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_run                            (<link linkend="gchar">gchar</link> *command_line,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This function is a wrapper for gksu_sudo/gksu_su. It will call one
+of them, depending on the GConf key that defines whether the default
+behavior for gksu is su or sudo mode. This is the recommended way of
+using the library functionality.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>command_line</parameter>&#160;:</term>
+<listitem><simpara> the command line that will be executed as other user
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> to be set with the error condition, if an error
+happens
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> FALSE if all went well, TRUE if an error happend.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-run-full" role="function">
+<title>gksu_run_full ()</title>
+<indexterm zone="gksu-run-full"><primary sortas="gksu_run_full">gksu_run_full</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_run_full                       (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="GksuAskPassFunc">GksuAskPassFunc</link> ask_pass,
+                                                         <link linkend="gpointer">gpointer</link> ask_pass_data,
+                                                         <link linkend="GksuPassNotNeededFunc">GksuPassNotNeededFunc</link> pass_not_needed,
+                                                         <link linkend="gpointer">gpointer</link> pass_not_needed_data,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This is a compatibility shim over gksu_run_fuller, which, for
+compatibility reasons, lacks the 'exit_status' argument.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuContext"><type>GksuContext</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ask_pass</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuAskPassFunc"><type>GksuAskPassFunc</type></link> to be called when the lib determines
+requesting a password is necessary; it may be NULL, in which case
+the standard password request dialog will be used
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ask_pass_data</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="gpointer"><type>gpointer</type></link> with user data to be passed to the
+<link linkend="GksuAskPasswordFunc"><type>GksuAskPasswordFunc</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>pass_not_needed</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuPassNotNeededFunc"><type>GksuPassNotNeededFunc</type></link> that will be called
+when the command is being run without the need for requesting
+a password; it will only be called if the display-no-pass-info
+gconf key is enabled; NULL will have the standard dialog be shown
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>pass_not_needed_data</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="gpointer"><type>gpointer</type></link> with the user data to be passed to the
+<link linkend="GksuPasswordNotNeededFunc"><type>GksuPasswordNotNeededFunc</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> object to be filled with the error code or NULL
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if all went fine, FALSE if failed
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-su" role="function">
+<title>gksu_su ()</title>
+<indexterm zone="gksu-su"><primary sortas="gksu_su">gksu_su</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_su                             (<link linkend="gchar">gchar</link> *command_line,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This function is a wrapper for gksu_su_run_full. It will call it
+without giving the callback functions, which leads to the standard
+ones being called. A simple <link linkend="GksuContext"><type>GksuContext</type></link> is created to hold the
+user name and the command.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>command_line</parameter>&#160;:</term>
+<listitem><simpara> the command line that will be executed as other user
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> to be set with the error condition, if an error
+happens
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if all went well, FALSE if an error happend.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-su-full" role="function">
+<title>gksu_su_full ()</title>
+<indexterm zone="gksu-su-full"><primary sortas="gksu_su_full">gksu_su_full</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_su_full                        (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="GksuAskPassFunc">GksuAskPassFunc</link> ask_pass,
+                                                         <link linkend="gpointer">gpointer</link> ask_pass_data,
+                                                         <link linkend="GksuPassNotNeededFunc">GksuPassNotNeededFunc</link> pass_not_needed,
+                                                         <link linkend="gpointer">gpointer</link> pass_not_needed_data,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This is a compatibility shim over gksu_su_fuller, which, for
+compatibility reasons, lacks the 'exit_status' argument. You should
+check the documentation for gksu_su_fuller for information about
+the arguments.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuContext"><type>GksuContext</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ask_pass</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuAskPassFunc"><type>GksuAskPassFunc</type></link> to be called when the lib determines
+requesting a password is necessary; it may be NULL, in which case
+the standard password request dialog will be used
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ask_pass_data</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="gpointer"><type>gpointer</type></link> with user data to be passed to the
+<link linkend="GksuAskPasswordFunc"><type>GksuAskPasswordFunc</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>pass_not_needed</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuPassNotNeededFunc"><type>GksuPassNotNeededFunc</type></link> that will be called
+when the command is being run without the need for requesting
+a password; it will only be called if the display-no-pass-info
+gconf key is enabled; NULL will have the standard dialog be shown
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>pass_not_needed_data</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="gpointer"><type>gpointer</type></link> with the user data to be passed to the
+<link linkend="GksuPasswordNotNeededFunc"><type>GksuPasswordNotNeededFunc</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> object to be filled with the error code or NULL
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if all went fine, FALSE if failed
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-sudo" role="function">
+<title>gksu_sudo ()</title>
+<indexterm zone="gksu-sudo"><primary sortas="gksu_sudo">gksu_sudo</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_sudo                           (<link linkend="gchar">gchar</link> *command_line,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This function is a wrapper for gksu_sudo_run_full. It will call it
+without giving the callback functions, which leads to the standard
+ones being called. A simple <link linkend="GksuContext"><type>GksuContext</type></link> is created to hold the
+user name and the command.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>command_line</parameter>&#160;:</term>
+<listitem><simpara> the command line that will be executed as other user
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> to be set with the error condition, if an error
+happens
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if all went well, FALSE if an error happend.
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-sudo-full" role="function">
+<title>gksu_sudo_full ()</title>
+<indexterm zone="gksu-sudo-full"><primary sortas="gksu_sudo_full">gksu_sudo_full</primary></indexterm><programlisting><link linkend="gboolean">gboolean</link>            gksu_sudo_full                      (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="GksuAskPassFunc">GksuAskPassFunc</link> ask_pass,
+                                                         <link linkend="gpointer">gpointer</link> ask_pass_data,
+                                                         <link linkend="GksuPassNotNeededFunc">GksuPassNotNeededFunc</link> pass_not_needed,
+                                                         <link linkend="gpointer">gpointer</link> pass_not_needed_data,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This is a compatibility shim over gksu_sudo_fuller, which, for
+compatibility reasons, lacks the 'exit_status' argument. You should
+check the documentation for gksu_sudo_fuller for information about
+the arguments.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuContext"><type>GksuContext</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ask_pass</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuAskPassFunc"><type>GksuAskPassFunc</type></link> to be called when the lib determines
+requesting a password is necessary; it may be NULL, in which case
+the standard password request dialog will be used
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>ask_pass_data</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="gpointer"><type>gpointer</type></link> with user data to be passed to the
+<link linkend="GksuAskPasswordFunc"><type>GksuAskPasswordFunc</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>pass_not_needed</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuPassNotNeededFunc"><type>GksuPassNotNeededFunc</type></link> that will be called
+when the command is being run without the need for requesting
+a password; it will only be called if the display-no-pass-info
+gconf key is enabled; NULL will have the standard dialog be shown
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>pass_not_needed_data</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="gpointer"><type>gpointer</type></link> with the user data to be passed to the
+<link linkend="GksuPasswordNotNeededFunc"><type>GksuPasswordNotNeededFunc</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> object to be filled with the error code or NULL
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> TRUE if all went fine, FALSE if failed
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-ask-password" role="function">
+<title>gksu_ask_password ()</title>
+<indexterm zone="gksu-ask-password"><primary sortas="gksu_ask_password">gksu_ask_password</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             gksu_ask_password                   (<link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This function uses the gksu infra-structure to request for a
+password, but instead of passing it to su or sudo to run a command
+it simply returns the password. This is just a convenience wrapper
+for gksu_ask_password_full.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> to be set with the error condition, if an error
+happens
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a newly allocated string with the password;
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+<refsect2 id="gksu-ask-password-full" role="function">
+<title>gksu_ask_password_full ()</title>
+<indexterm zone="gksu-ask-password-full"><primary sortas="gksu_ask_password_full">gksu_ask_password_full</primary></indexterm><programlisting><link linkend="gchar">gchar</link> *             gksu_ask_password_full              (<link linkend="GksuContext">GksuContext</link> *context,
+                                                         <link linkend="gchar">gchar</link> *prompt,
+                                                         <link linkend="GError">GError</link> **error);</programlisting>
+<para>
+This function uses the gksu infra-structure to request for a
+password, but instead of passing it to su or sudo to run a command
+it simply returns the password.</para>
+<para>
+</para><variablelist role="params">
+<varlistentry><term><parameter>context</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GksuContext"><type>GksuContext</type></link>
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>prompt</parameter>&#160;:</term>
+<listitem><simpara> a prompt different from Password:
+</simpara></listitem></varlistentry>
+<varlistentry><term><parameter>error</parameter>&#160;:</term>
+<listitem><simpara> a <link linkend="GError"><type>GError</type></link> object to be filled with the error code or NULL
+</simpara></listitem></varlistentry>
+<varlistentry><term><emphasis>Returns</emphasis>&#160;:</term><listitem><simpara> a newly allocated string with the password;
+</simpara></listitem></varlistentry>
+</variablelist></refsect2>
+
+</refsect1>
+
+
+
+
+</refentry>

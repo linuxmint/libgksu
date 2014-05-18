@@ -1,0 +1,398 @@
+# Korean translation for libgksu
+# Copyright (c) 2006 Rosetta Contributors and Canonical Ltd 2006
+# This file is distributed under the same license as the libgksu package.
+# DasomOLI <dasomoli@gmail.com>, 2006.
+# Copyright others:
+# Changwoo Ryu <cwryu@debian.org>, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgksu\n"
+"Report-Msgid-Bugs-To: kov@debian.org\n"
+"POT-Creation-Date: 2007-03-26 00:10+0900\n"
+"PO-Revision-Date: 2007-03-26 01:28+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: Korean <ko@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libgksu/libgksu.c:119
+#, c-format
+msgid "Not using locking for read only lock file %s"
+msgstr "읽기 전용 잠금 파일 %s에 대해 잠금을 사용하지 않습니다"
+
+#: ../libgksu/libgksu.c:139
+#, c-format
+msgid "Not using locking for nfs mounted lock file %s"
+msgstr "NFS로 마운트된 잠금 파일 %s에 대해 잠금을 사용하지 않습니다"
+
+#: ../libgksu/libgksu.c:495
+msgid ""
+"<b><big>Could not grab your mouse.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>마우스를 고정할 수 없습니다.</big></b>\n"
+"\n"
+"의심스러운 프로그램이 세션을 몰래 엿듣고 있을 수도 있고, 막 포커스를 받은 메뉴나 프로그램을 클릭했을 수도 있습니다.\n"
+"\n"
+"다시 시도해 보십시오."
+
+#: ../libgksu/libgksu.c:507
+msgid ""
+"<b><big>Could not grab your keyboard.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>키보드를 고정할 수 없습니다.</big></b>\n"
+"\n"
+"의심스러운 프로그램이 세션을 몰래 엿듣고 있을 수도 있고, 막 포커스를 받은 메뉴나 프로그램을 클릭했을 수도 있습니다.\n"
+"\n"
+"다시 시도해 보십시오."
+
+#: ../libgksu/libgksu.c:864
+#, c-format
+msgid ""
+"<b><big>Enter your password to perform administrative tasks</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>관리 작업을 하려면 열쇠글을 입력하십시오</big></b>\n"
+"\n"
+"'%s' 프로그램을 이용해 시스템의 중요 사항을 바꿉니다."
+
+#: ../libgksu/libgksu.c:871
+#, c-format
+msgid ""
+"<b><big>Enter your password to run the application '%s' as user %s</big></b>"
+msgstr "<b><big>'%s' 프로그램을 '%s' 사용자로 실행하려면 열쇠글을 입력하십시오</big></b>"
+
+#: ../libgksu/libgksu.c:879
+#, c-format
+msgid ""
+"<b><big>Enter the administrative password</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>관리자 열쇠글을 입력하십시오</big></b>\n"
+"\n"
+"'%s' 프로그램을 이용해 시스템의 중요 사항을 바꿉니다."
+
+#: ../libgksu/libgksu.c:886
+#, c-format
+msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgstr "<b><big>'%2$s' 프로그램을 실행하려면 %1$s의 열쇠글을 입력하십시오</big></b>"
+
+#: ../libgksu/libgksu.c:917
+msgid "Password prompt canceled."
+msgstr "열쇠글 물어보기를 취소했습니다."
+
+#: ../libgksu/libgksu.c:987
+#, c-format
+msgid ""
+"<b><big>Granted permissions without asking for password</big></b>\n"
+"\n"
+"The '%s' program was started with the privileges of the %s user without the "
+"need to ask for a password, due to your system's authentication mechanism "
+"setup.\n"
+"\n"
+"It is possible that you are being allowed to run specific programs as user %"
+"s without the need for a password, or that the password is cached.\n"
+"\n"
+"This is not a problem report; it's simply a notification to make sure you "
+"are aware of this."
+msgstr ""
+"<b><big>열쇠글을 물어보지 않고 권한을 부여합니다</big></b>\n"
+"\n"
+" 열쇠글을 물어보지 않고 '%s' 프로그램을 %s 사용자의 권한으로 시작합니다. 이 시스템의 인증 시스템이 그렇게 설정되어 있습니다.\n"
+"\n"
+"현재 사용자가 열쇠글을 입력하지 않고도 %s 사용자로 특정 프로그램을 실행할 수 있도록 허용되어 있을 수도 있고, 아니면 열쇠글이 임시 저장되어 있을 수도 있습니다.\n"
+"\n"
+"이 메세지는 문제점을 표시하는 게 아닙니다. 위와 같은 사실을 알리는 메세지일 뿐입니다."
+
+#: ../libgksu/libgksu.c:1011
+msgid "Do _not display this message again"
+msgstr "이 메세지를 다시 보여주지 않음( _n)"
+
+#: ../libgksu/libgksu.c:1031
+msgid ""
+"<b>Would you like your screen to be \"grabbed\"\n"
+"while you enter the password?</b>\n"
+"\n"
+"This means all applications will be paused to avoid\n"
+"the eavesdropping of your password by a a malicious\n"
+"application while you type it."
+msgstr ""
+"<b>열쇠글을 입력하는 동안에 화면을 \"고정\"하시겠습니까?\n"
+"\n"
+"모든 프로그램이 일시 정지해서 악의적인 프로그램이\n"
+"열쇠글 입력을 엿듣지 못하게 합니다."
+
+#: ../libgksu/libgksu.c:1308
+msgid "Granting Rights"
+msgstr "권한 부여"
+
+#: ../libgksu/libgksu.c:1863
+msgid "gksu_run needs a command to be run, none was provided."
+msgstr "gksu_run에 실행할 명령이 필요하지만 명령이 주어지지 않았습니다."
+
+#: ../libgksu/libgksu.c:1874
+msgid "The gksu-run-helper command was not found or is not executable."
+msgstr "gksu-run-helper 명령을 찾을 수 없거나 실행할 수 없습니다."
+
+#: ../libgksu/libgksu.c:1882 ../libgksu/libgksu.c:2396
+msgid "Unable to copy the user's Xauthorization file."
+msgstr "사용자의 X인증 파일을 복사할 수 없습니다."
+
+#: ../libgksu/libgksu.c:1928 ../libgksu/libgksu.c:2530
+#, c-format
+msgid "Failed to fork new process: %s"
+msgstr "새 프로세스를 만드는데 실패: %s"
+
+#: ../libgksu/libgksu.c:2067
+msgid "Wrong password got from keyring."
+msgstr "키 모음에서 가져온 열쇠글이 틀렸습니다."
+
+#: ../libgksu/libgksu.c:2071 ../libgksu/libgksu.c:2681
+msgid "Wrong password."
+msgstr "잘못된 열쇠글."
+
+#: ../libgksu/libgksu.c:2126 ../libgksu/libgksu.c:2140
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received:\n"
+" %s\n"
+"While expecting:\n"
+" %s"
+msgstr ""
+"gksu-run-helper와 통신에 실패했습니다.\n"
+"\n"
+"받은 문자열:\n"
+" %s\n"
+"예상했던 문자열:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2132
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received bad string while expecting:\n"
+" %s"
+msgstr ""
+"gksu-run-helper와 통신에 실패했습니다.\n"
+"\n"
+"다음을 예상했지만 잘못된 문자열을 받았습니다:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2208
+#, c-format
+msgid "Could not read from the pipe with the child: %s"
+msgstr "자식의 파이프에서 읽을 수 없습니다: %s"
+
+#: ../libgksu/libgksu.c:2255
+#, c-format
+msgid "su terminated with %d status"
+msgstr "su가 %d 값을 리턴하면서 끝났습니다"
+
+#: ../libgksu/libgksu.c:2370
+msgid "gksu_sudo_run needs a command to be run, none was provided."
+msgstr "gksu_sudo_run에 실행할 명령이 필요하지만 명령이 주어지지 않았습니다."
+
+#: ../libgksu/libgksu.c:2511 ../libgksu/libgksu.c:2520
+#, c-format
+msgid "Error creating pipe: %s"
+msgstr "파이프 만드는데 오류: %s"
+
+#: ../libgksu/libgksu.c:2546
+#, c-format
+msgid "Failed to exec new process: %s"
+msgstr "새 프로세스를 실행하는데 실패: %s"
+
+#: ../libgksu/libgksu.c:2563 ../libgksu/libgksu.c:2573
+#, c-format
+msgid "Error opening pipe: %s"
+msgstr "파이프 여는데 오류: %s"
+
+#: ../libgksu/libgksu.c:2631
+msgid "Password: "
+msgstr "열쇠글: "
+
+#: ../libgksu/libgksu.c:2684 ../libgksu/libgksu.c:2698
+msgid ""
+"The underlying authorization mechanism (sudo) does not allow you to run this "
+"program. Contact the system administrator."
+msgstr "내부 인증 방식에서 (sudo) 이 프로그램 실행을 허용하지 않습니다. 시스템 관리자에게 문의하십시오."
+
+#: ../libgksu/libgksu.c:2751
+#, c-format
+msgid "sudo terminated with %d status"
+msgstr "sudo가 %d 값을 리턴하면서 끝났습니다"
+
+#: ../libgksuui/gksuui-dialog.c:218
+msgid "Remember password"
+msgstr "열쇠글 기억하기"
+
+#: ../libgksuui/gksuui-dialog.c:235
+msgid "Save for this session"
+msgstr "이 세션에 대해 저장"
+
+#: ../libgksuui/gksuui-dialog.c:240
+msgid "Save in the keyring"
+msgstr "키 모음에 저장"
+
+#. label
+#: ../libgksuui/gksuui-dialog.c:334
+msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+msgstr "<span weight=\"bold\" size=\"larger\">root 열쇠글을 입력하십시오.</span>\n"
+
+#. entry label
+#: ../libgksuui/gksuui-dialog.c:355
+msgid "Password:"
+msgstr "열쇠글:"
+
+#. label capslock warning
+#: ../libgksuui/gksuui-dialog.c:376
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Caps Lock이 켜져 있습니다</b>"
+
+#: ../gksu-properties/gksu-properties.c:248
+msgid "Failed to load glade file; please check your installation."
+msgstr "글레이드 파일을 읽어들이는 데 실패했습니다. 설치가 올바른 지 확인하십시오."
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:1
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "관리 권한 부여 프로그램의 동작을 설정합니다"
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Privilege granting"
+msgstr "관리 권한 부여"
+
+#: ../gksu-properties/gksu-properties.glade.h:1
+msgid "<b>Behavior</b>"
+msgstr "<b>동작</b>"
+
+#: ../gksu-properties/gksu-properties.glade.h:2
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>화면 고정</b>"
+
+#: ../gksu-properties/gksu-properties.glade.h:3
+msgid "_Authentication mode:"
+msgstr "인증 모드(_A):"
+
+#: ../gksu-properties/gksu-properties.glade.h:4
+msgid "_Grab mode:"
+msgstr "고정 모드(_G):"
+
+#: ../gksu-properties/gksu-properties.glade.h:5
+msgid ""
+"enable\n"
+"disable\n"
+"force enable\n"
+"prompt\n"
+msgstr ""
+"사용하기\n"
+"사용하지 않음\n"
+"강제로 사용하기\n"
+"물어보기\n"
+
+#: ../gksu-properties/gksu-properties.glade.h:10
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../gksu-properties/gksu-properties.glade.h:11
+msgid ""
+"su\n"
+"sudo"
+msgstr ""
+"su\n"
+"sudo"
+
+#: ../gksu.schemas.in.h:1
+msgid "Disable keyboard and mouse grab"
+msgstr "키보드 및 마우스 고정 사용하지 않기"
+
+#: ../gksu.schemas.in.h:2
+msgid "Display information message when no password is needed"
+msgstr "열쇠글이 필요 없을 때 정보 메세지 표시"
+
+#: ../gksu.schemas.in.h:3
+msgid "Force keyboard and mouse grab"
+msgstr "키보드 및 마우스 강제로 고정"
+
+#: ../gksu.schemas.in.h:4
+msgid ""
+"Grab keyboard and mouse even if -g has been passed as argument on the "
+"command line."
+msgstr "명령행에 -g 옵션을 넘겼을 경우에도 키보드와 마우스 고정."
+
+#: ../gksu.schemas.in.h:5
+msgid "Keyring to which passwords will be saved"
+msgstr "열쇠글을 저장할 키 모음"
+
+#: ../gksu.schemas.in.h:6
+msgid "Prompt for grabbing"
+msgstr "고정할 때 물어보기"
+
+#: ../gksu.schemas.in.h:7
+msgid "Save password to gnome-keyring"
+msgstr "열쇠글을 그놈 키모음에 저장"
+
+#: ../gksu.schemas.in.h:8
+msgid "Sudo mode"
+msgstr "sudo 모드"
+
+#: ../gksu.schemas.in.h:9
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr "gksu가 사용할 키 모음의 이름. 보통 사용하는 값은 \"session\"으로 현재 세션에 대해 열쇠글을 저장합니다. 그리고 \"default\"는 시간 제한 없이 열쇠글을 저장합니다."
+
+#: ../gksu.schemas.in.h:10
+msgid ""
+"This option determines whether a message dialog will be displayed informing "
+"the user that the program is being run without the need of a password being "
+"asked for some reason."
+msgstr "이 옵션에 따라 (무언가의 이유로) 열쇠글 입력 없이 프로그램을 실행한다는 사실을 알리는 메세지 창을 표시할 지 여부를 결정합니다."
+
+#: ../gksu.schemas.in.h:11
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr "이 옵션을 켜면 gksu에서 열쇠글을 입력할 때 화면을 고정할 지 여부를 물어봅니다 이 옵션은 force-grab 옵션을 껐을 때만 효과가 있습니다."
+
+#: ../gksu.schemas.in.h:12
+msgid ""
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
+msgstr "sudo를 기본 벡엔드로 할 지 여부. 이 방법은 -S 옵션을 사용하거나 ('gksu' 대신) 'gksudo'를 실행해도 사용할 수 있습니다."
+
+#: ../gksu.schemas.in.h:13
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr "키보드 및 마우스 고정 기능을 끌 지 여부. 이 옵션을 사용하면 다른 X 프로그램이 키보드 입력 이벤트를 가로챌 수 있습니다. 즉 실행 중일 지도 모르는 의심스러운 프로그램을 막을 수 없게 됩니다."
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"gksu can save the password you type to the gnome-keyring so you'll not be "
+"asked everytime"
+msgstr "gksu에서 입력하는 열쇠글을 그놈 키 모음에 저장해서 매번 물어보지 않게 합니다"
+
+#: ../libgksu/gksu-run-helper.c:149
+#, c-format
+msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
+msgstr "xauth 키를 얻는 데 실패했습니다. xauth 바이너리가 있어야 할 위치에 없습니다"
