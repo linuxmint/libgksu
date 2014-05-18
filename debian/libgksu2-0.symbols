@@ -1,7 +1,6 @@
 libgksu2.so.0 libgksu2-0 #MINVER#
  HIDDEN@HIDDEN 1.9.6
  LIBGKSU_2@LIBGKSU_2 1.9.6
- fade_data@LIBGKSU_2 1.9.6
  get_configuration_options@LIBGKSU_2 1.9.6
  gksu_ask_password@LIBGKSU_2 1.9.6
  gksu_ask_password_full@LIBGKSU_2 1.9.6
@@ -55,10 +54,6 @@ libgksu2.so.0 libgksu2-0 #MINVER#
  gksuui_dialog_set_message@LIBGKSU_2 1.9.6
  gksuui_dialog_set_prompt@LIBGKSU_2 1.9.6
  grab_keyboard_and_mouse@LIBGKSU_2 1.9.6
- gsm_screen_get_height@LIBGKSU_2 1.9.6
- gsm_screen_get_width@LIBGKSU_2 1.9.6
- gsm_screen_get_x@LIBGKSU_2 1.9.6
- gsm_screen_get_y@LIBGKSU_2 1.9.6
  no_pass@LIBGKSU_2 1.9.6
  report_failed_grab@LIBGKSU_2 1.9.6
  set_sensitivity_cb@LIBGKSU_2 1.9.6
