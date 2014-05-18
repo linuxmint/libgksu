@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<indexdiv>
+<indexdiv><title>G</title>
+<indexentry><primaryie linkends="GksuError"><link linkend="GksuError">GksuError</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-ask-password"><link linkend="gksu-ask-password">gksu_ask_password</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-ask-password-full"><link linkend="gksu-ask-password-full">gksu_ask_password_full</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-free"><link linkend="gksu-context-free">gksu_context_free</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-command"><link linkend="gksu-context-get-command">gksu_context_get_command</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-debug"><link linkend="gksu-context-get-debug">gksu_context_get_debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-description"><link linkend="gksu-context-get-description">gksu_context_get_description</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-grab"><link linkend="gksu-context-get-grab">gksu_context_get_grab</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-keep-env"><link linkend="gksu-context-get-keep-env">gksu_context_get_keep_env</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-login-shell"><link linkend="gksu-context-get-login-shell">gksu_context_get_login_shell</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-message"><link linkend="gksu-context-get-message">gksu_context_get_message</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-get-user"><link linkend="gksu-context-get-user">gksu_context_get_user</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-new"><link linkend="gksu-context-new">gksu_context_new</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-command"><link linkend="gksu-context-set-command">gksu_context_set_command</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-debug"><link linkend="gksu-context-set-debug">gksu_context_set_debug</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-description"><link linkend="gksu-context-set-description">gksu_context_set_description</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-grab"><link linkend="gksu-context-set-grab">gksu_context_set_grab</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-keep-env"><link linkend="gksu-context-set-keep-env">gksu_context_set_keep_env</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-login-shell"><link linkend="gksu-context-set-login-shell">gksu_context_set_login_shell</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-message"><link linkend="gksu-context-set-message">gksu_context_set_message</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-context-set-user"><link linkend="gksu-context-set-user">gksu_context_set_user</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-run"><link linkend="gksu-run">gksu_run</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-run-full"><link linkend="gksu-run-full">gksu_run_full</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-su"><link linkend="gksu-su">gksu_su</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-sudo"><link linkend="gksu-sudo">gksu_sudo</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-sudo-full"><link linkend="gksu-sudo-full">gksu_sudo_full</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gksu-su-full"><link linkend="gksu-su-full">gksu_su_full</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

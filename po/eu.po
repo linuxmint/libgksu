@@ -1,0 +1,430 @@
+# translation of eu.po to Basque
+# Copyright (C) 2005, 2008 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Piarres Beobide <pi@beobide.net>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: eu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-03-02 12:35-0300\n"
+"PO-Revision-Date: 2008-02-29 12:50+0100\n"
+"Last-Translator: Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>\n"
+"Language-Team: Basque <eu@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../libgksu/libgksu.c:122
+#, c-format
+msgid "Not using locking for read only lock file %s"
+msgstr "Blokeoa erabili gabe irakurtzeko soilik den %s fitxategian"
+
+#: ../libgksu/libgksu.c:142
+#, c-format
+msgid "Not using locking for nfs mounted lock file %s"
+msgstr "Blokeoa erabili gabe NFS bidez muntatutako %s fitxategian"
+
+#: ../libgksu/libgksu.c:498
+msgid ""
+"<b><big>Could not grab your mouse.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>Ezin izan da sagua blokeatu</big></b>\n"
+"\n"
+"Bezero maltzur bat zure saioa zelatatzen egon liteke, edo agian fokua "
+"lortzea erabaki duen menu edo aplikazio batean klik egin duzu.\n"
+"\n"
+"Saiatu berriro."
+
+#: ../libgksu/libgksu.c:510
+msgid ""
+"<b><big>Could not grab your keyboard.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>Ezin izan da teklatua blokeatu</big></b>\n"
+"\n"
+"Bezero maltzur bat zure saioa zelatatzen egon liteke, edo agian fokua "
+"lortzea erabaki duen menu edo aplikazio batean klik egin duzu.\n"
+"\n"
+"Saiatu berriro."
+
+#: ../libgksu/libgksu.c:867
+#, c-format
+msgid ""
+"<b><big>Enter your password to perform administrative tasks</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Idatzi pasahitza administrazioko atazak lantzeko</big></b>\n"
+"\n"
+"'%s' aplikazioak sistemako funtsezko zatia aldatzea uzten dizu."
+
+#: ../libgksu/libgksu.c:874
+#, c-format
+msgid ""
+"<b><big>Enter your password to run the application '%s' as user %s</big></b>"
+msgstr ""
+"<b><big>Idatzi pasahitza '%s' aplikazioa '%s' erabiltzaile gisa "
+"exekutatzeko</big></b>"
+
+#: ../libgksu/libgksu.c:882
+#, c-format
+msgid ""
+"<b><big>Enter the administrative password</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Idatzi administratzailearen pasahitza</big></b>\n"
+"\n"
+"'%s' aplikazioak sistemako funtsezko zatia aldatzea uzten dizu."
+
+#: ../libgksu/libgksu.c:889
+#, c-format
+msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgstr ""
+"<b><big>Idatzi '%s'-(r)en pasahitza '%s' aplikazioa exekutatzeko</big></b>"
+
+#: ../libgksu/libgksu.c:920
+msgid "Password prompt canceled."
+msgstr "Pasahitzaren eskaera bertan behera utzita."
+
+#: ../libgksu/libgksu.c:992
+#, c-format
+msgid ""
+"<b><big>Granted permissions without asking for password</big></b>\n"
+"\n"
+"The '%s' program was started with the privileges of the %s user without the "
+"need to ask for a password, due to your system's authentication mechanism "
+"setup.\n"
+"\n"
+"It is possible that you are being allowed to run specific programs as user %"
+"s without the need for a password, or that the password is cached.\n"
+"\n"
+"This is not a problem report; it's simply a notification to make sure you "
+"are aware of this."
+msgstr ""
+"<b><big>Baimenak eman dira pasahitza eskatu gabe</big></b>\n"
+"\n"
+"'%s' programa %s erabiltzailearen pribilegioekin abiarazi da pasahitza "
+"eskatu behar izan gabe, sistemako autentifikazio-mekanismoaren "
+"konfigurazioaren eraginez.\n"
+"\n"
+"Baliteke %s erabiltzaile gisa programa zehatz bat exekutatzeko baimenak "
+"izatea pasahitzik eskatu gabe, edo pasahitza cachean egotea.\n"
+"\n"
+"Hau ez da arazo baten txostena, jakinarazpen bat besterik ez da honi buruz "
+"ardura izan dezazun ziurtatzeko."
+
+#: ../libgksu/libgksu.c:1016
+msgid "Do _not display this message again"
+msgstr "_Ez erakutsi mezu hau berriro"
+
+#: ../libgksu/libgksu.c:1036
+msgid ""
+"<b>Would you like your screen to be \"grabbed\"\n"
+"while you enter the password?</b>\n"
+"\n"
+"This means all applications will be paused to avoid\n"
+"the eavesdropping of your password by a a malicious\n"
+"application while you type it."
+msgstr ""
+"<b>Nahi duzu pantaila \"blokeatzea\"\n"
+"pasahitza sartzen duzun bitartean?</b>\n"
+"\n"
+"Aplikazio guztiak pausarazi egingo direla adierazten du,\n"
+"aplikazio maltzur batek zure pasahitza irakurtzea sahiesteko\n"
+"pasahitza idaztean."
+
+#: ../libgksu/libgksu.c:1313
+msgid "Granting Rights"
+msgstr "Baimenak ematen"
+
+#: ../libgksu/libgksu.c:1901
+msgid "gksu_run needs a command to be run, none was provided."
+msgstr ""
+"'gksu_run'-ek komando bat behar du exekutatzeko, baina ez zaio ezer eman."
+
+#: ../libgksu/libgksu.c:1912
+msgid "The gksu-run-helper command was not found or is not executable."
+msgstr "'gksu-run-helper' komandoa ez da aurkitu edo ez da exekutagarria."
+
+#: ../libgksu/libgksu.c:1920 ../libgksu/libgksu.c:2420
+msgid "Unable to copy the user's Xauthorization file."
+msgstr "Ezin da erabiltzailearen Xauthorization fitxategia kopiatu."
+
+#: ../libgksu/libgksu.c:1966 ../libgksu/libgksu.c:2554
+#, c-format
+msgid "Failed to fork new process: %s"
+msgstr "Huts egin du prozesu berria sarbidetzean: %s"
+
+#: ../libgksu/libgksu.c:2109
+msgid "Wrong password got from keyring."
+msgstr "Okerreko pasahitza eskuratu da gako-sortatik."
+
+#: ../libgksu/libgksu.c:2113 ../libgksu/libgksu.c:2703
+msgid "Wrong password."
+msgstr "Okerreko pasahitza."
+
+#: ../libgksu/libgksu.c:2168 ../libgksu/libgksu.c:2182
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received:\n"
+" %s\n"
+"While expecting:\n"
+" %s"
+msgstr ""
+"Huts egin du 'gksu-run-helper'-ekin komunikatzean.\n"
+"\n"
+"Jaso dana:\n"
+" %s\n"
+"Espero zena:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2174
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received bad string while expecting:\n"
+" %s"
+msgstr ""
+"Huts egin du 'gksu-run-helper'-ekin komunikatzean.\n"
+"\n"
+"Okerreko katea jaso da honakoa espero zenean:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2274
+#, c-format
+msgid "su terminated with %d status"
+msgstr "'su' %d egoerarekin amaituta"
+
+#: ../libgksu/libgksu.c:2388
+msgid "gksu_sudo_run needs a command to be run, none was provided."
+msgstr ""
+"'gksu_sudo_run'-ek komando bat behar du exekutatzeko, baina ez zaio ezer "
+"eman."
+
+#: ../libgksu/libgksu.c:2535 ../libgksu/libgksu.c:2544
+#, c-format
+msgid "Error creating pipe: %s"
+msgstr "Errorea kanalizazioa sortzean: %s"
+
+#: ../libgksu/libgksu.c:2570
+#, c-format
+msgid "Failed to exec new process: %s"
+msgstr "Huts egin du prozesu berria exekutatzean: %s"
+
+#: ../libgksu/libgksu.c:2587 ../libgksu/libgksu.c:2597
+#, c-format
+msgid "Error opening pipe: %s"
+msgstr "Errorea kanalizazioa irekitzean: %s"
+
+#: ../libgksu/libgksu.c:2655
+msgid "Password: "
+msgstr "Pasahitza:"
+
+#: ../libgksu/libgksu.c:2706 ../libgksu/libgksu.c:2720
+msgid ""
+"The underlying authorization mechanism (sudo) does not allow you to run this "
+"program. Contact the system administrator."
+msgstr ""
+"Azpiko autorizazio-mekanismoak (sudo) ez dizu aplikazio hau exekutatzea "
+"uzten. Jar zaitez sistemako administratzailearekin harremanetan."
+
+#: ../libgksu/libgksu.c:2770
+#, c-format
+msgid "sudo terminated with %d status"
+msgstr "'sudo' %d egoerarekin amaituta"
+
+#: ../libgksuui/gksuui-dialog.c:149
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Maiuskulak aktibatuta daude</b>"
+
+#: ../libgksuui/gksuui-dialog.c:219
+msgid "Remember password"
+msgstr "Gogoratu pasahitza"
+
+#: ../libgksuui/gksuui-dialog.c:236
+msgid "Save for this session"
+msgstr "Gorde saio honetan"
+
+#: ../libgksuui/gksuui-dialog.c:241
+msgid "Save in the keyring"
+msgstr "Gorde gako-sortan"
+
+#. label
+#: ../libgksuui/gksuui-dialog.c:335
+msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">Idatzi 'root'-en pasahitza.</span>\n"
+
+#. entry label
+#: ../libgksuui/gksuui-dialog.c:356
+msgid "Password:"
+msgstr "Pasahitza:"
+
+#: ../gksu-properties/gksu-properties.c:248
+msgid "Failed to load glade file; please check your installation."
+msgstr "Huts egin du glade fitxategia kargatzean, egiaztatu instalazioa."
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:1
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Konfiguratu pribilegioak emateko tresnaren portaera"
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Privilege granting"
+msgstr "Pribilegioa ematea"
+
+#: ../gksu-properties/gksu-properties.glade.h:1
+msgid "<b>Behavior</b>"
+msgstr "<b>Portaera</b>"
+
+#: ../gksu-properties/gksu-properties.glade.h:2
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Pantaila blokeatzea</b>"
+
+#: ../gksu-properties/gksu-properties.glade.h:3
+msgid "_Authentication mode:"
+msgstr "_Autentifikazio modua:"
+
+#: ../gksu-properties/gksu-properties.glade.h:4
+msgid "_Grab mode:"
+msgstr "_Blokeo modua:"
+
+#: ../gksu-properties/gksu-properties.glade.h:5
+msgid ""
+"enable\n"
+"disable\n"
+"force enable\n"
+"prompt\n"
+msgstr ""
+"gaitu\n"
+"desgaitu\n"
+"behartu gaitzea\n"
+"galdetu\n"
+
+#: ../gksu-properties/gksu-properties.glade.h:10
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../gksu-properties/gksu-properties.glade.h:11
+msgid ""
+"su\n"
+"sudo"
+msgstr ""
+"su\n"
+"sudo"
+
+#: ../gksu.schemas.in.h:1
+msgid "Disable keyboard and mouse grab"
+msgstr "Desgaitu teklatua eta sagua blokeatzea"
+
+#: ../gksu.schemas.in.h:2
+msgid "Display information message when no password is needed"
+msgstr "Bistaratu informazioaren mezua pasahitzik behar ez denean"
+
+#: ../gksu.schemas.in.h:3
+msgid "Force keyboard and mouse grab"
+msgstr "Behartu teklatua eta sagua blokeatzea"
+
+#: ../gksu.schemas.in.h:4
+msgid ""
+"Grab keyboard and mouse even if -g has been passed as argument on the "
+"command line."
+msgstr ""
+"Blokeatu teklatua eta sagua, nahiz eta '-g' aukera eman komando-lerroan."
+
+#: ../gksu.schemas.in.h:5
+msgid "Keyring to which passwords will be saved"
+msgstr "Gako-sorta (pasahitzak hor gordetzeko)"
+
+#: ../gksu.schemas.in.h:6
+msgid "Prompt for grabbing"
+msgstr "Blokeatzeko eskaera"
+
+#: ../gksu.schemas.in.h:7
+msgid "Save password to gnome-keyring"
+msgstr "Gorde pasahitza 'gnome-keyring'-en"
+
+#: ../gksu.schemas.in.h:8
+msgid "Sudo mode"
+msgstr "'Sudo' modua"
+
+#: ../gksu.schemas.in.h:9
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"Gksu-k erabiliko duen gako-sortaren izena. Balio erabilgarriak: \"session"
+"\" (saioa), pasahitza saioan gordetzeko; \"default\" (lehenetsia), pasahitza "
+"denbora-mugarik gabe gordetzeko."
+
+#: ../gksu.schemas.in.h:10
+msgid ""
+"This option determines whether a message dialog will be displayed informing "
+"the user that the program is being run without the need of a password being "
+"asked for some reason."
+msgstr ""
+"Aukera honek mezuaren elkarrizketa-koadroa bistaratuko den ala ez zehazten "
+"du. Elkarrizketa-koadro horrek programa eskatu den pasahitza behar izan gabe "
+"eta arrazoi bategatik exekutatzen ari dela jakinarazten dio erabiltzaileari."
+
+#: ../gksu.schemas.in.h:11
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"Auekra honekin 'gksu'-k erabiltzaileari galdetuko dio ea pantaila blokeatzea "
+"nahi duen pasahitza sartzean. Jakin ezazu 'force-grab' (derrigortu blokeoa) "
+"desgaituta badago soilik eragiten duela."
+
+#: ../gksu.schemas.in.h:12
+msgid ""
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
+msgstr ""
+"'sudo' metodo lehenetsia izngo den ala ez adierazten du. Metodo hau "
+"atzitzeko '-S' aukera erabili edo 'gksudo' exekutatu daiteke 'gksu' ordez."
+
+#: ../gksu.schemas.in.h:13
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr ""
+"Teklatua eta sagua blokeatzea desaktibatu behar den ala ez adierazten du. "
+"Beste X-eko aplikazioek teklatuaren sarrerako gertaerak entzutea eragin "
+"dezake, eta ondorioz exekutatzen egon daitezkeen aplikazio maltzurretatik ez "
+"babestea."
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"gksu can save the password you type to the gnome-keyring so you'll not be "
+"asked everytime"
+msgstr ""
+"'gksu'-k idazten duzun pasahitza 'gnome-keyring'-en gorde dezake, aldi "
+"bakoitzean zuri ez galdetzeko."
+
+#: ../libgksu/gksu-run-helper.c:149
+#, c-format
+msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
+msgstr ""
+"Huts egin du xauth-en gakoa lortzean: ez da xauth kode bitarrik aurkitu "
+"ohizko kokalekuetan"

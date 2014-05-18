@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=Privilege granting
+_Comment=Configure behavior of the privilege-granting tool
+Exec=gksu-properties
+Icon=gksu.png
+StartupNotify=true
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Application;Settings;AdvancedSettings;
+OnlyShowIn=GNOME;XFCE;

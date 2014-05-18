@@ -1,0 +1,395 @@
+# Swedish translation of libgksu.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Daniel Nylander <po@danielnylander.se>, 2005
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgksu\n"
+"Report-Msgid-Bugs-To: kov@debian.org\n"
+"POT-Creation-Date: 2006-12-13 22:22+0100\n"
+"PO-Revision-Date: 2007-01-10 08:23+0100\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../libgksu/libgksu.c:119
+#, c-format
+msgid "Not using locking for read only lock file %s"
+msgstr "Använder inte låsning för skrivskyddade läsfilen %s"
+
+#: ../libgksu/libgksu.c:139
+#, c-format
+msgid "Not using locking for nfs mounted lock file %s"
+msgstr "Använder inte låsning för NFS-monterade låsfilen %s"
+
+#: ../libgksu/libgksu.c:495
+msgid ""
+"<b><big>Could not grab your mouse.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>Kunde inte fånga din mus.</big></b>\n"
+"\n"
+"En ondsint klient har möjligheten att lyssna på din session, du har klickat på en meny eller att något program precis har bestämt sig för att ta fokus.\n"
+"\n"
+"Försök igen."
+
+#: ../libgksu/libgksu.c:507
+msgid ""
+"<b><big>Could not grab your keyboard.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>Kunde inte fånga ditt tangentbord.</big></b>\n"
+"\n"
+"En ondsint klient har möjligheten att lyssna på din session, du har klickat på en meny eller att något program precis har bestämt sig för att ta fokus.\n"
+"\n"
+"Försök igen."
+
+#: ../libgksu/libgksu.c:855
+#, c-format
+msgid ""
+"<b><big>Enter your password to perform administrative tasks</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Ange ditt lösenord för att genomföra administrativa uppgifter</big></b>\n"
+"\n"
+"Programmet \"%s\" låter dig ändra systemkritiska delar av ditt system."
+
+#: ../libgksu/libgksu.c:862
+#, c-format
+msgid "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
+msgstr "<b><big>Ange ditt lösenord för att köra programmet \"%s\" som användaren %s</big></b>"
+
+#: ../libgksu/libgksu.c:870
+#, c-format
+msgid ""
+"<b><big>Enter the administrative password</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Ange det administrativa lösenordet</big></b>\n"
+"\n"
+"Programmet \"%s\" låter dig ändra systemkritiska delar av ditt system."
+
+#: ../libgksu/libgksu.c:877
+#, c-format
+msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgstr "<b><big>Ange lösenordet för %s för att köra programmet \"%s\"</big></b>"
+
+#: ../libgksu/libgksu.c:908
+msgid "Password prompt canceled."
+msgstr "Lösenordsfråga avbröts."
+
+#: ../libgksu/libgksu.c:978
+#, c-format
+msgid ""
+"<b><big>Granted permissions without asking for password</big></b>\n"
+"\n"
+"The '%s' program was started with the privileges of the %s user without the need to ask for a password, due to your system's authentication mechanism setup.\n"
+"\n"
+"It is possible that you are being allowed to run specific programs as user %s without the need for a password, or that the password is cached.\n"
+"\n"
+"This is not a problem report; it's simply a notification to make sure you are aware of this."
+msgstr ""
+"<b><big>Tilldelade rättigheter utan att fråga efter lösenord</big></b>\n"
+"\n"
+"Programmet \"%s\" startades med rättigheterna för användaren %s utan att behöva fråga efter ett lösenord. Detta på grund av konfigurationen av autentiseringsmekanismen i ditt system.\n"
+"\n"
+"Det är möjligt att du har tillåtits att köra specifika program som användaren %s utan att behöva ange ett lösenord, eller att lösenordet är mellanlagrat.\n"
+"\n"
+"Det här är inte en problemrapport; det är helt enkelt en notifiering för att göra dig uppmärksam på det här."
+
+#: ../libgksu/libgksu.c:1002
+msgid "Do _not display this message again"
+msgstr "Visa _inte det här meddelandet igen"
+
+#: ../libgksu/libgksu.c:1022
+msgid ""
+"<b>Would you like your screen to be \"grabbed\"\n"
+"while you enter the password?</b>\n"
+"\n"
+"This means all applications will be paused to avoid\n"
+"the eavesdropping of your password by a a malicious\n"
+"application while you type it."
+msgstr ""
+"<b>Vill du att din skärm ska \"fångas\"\n"
+"under tiden du matar in lösenordet?</b>\n"
+"\n"
+"Det här betyder att alla program pausas för att förhindra\n"
+"avlyssning av ditt lösenord av ett ondsint program\n"
+"under tiden du matar in det."
+
+#: ../libgksu/libgksu.c:1299
+msgid "Granting Rights"
+msgstr "Tilldelar rättigheter"
+
+#: ../libgksu/libgksu.c:1806
+msgid "gksu_run needs a command to be run, none was provided."
+msgstr "gksu_run behöver ett kommando att köra men inget angavs."
+
+#: ../libgksu/libgksu.c:1817
+msgid "The gksu-run-helper command was not found or is not executable."
+msgstr "Kommandot gksu-run-helper hittades inte eller är inte startbart."
+
+#: ../libgksu/libgksu.c:1825
+#: ../libgksu/libgksu.c:2331
+msgid "Unable to copy the user's Xauthorization file."
+msgstr "Kunde inte kopiera användarens Xauthorization-fil."
+
+#: ../libgksu/libgksu.c:1871
+#: ../libgksu/libgksu.c:2465
+#, c-format
+msgid "Failed to fork new process: %s"
+msgstr "Misslyckades att grena ny process: %s"
+
+#: ../libgksu/libgksu.c:2002
+msgid "Wrong password got from keyring."
+msgstr "Fick fel lösenord från nyckelringen."
+
+#: ../libgksu/libgksu.c:2006
+#: ../libgksu/libgksu.c:2616
+msgid "Wrong password."
+msgstr "Fel lösenord."
+
+#: ../libgksu/libgksu.c:2061
+#: ../libgksu/libgksu.c:2075
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received:\n"
+" %s\n"
+"While expecting:\n"
+" %s"
+msgstr ""
+"Misslyckades att kommunicera med gksu-run-helper.\n"
+"\n"
+"Mottog:\n"
+" %s\n"
+"Förväntade:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2067
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received bad string while expecting:\n"
+" %s"
+msgstr ""
+"Misslyckades med att kommunicera med gksu-run-helper.\n"
+"\n"
+"Mottog fel sträng när detta förväntades:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2143
+#, c-format
+msgid "Could not read from the pipe with the child: %s"
+msgstr "Kunde inte läsa från röret med barnprocess: %s"
+
+#: ../libgksu/libgksu.c:2190
+#, c-format
+msgid "su terminated with %d status"
+msgstr "su avslutades med status %d"
+
+#: ../libgksu/libgksu.c:2305
+msgid "gksu_sudo_run needs a command to be run, none was provided."
+msgstr "gksu_sudo_run behöver ett kommando att köra men inget angavs."
+
+#: ../libgksu/libgksu.c:2446
+#: ../libgksu/libgksu.c:2455
+#, c-format
+msgid "Error creating pipe: %s"
+msgstr "Fel vid skapande av rör: %s"
+
+#: ../libgksu/libgksu.c:2481
+#, c-format
+msgid "Failed to exec new process: %s"
+msgstr "Misslyckades med att starta ny process: %s"
+
+#: ../libgksu/libgksu.c:2498
+#: ../libgksu/libgksu.c:2508
+#, c-format
+msgid "Error opening pipe: %s"
+msgstr "Fel vid öppning av rör: %s"
+
+#: ../libgksu/libgksu.c:2566
+msgid "Password: "
+msgstr "Lösenord: "
+
+#: ../libgksu/libgksu.c:2619
+#: ../libgksu/libgksu.c:2633
+msgid "The underlying authorization mechanism (sudo) does not allow you to run this program. Contact the system administrator."
+msgstr "Den underliggande auktoriseringsmekanismen (sudo) tillåter inte att du kör detta program. Kontakta systemadministratören."
+
+#: ../libgksu/libgksu.c:2686
+#, c-format
+msgid "sudo terminated with %d status"
+msgstr "sudo avslutades med status %d"
+
+#: ../libgksuui/gksuui-dialog.c:218
+msgid "Remember password"
+msgstr "Kom ihåg lösenord"
+
+#: ../libgksuui/gksuui-dialog.c:235
+msgid "Save for this session"
+msgstr "Spara för den här sessionen"
+
+#: ../libgksuui/gksuui-dialog.c:240
+msgid "Save in the keyring"
+msgstr "Spara i nyckelringen"
+
+#. label
+#: ../libgksuui/gksuui-dialog.c:334
+msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+msgstr "<span weight=\"bold\" size=\"larger\">Ange root-lösenordet.</span>\n"
+
+#. entry label
+#: ../libgksuui/gksuui-dialog.c:355
+msgid "Password:"
+msgstr "Lösenord:"
+
+#. label capslock warning
+#: ../libgksuui/gksuui-dialog.c:375
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Du har CapsLock intryckt</b>"
+
+#: ../gksu-properties/gksu-properties.c:248
+msgid "Failed to load glade file; please check your installation."
+msgstr "Misslyckades med att läsa in glade-filen; kontrollera din installation."
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:1
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Konfigurera beteendet för verktyget för rättighetstilldelning"
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Privilege granting"
+msgstr "Rättighetstilldelning"
+
+#: ../gksu-properties/gksu-properties.glade.h:1
+msgid "<b>Behavior</b>"
+msgstr "<b>Beteende</b>"
+
+#: ../gksu-properties/gksu-properties.glade.h:2
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Skärmfångst</b>"
+
+#: ../gksu-properties/gksu-properties.glade.h:3
+msgid "_Authentication mode:"
+msgstr "_Autentiseringsläge:"
+
+#: ../gksu-properties/gksu-properties.glade.h:4
+msgid "_Grab mode:"
+msgstr "_Fångstläge:"
+
+#: ../gksu-properties/gksu-properties.glade.h:5
+msgid ""
+"enable\n"
+"disable\n"
+"force enable\n"
+"prompt\n"
+msgstr ""
+"aktivera\n"
+"inaktivera\n"
+"tvinga aktivering\n"
+"fråga\n"
+
+#: ../gksu-properties/gksu-properties.glade.h:10
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../gksu-properties/gksu-properties.glade.h:11
+msgid ""
+"su\n"
+"sudo"
+msgstr ""
+"su\n"
+"sudo"
+
+#: ../gksu.schemas.in.h:1
+msgid "Disable keyboard and mouse grab"
+msgstr "Inaktivera fångst av tangentbord och mus"
+
+#: ../gksu.schemas.in.h:2
+msgid "Display information message when no password is needed"
+msgstr "Visa informationsmeddelande när inget lösenord behövs"
+
+#: ../gksu.schemas.in.h:3
+msgid "Force keyboard and mouse grab"
+msgstr "Tvinga fångst av tangentbord och mus"
+
+#: ../gksu.schemas.in.h:4
+msgid "Grab keyboard and mouse even if -g has been passed as argument on the command line."
+msgstr "Fånga tangentbord och mus även om -g har angivits som argument på kommandoraden."
+
+#: ../gksu.schemas.in.h:5
+msgid "Keyring to which passwords will be saved"
+msgstr "Nyckelring till vilken lösenord kommer att sparas"
+
+#: ../gksu.schemas.in.h:6
+msgid "Prompt for grabbing"
+msgstr "Fråga för fångst"
+
+#: ../gksu.schemas.in.h:7
+msgid "Save password to gnome-keyring"
+msgstr "Spara lösenord i gnome-keyring"
+
+#: ../gksu.schemas.in.h:8
+msgid "Sudo mode"
+msgstr "Sudo-läge"
+
+#: ../gksu.schemas.in.h:9
+msgid "The name of the keyring gksu should use. Usual values are \"session\", which saves the password for the session, and \"default\", which saves the password with no timeout."
+msgstr "Namnet på nyckelringen som gksu ska använda. Vanliga värden är \"session\", vilket sparar lösenordet för sessionen, och \"default\" som sparar lösenordet utan maximal tidsgräns."
+
+#: ../gksu.schemas.in.h:10
+msgid "This option determines whether a message dialog will be displayed informing the user that the program is being run without the need of a password being asked for some reason."
+msgstr "Det här alternativet bestämmer huruvida en meddelandedialog kommer att visas och informera användaren att programmet kör utan att behöva fråga efter ett lösenord av någon anledning."
+
+#: ../gksu.schemas.in.h:11
+msgid "This option will make gksu prompt the user if he wants to have the screen grabbed before entering the password. Notice that this only has an effect if force-grab is disabled."
+msgstr "Det här alternativet kommer att göra att gksu frågar användaren om denne vill få skärmen fångad innan lösenordet matas in. Observera att det endast har effekt om force-grab är inaktivert."
+
+#: ../gksu.schemas.in.h:12
+msgid "Whether sudo should be the default backend method. This method is otherwise accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
+msgstr "Huruvida sudo ska vara standardbakändemetoden. Den här metoden användas annars genom flaggan -S eller genom att köra \"gksudo\" istället för \"gksu\"."
+
+#: ../gksu.schemas.in.h:13
+msgid "Whether the keyboard and mouse grabbing should be turned off. This will make it possible for other X applications to listen to keyboard input events, thus making it not possible to shield from malicious applications which may be running."
+msgstr "Huruvida fångst av tangentbordet och musen ska stängas av. Det här gör det möjligt för andra X-program att lyssna på tangentbordsinmatningshändelser, vilket gör det inte är möjligt att skydda sig mot ondsinta program som kan vara igång."
+
+#: ../gksu.schemas.in.h:14
+msgid "gksu can save the password you type to the gnome-keyring so you'll not be asked everytime"
+msgstr "gksu kan spara lösenordet som du anger i gnome-keyring så att du inte kommer att bli tillfrågad varje gång det används"
+
+#: ../libgksu/gksu-run-helper.c:149
+#, c-format
+msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
+msgstr "Misslyckades att hämta xauth-nyckeln: xauth-binären hittades inte på de vanliga platserna"
+
+#~ msgid "Failed to obtain xauth key: %s"
+#~ msgstr "Misslyckades med att hämta xauth-nyckel: %s"
+#~ msgid ""
+#~ "Impossible to create the .Xauthority file: a file already exists. This "
+#~ "might be a security issue; please investigate or warn your system "
+#~ "administrator."
+#~ msgstr ""
+#~ "Omöjligt att skapa filen .Xauthority: en fil finns redan. Det här kan "
+#~ "vara ett säkerhetsproblem; undersök problemet eller varna din "
+#~ "systemadministratör."
+#~ msgid "Error copying '%s' to '%s': %s"
+#~ msgstr "Fel vid kopiering av \"%s\" till \"%s\": %s"
+#~ msgid "Unable to run /bin/su: %s"
+#~ msgstr "Kunde inte köra /bin/su: %s"
+#~ msgid "No password was supplied and sudo needs it."
+#~ msgstr "Inget lösenord angavs och sudo behöver det."
+

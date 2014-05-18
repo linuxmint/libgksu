@@ -1,0 +1,291 @@
+<!-- ##### SECTION Title ##### -->
+API Reference
+
+<!-- ##### SECTION Short_Description ##### -->
+This API provides functions to provide su and sudo functionality to
+its users.
+
+<!-- ##### SECTION Long_Description ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION See_Also ##### -->
+<para>
+
+</para>
+
+<!-- ##### SECTION Stability_Level ##### -->
+
+
+<!-- ##### ENUM GksuError ##### -->
+<para>
+
+</para>
+
+@GKSU_ERROR_XAUTH: 
+@GKSU_ERROR_HELPER: 
+@GKSU_ERROR_NOCOMMAND: 
+@GKSU_ERROR_NOPASSWORD: 
+@GKSU_ERROR_FORK: 
+@GKSU_ERROR_EXEC: 
+@GKSU_ERROR_PIPE: 
+@GKSU_ERROR_PIPEREAD: 
+@GKSU_ERROR_WRONGPASS: 
+@GKSU_ERROR_CHILDFAILED: 
+@GKSU_ERROR_NOT_ALLOWED: 
+@GKSU_ERROR_CANCELED: 
+@GKSU_ERROR_WRONGAUTOPASS: 
+
+<!-- ##### FUNCTION gksu_context_new ##### -->
+<para>
+
+</para>
+
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_user ##### -->
+<para>
+
+</para>
+
+@context: 
+@username: 
+
+
+<!-- ##### FUNCTION gksu_context_get_user ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_command ##### -->
+<para>
+
+</para>
+
+@context: 
+@command: 
+
+
+<!-- ##### FUNCTION gksu_context_get_command ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_keep_env ##### -->
+<para>
+
+</para>
+
+@context: 
+@value: 
+
+
+<!-- ##### FUNCTION gksu_context_get_keep_env ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_get_description ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_description ##### -->
+<para>
+
+</para>
+
+@context: 
+@description: 
+
+
+<!-- ##### FUNCTION gksu_context_set_message ##### -->
+<para>
+
+</para>
+
+@context: 
+@message: 
+
+
+<!-- ##### FUNCTION gksu_context_get_message ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_login_shell ##### -->
+<para>
+
+</para>
+
+@context: 
+@value: 
+
+
+<!-- ##### FUNCTION gksu_context_get_login_shell ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_grab ##### -->
+<para>
+
+</para>
+
+@context: 
+@value: 
+
+
+<!-- ##### FUNCTION gksu_context_get_grab ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_set_debug ##### -->
+<para>
+
+</para>
+
+@context: 
+@value: 
+
+
+<!-- ##### FUNCTION gksu_context_get_debug ##### -->
+<para>
+
+</para>
+
+@context: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_context_free ##### -->
+<para>
+
+</para>
+
+@context: 
+
+
+<!-- ##### FUNCTION gksu_run ##### -->
+<para>
+
+</para>
+
+@command_line: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_run_full ##### -->
+<para>
+
+</para>
+
+@context: 
+@ask_pass: 
+@ask_pass_data: 
+@pass_not_needed: 
+@pass_not_needed_data: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_su ##### -->
+<para>
+
+</para>
+
+@command_line: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_su_full ##### -->
+<para>
+
+</para>
+
+@context: 
+@ask_pass: 
+@ask_pass_data: 
+@pass_not_needed: 
+@pass_not_needed_data: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_sudo ##### -->
+<para>
+
+</para>
+
+@command_line: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_sudo_full ##### -->
+<para>
+
+</para>
+
+@context: 
+@ask_pass: 
+@ask_pass_data: 
+@pass_not_needed: 
+@pass_not_needed_data: 
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_ask_password ##### -->
+<para>
+
+</para>
+
+@error: 
+@Returns: 
+
+
+<!-- ##### FUNCTION gksu_ask_password_full ##### -->
+<para>
+
+</para>
+
+@context: 
+@prompt: 
+@error: 
+@Returns: 
+
+

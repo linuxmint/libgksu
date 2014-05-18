@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE book PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "">
+<book xmlns="http://www.devhelp.net/book" title="LibGKSu Reference Manual" link="index.html" author="" name="libgksu">
+  <chapters>
+    <sub name="API Reference" link="libgksu-API-Reference.html"/>
+  </chapters>
+  <functions>
+    <function name="enum GksuError" link="libgksu-API-Reference.html#GksuError"/>
+    <function name="gksu_context_new ()" link="libgksu-API-Reference.html#gksu-context-new"/>
+    <function name="gksu_context_set_user ()" link="libgksu-API-Reference.html#gksu-context-set-user"/>
+    <function name="gksu_context_get_user ()" link="libgksu-API-Reference.html#gksu-context-get-user"/>
+    <function name="gksu_context_set_command ()" link="libgksu-API-Reference.html#gksu-context-set-command"/>
+    <function name="gksu_context_get_command ()" link="libgksu-API-Reference.html#gksu-context-get-command"/>
+    <function name="gksu_context_set_keep_env ()" link="libgksu-API-Reference.html#gksu-context-set-keep-env"/>
+    <function name="gksu_context_get_keep_env ()" link="libgksu-API-Reference.html#gksu-context-get-keep-env"/>
+    <function name="gksu_context_get_description ()" link="libgksu-API-Reference.html#gksu-context-get-description"/>
+    <function name="gksu_context_set_description ()" link="libgksu-API-Reference.html#gksu-context-set-description"/>
+    <function name="gksu_context_set_message ()" link="libgksu-API-Reference.html#gksu-context-set-message"/>
+    <function name="gksu_context_get_message ()" link="libgksu-API-Reference.html#gksu-context-get-message"/>
+    <function name="gksu_context_set_login_shell ()" link="libgksu-API-Reference.html#gksu-context-set-login-shell"/>
+    <function name="gksu_context_get_login_shell ()" link="libgksu-API-Reference.html#gksu-context-get-login-shell"/>
+    <function name="gksu_context_set_grab ()" link="libgksu-API-Reference.html#gksu-context-set-grab"/>
+    <function name="gksu_context_get_grab ()" link="libgksu-API-Reference.html#gksu-context-get-grab"/>
+    <function name="gksu_context_set_debug ()" link="libgksu-API-Reference.html#gksu-context-set-debug"/>
+    <function name="gksu_context_get_debug ()" link="libgksu-API-Reference.html#gksu-context-get-debug"/>
+    <function name="gksu_context_free ()" link="libgksu-API-Reference.html#gksu-context-free"/>
+    <function name="gksu_run ()" link="libgksu-API-Reference.html#gksu-run"/>
+    <function name="gksu_run_full ()" link="libgksu-API-Reference.html#gksu-run-full"/>
+    <function name="gksu_su ()" link="libgksu-API-Reference.html#gksu-su"/>
+    <function name="gksu_su_full ()" link="libgksu-API-Reference.html#gksu-su-full"/>
+    <function name="gksu_sudo ()" link="libgksu-API-Reference.html#gksu-sudo"/>
+    <function name="gksu_sudo_full ()" link="libgksu-API-Reference.html#gksu-sudo-full"/>
+    <function name="gksu_ask_password ()" link="libgksu-API-Reference.html#gksu-ask-password"/>
+    <function name="gksu_ask_password_full ()" link="libgksu-API-Reference.html#gksu-ask-password-full"/>
+  </functions>
+</book>

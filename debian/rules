@@ -1,0 +1,28 @@
+#!/usr/bin/make -f
+
+GNOME_DOWNLOAD_URL = http://people.debian.org/~kov/gksu/$(GNOME_TARBALL)
+
+ALLOWED_DISTS += unstable
+
+include /usr/share/cdbs/1/rules/buildcore.mk
+include /usr/share/cdbs/1/class/autotools.mk
+include /usr/share/cdbs/1/rules/autoreconf.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/gnome.mk
+-include /usr/share/gnome-pkg-tools/1/rules/gnome-get-source.mk
+include /usr/share/gnome-pkg-tools/1/rules/check-dist.mk
+include /usr/share/gnome-pkg-tools/1/rules/uploaders.mk
+
+export AUTOMAKE := automake --foreign
+
+DEB_CONFIGURE_EXTRA_FLAGS := --disable-gtk-doc --enable-gnome-keyring
+
+clean::
+	-test -d po.old && (rm -rf po; mv po.old po)
+
+post-patches::
+	if ! test -d po.old; then \
+		cp -a po po.old; \
+		cp -a debian/pos/* po/; \
+		rm po/*gmo po/stamp-po || true; \
+	fi

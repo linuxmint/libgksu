@@ -1,0 +1,1625 @@
+2009-08-16  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c: - turn the new forkpty-based code into a
+	configure option, since this doesn't seem to play that nice with
+	Debian/Ubuntu
+
+2009-06-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.12
+
+2009-06-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-run-helper.c:
+	- fix the fact that the main function ends without returning a
+	value, on success (doh)
+
+2009-06-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* gksu-properties/gksu-properties.c:
+	- fixed printf format for two error messages, introduced
+	  by the last change
+
+2009-06-29  Sebastien Bacher <seb128@ubuntu.com>
+
+	* gksu-properties/gksu-properties.c,
+	  gksu-properties/Makefile.am,
+	  configure.ac:
+	- use GtkBuilder instead of libglade
+
+2009-06-29  Joshua Kwan <jkwan@vmware.com>
+
+	* libgksu/libgksu.c:
+
+	- Fix double-free introduced by recent changes.
+
+2009-06-24  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.11
+
+2009-06-24  Joshua Kwan <jkwan@vmware.com>
+
+	* libgksu/libgksu.c:
+
+	- Make su code work on Red Hat systems.
+
+2009-06-17  Joshua Kwan <jkwan@vmware.com>
+
+        * libgksu/libgksu.c:
+
+        - Make sudo also use forkpty, to also work when /etc/sudoers is
+          configured to require a tty.
+
+2009-06-17  Joshua Kwan <jkwan@vmware.com>
+
+	* libgksu/libgksu.c:
+	- Make su backend work with Fedora's su.
+
+2009-05-09  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.10
+
+2009-05-09  François Wendling  <frwendling@free.fr>
+
+        Document gksu-properties, briefly.
+
+        * docs/gksu-properties.1, docs/Makefile.am:
+
+2009-05-09  Robert Millan <rmh.debian.bts@aybabtu.com>
+
+	This fixes two bugs in read_line function.  Both are exposed when
+	running gksudo --debug:
+
+	  - First, when read() fails, the printed value will come from
+            uninitialised memory.  This results in stuff like
+            "GNOME_SUDO_PASSSSSSSSSSSSSSSSS..."  being printed.
+
+          - Second, the null terminator is off-by-one, resulting in
+            garbage being printed at the end of each line. This may
+	    also lead to memory corruption (for n >= 256)!
+
+	* libgksu/libgksu.c:
+
+2009-03-04  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.9
+
+	* libgksu/libgksu.c: fix how the GdkDisplay* is obtained at
+	gksu_context_launch_initiate
+
+	* libgksu/gksu-run-helper.c: - cleanup the environment from
+	ORBIT_SOCKETDIR and DBUS_SESSION_BUS_ADDRESS to acommodate recent
+	changes in gconf
+
+2009-02-22  Gustavo Noronha Silva  <kov@alface>
+
+	* Release 2.0.8
+
+2009-02-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c: - added threads protection for the gdk
+	fadeout/fadein animation, so that callers will not have X errors
+	when trying to use gdk functions in parallel with us
+	See http://bugzilla.gnome.org/show_bug.cgi?id=549760.
+
+2009-02-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac, libgksu/libgksu.{c,h}, libgksu/gksu-run-helper.c:
+	- accepted patch by Joshua Kwan <jkwan@vmware.com> to
+	  return the same status code as the child
+
+2009-02-03  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added th to ALL_LINGUAS
+
+2008-08-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c: patch by Daniel Richard G. <skunk@iSKUNK.ORG>
+	to allow changing the location of the lockfile, so that libgksu
+	will work on AFS/NFS mounted home directories
+
+2008-06-20  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-run-helper.c: accepted patch by Michael Vogt, from
+	Ubuntu, to fix very long commands not fitting in the helper's
+	statically-sized buffer (Debian bug #486087, launchpad #173757)
+
+	* libgksu/libgksu.c (sudo_full): accepted patch by Michael Vogt,
+	from Ubuntu, to fix sudo having problems resolving network
+	addresses breaking gksu (Debian bug #486083, launchpad #237325)
+
+2008-05-27  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.7
+
+	* libgksu/libgksu.c (gksu_sudo_full): accepted patch by Ben
+	Hutchings <ben@decadent.org.uk> to also disable nonblocking I/O
+	when no password is asked (Debian bug #463709)
+
+	* configure.ac: - remove \n from the test code used to test for
+	the presence of the -version-script linker option; that was
+	causing the test to fail
+
+2008-05-16  Gustavo Noronha Silva  <Gustavo Noronha Silva <kov@alfaiati.net>>
+
+	* Release 2.0.6
+
+2008-01-02  Guilherme de S. Pastore  <gpastore@debian.org>
+
+	* libgksu/libgksu.c (gksu_sudo_full): fix typo introduced with the latest
+	  changes ("aways").
+
+2007-12-31  Gustavo Noronha Silva  <kov@cenoura>
+
+	* libgksu/libgksu.c:
+	- format parameters were wrong for the case in which you
+	  ask gksu to run a given command as a given user (other than
+	  root); thanks to Uwe Kleine-König <ukleinek@informatik.uni-freiburg.de>
+	  for pointing out; Debian bug #449180
+
+	* libgksu/libgksu.c:
+	- accepted patch from Ubuntu by Michael Vogt to add a new
+	  property for GksuContext: always_ask_password; the patch
+	  suffered minor aditions by me to also implement the functionality
+	  to the su backend and document the limitations (Debian bug #453423)
+
+	* libgksuui/gksuui-dialog.c:
+	- accepted patch from Ubuntu by Michael Vogt that fixes
+	  the capslock notification so that it doesn't change the
+	  size of the window (Debian bug #453426)
+
+2007-06-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- accepted patch from Ubuntu, by Michael Vogt, that
+	  fixes the way gksu waits for the child process to
+	  finish; see:
+	https://bugs.launchpad.net/ubuntu/+source/libgksu/+bug/121581
+
+2007-06-10  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.5
+
+	* libgksu/libgksu.c:
+	- also complete launch notification when cancel is
+	  pressed in the dialog; (Addressing Debian Bug #426495)
+
+2007-06-09  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- reworked the way gksu_su{,do}_full relays the child's
+	  output, making it sleep rather than wakeup every
+	  few microseconds (Addressing Debian Bug #425679)
+
+2007-05-11  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added sv and zh_CN.po to ALL_LINGUAS
+
+2007-03-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added ko to ALL_LINGUAS
+
+2007-03-06  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- always try to create the keyring when setting the password;
+	  if the keyring exists this is a no-op, so no problems
+	  (Addressing Debian Bug #412681)
+
+	* libgksu/libgksu.c:
+	- improved debugging for getting the password from the
+	  GNOME Keyring; and do not show the password anymore when
+	  debugging
+
+2007-03-04  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- accepted patch by Michael Vogt to handle the
+	  better quoted strings given by gksu
+
+2007-02-04  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.4
+
+2007-01-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.[ch]:
+	- accepted patch by "Gian Mario Tagliaretti"
+	  <g.tagliaretti@gmail.com> to turn GksuContext into
+	  a boxed type, so that it can be used in a saner way
+	  in bindings
+
+2007-01-05  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- accepted patch by Виталий Ищенко <betalb@gmail.com>
+	  which makes libgksu only replace the 'password typing' character
+	  when '*' is the default one
+
+2006-12-07  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- make sure DESKTOP_STARTUP_ID is set in the environment correctly
+
+2006-10-31  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- remove a trailing \n if it exists in the password we get from
+	  the GNOME Keyring (Addresses Debian Bug #395462)
+
+2006-10-23  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.3
+
+	* libgksu/libgksu.c:
+	- make sure the dialog is _destroyed_ instead of just being
+	  hidden, after some action has been taken in the dialog that
+	  asks for the password
+	- returns WRONGAUTOPASS instead of WRONGPASS when wrong password
+	  is the one we got from the gnome keyring
+	- store the password in the GNOME Keyring without the \n
+	  (Addresses Debian Bug #394895)
+
+2006-10-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.2
+
+	* libgksu/libgksu.c:
+	- make sure we notice ECHO disabled, and remove some uneeded waits
+	  which will probably speedup using su with password, but probably
+	  slow down su without password; this should avoid deadlocks when
+	  su delays setting ECHO off.
+
+2006-10-15  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksuui/gksuui-dialog.c:
+	- try to always have focus, by traping the focus-out-event;
+	  should address Debian bug #391804
+
+2006-10-08  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 2.0.1
+
+	* libgksu/libgksu.c:
+	- use some brute force reading when using sudo, to be able
+	  to handle stuff like the sudo lecture and pam modules debugging
+
+2006-10-01  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- if xauth is an empty string when using the su backend,
+	  then try to get it again by striping the hostname part
+	  of the display string; this is needed for ssh X forwarding
+
+2006-09-23  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- version set to 2.0.0; releasing libgksu 2, at last!
+
+2006-09-07  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- have gksu ignore lines coming from the process 'till it is able
+	  to find the gksu: waiting line; this is done observing some
+	  time and size constraints, though, so we won't end up in an infinite
+	  loop; this addresses #17139; libpam-mount should now work happily with
+	  debug on
+	- also make su's child session leader, like sudo's, so that when the
+	  program you ran launches another, closing the first will not destroy
+	  the second
+
+2006-09-02  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added it to ALL_LINGUAS
+
+2006-08-19  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added lt to ALL_LINGUAS
+
+	* libgksu/libgksu.c:
+	- add gettext call in the prompt in su_ask_password, so that
+	  the prompt is translated
+
+2006-08-15  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- accepted patch by Michael Vogt to fix the detection of
+	  sudo password failure by making the fd block while expecting
+	  the line right after the password is sent to sudo
+
+2006-08-06  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.9.8
+
+	* libgksu/libgksu.c:
+	- bring the rest of the startup notification code from the
+	  application
+
+2006-07-19  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.9.7
+
+	* libgksuui/gksuui-dialog.{c,h}:
+	- gksuui_dialog_init is not called after the properties
+	  are set, so post-pone creating the gnome-keyring UI
+	  when they are; also fixes a logic error
+
+2006-07-16  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.9.6
+
+	* libgksuui/gksuui-dialog.c, libgksu/libgksu.c:
+	- add a new object property to GksuuiDialog, and pass
+	  the sudo_mode boolean to it on object instanciation,
+	  so that the sudo window will not have the gnome_keyring
+	  stuff, again
+
+	* libgksu/libgksu.c[gksu_sudo_full]:
+	- use select in the read side of the parent_pipe, so that
+	  the sudo prompt will not show up after the non-blocking
+	  read is done (addresses Debian bug #377746)
+	- do not remove the hostname/socket part of the DISPLAY
+	  (addresses Debian bug #349652)
+
+2006-07-12  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.9.5
+
+	* libgksu/libgksu.{c,h}:
+	- add accessor methods for the startup notification launcher
+	  context
+
+2006-07-10  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- increment version to 1.9.5
+
+	* libgksu/libgksu.{c,h}, libgksuui/gksu-dialog.{c,h}:
+	- implement a new 'alert' label, to allow applications showing
+	  messages like 'wrong password, try again'
+
+2006-07-05  Gustavo Noronha Silva  <kov@debian.org>
+
+	* gksu.png, gksu-properties/{Makefile.am,gksu-properties.desktop.in,
+	  gksu-properties.c}:
+	- added an icon, and a desktop file so that the capplet will show in
+	  the preferences menu for the desktop
+
+2006-07-03  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- remove \n from the check of the command name, since gtop
+	  does not give a \n-terminated string; thanks to
+	  Benoît Dejean <benoit@placenet.org> for pointing this out
+
+2006-06-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* gksu-properties/*:
+	- start a simple capplet to configure the gksu gconf
+	  preferences
+
+	* libgksu/defines.h:
+	- small adaption so it can better be used by gksu-properties
+
+2006-06-26  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.9.4
+
+	* libgksu/libgksu.c:
+	- correctly derreference the error pointer when checking
+	  if something was returned by ask_pass
+
+2006-06-25  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.9.3
+
+	* libgksu/libgksu.c:
+	- use TRUE for success and FALSE for failure, to match glib's
+	  spawn API - well, it's a development release =D
+
+	* libgksu/libgksu.c:
+	- handle canceling the dialog correctly; added a new
+	  error to the enum
+
+	* configure.ac, libgksu/libgksu.c:
+	- accepted patch by Benoît Dejean <benoit@placenet.org>
+	  to get the process name in a platform independent way
+
+2006-05-01  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added fr to ALL_LINGUAS
+
+	* configure.ac, libgksu/Makefile.am:
+	- only use the version script if the system we're
+	  building on supports it; thanks to Daniel Macks
+	  for the patch
+
+	* libgksu/libgksu.c:
+	- check fread's return value before using strlen
+	  and setting a \0 in the xauth string, to prevent
+	  problems when xauth returns nothing (#7698)
+	- handle locales which mess with the 'su:' layout
+
+	* Release 1.9.2
+
+	* configure.ac:
+	- fixed gettext domain define
+
+2006-04-30  Gustavo Noronha Silva  <kov@debian.org>
+
+	* docs/*:
+	- updated documentation
+
+	* libgksu/Makefile.am:
+	- increased minor version of the library, since some
+	  symbols were added
+
+	* libgksuui/Makefile.am:
+	- do not build a static version of the lib only;
+	  I need a shared version with PIC symbols built so
+	  that libgksu will be able to be fully PIC
+
+	* libgksu/libgksu.c:
+	- provide an API for simply getting the password
+	- standardize the get methods that return string to
+	  return NULL if they were not set, and updated
+	  "docstrings" to fit;
+	- removed translatable marks for strings that are
+	  errors printed to stderr
+	- made some strings look better or more HIG compliant
+
+	* libgksuui/libgksu.{c,h}, libgksuui/gksuui-dialog.c:
+	- accepted changes from the Ubuntu people to make the dialog
+	  and messages be more beatiful; also provide an API that
+	  enables specifying a descriptional name for the command, that
+	  is used automatically in the message
+
+	* libgksuui/gksuui-dialog.c:
+	- do not center the label that is used to display
+	  the message
+
+2006-04-24  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- use the internal context->sudo_mode to tell the
+	  ask_pass function if we're on su or sudo mode
+
+	* libgksu/libgksu.{c.h}:
+	- implemented the message setting and getting
+	  functions, and use the message that is given
+	  when creating the dialog
+
+	* Release 1.9.1
+
+2006-04-23  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu2.pc.in:
+	- add gnome-keyring-1 and gconf-2.0 as dependencies
+
+	* Release 1.9.0
+
+	* libgksu/test-gksu.c:
+	- display message before testing gksu_sudo_full, so we
+	  get a better picture of where stuff is happening
+	- add a test to the new gksu_run{,_full} API
+
+	* libgksu.c:
+	- use non-blocking read when looking for the sudo prompt,
+	  so that we won't get blocked if there is none; also,
+	  make sure the window is displayed
+	- (su) track that gnome keyring was used to enhance the pass_not_needed
+	  display logic; display it parallel to running the command, to match
+	  gksu_sudo_full behavior
+	- only print the password when on debug mode
+	- init sn_context with NULL, so non-SN-supporting users will
+	  not segfault when we check for the value
+
+	* libgksu/libgksu.{c,h}:
+	- new API gksu_run{,_full}, that is a generic way of using
+	  gksu functionality, leaving the choice of su or sudo backend
+	  to the gconf setting
+
+2006-04-16  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- used suggestion by Benoît Dejean <benoit@placenet.org>
+	  to avoid buffer overflows on the debug code
+
+	* libgksu/libgksu.c:
+	- patch from Michael Vogt to fix corner condition which
+	  happens when fgets returns badly with a specific app
+
+2006-04-15  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c, libgksu/gksu-run-helper.c:
+	- check for xauth at /usr/bin (Xorg 7.0) and /usr/X11R6/bin
+	  (Xorg 6.9 and XFree86) [merged from trunk]
+
+2006-03-12  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksuui/gksuui-dialog.c:
+	- added UI for the gnome-keyring support in the main widget
+
+	* libgksu/libgksu.c:
+	- Preliminary support for gnome-keyring imported from the
+	  gksu app code; it now removes the password from the
+	  keyring in case it tries with it and fails
+
+2006-03-02  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added dependency on libstartup-notification-1.0 to
+	  PKG_CHECK_MODULES; startup notification support has
+	  been added!
+
+	* libgksu/test-gksu.c:
+	- use the new location for xterm (FHS-compliant)
+
+	* libgksu/libgksu.c:
+	- integrated patch by Michael Vogt to support startup notfication
+	- added accessor methods for the GksuContext structure, I want it
+	  to be opaque
+
+	* libgksu/Makefile.am, libgksu/libgksu2.pc.in:
+	- misc fixes to build system
+
+2006-01-24  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksuui/gksuui-dialog.{c,h}:
+	- applied patch by Michael Vogt to report that capslock is enabled
+	  with small modifications
+
+2006-01-07  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c, docs/*:
+	- revamp documentation; gtk-doc-style comments added to
+	  functions and some fixes to return values were made to
+	  match the docs
+
+	* configure.ac, Makefile.am, others:
+	- revamping the i18n infra-structure; mainly removing
+	  local intl/ copy and updating files
+	- do not use local copies of m4 files in a m4/ directory
+
+	* configure.ac:
+	- do not create pkg-config files for libgksuui; it won't
+	  be installed anymore
+
+	* Make libgksuui a sub, static library for libgksu only.
+	- removed gksu-convenience stuff, that is not going to
+	  be used anymore
+
+2005-12-11  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Major design overhaul
+	- incorporating libgksuui
+	- no longer try to be UI independent; use GTK+ mercylessly
+	- incorporating gconf schema and settings handling
+	- massive API review, removal of most public functions;
+	  GksuContext is no longer a GObject-based object, no longer
+	  has many accessor functions for its data fields and is
+	  needed for the _full versions of the main API functions
+	  right now; this allows saner handling of password prompting
+	  and housekeeping
+
+	* gksu.schemas.in:
+	- remove always-ask-password for now, it will probably be
+	  replaced by something else when gnome-keyring is integrated
+
+	* intltoolized, modified some stuff for the package
+	  renaming to work
+
+	* libgksu/libgksu.c:
+	- integrated 'prompt before grab' support; also make the
+	  foce-grab configuration effective
+
+	* renaming files:
+	- libgksu/gksu-context.{c,h} -> libgksu/libgksu.{c,h}
+
+2005-11-23  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.7
+
+2005-11-17  Gustavo Noronha Silva  <kov@debian.org>
+
+        Following 4 fixes were done with information and help
+	provided by Benoît Dejean <benoit@placenet.org>; thanks!
+
+	* libgksu/gksu-context.c:
+	- change debug message for the case in which we can't find
+	  a password prompt
+
+	* libgksu/gksu-context.c:
+	- do not free the user component of the context struct
+	  twice
+
+	* libgksu/gksu-context.c:
+	- init buffer with {0} so that debuging information will
+	  not show crappy stuff for it
+
+	* libgksu/gksu-context.c:
+	- check if pass_not_needed is there before calling
+	  it on gksu_context_sudo_run_full
+
+2005-10-25  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.6
+
+2005-10-02  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- fix logic problem when checking if what was read does not
+	  start with "gksu" or "su" - thanks to Guilherme de S. Pastore
+          for spotting the problematic range of code (Debian bug #331124)
+
+2005-09-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.5
+
+	* libgksu/gksu-context.c:
+	- fixed some memory leaks which were added by lack of
+	  caution on my part =/
+
+2005-09-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.4
+
+	* relibtoolized with libtool --automake -c -f
+	  (Debian's libtool 1.5.20-1)
+
+	* configure.ac: bump version to 1.3.4
+
+	* libgksu/gksu-context.c:
+	- apply the same solution to handling error return
+	  checking to the su backend
+
+2005-09-21  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- handle 'not in sudoers' message (Ubuntu's #14922)
+
+2005-09-18  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- applied a patch to use /proc information to find out the
+	  name of the current child process to check if it was sudo
+	  who returned a failure code or the app we called on Linux
+	  systems; patch and modifications done to it were made by
+	  Michael Vogt and his advice, respectively (Ubuntu's #7517)
+
+2005-09-12  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- treat the command line to remove the quotes that may have
+	  been added by gksu's multi-argument processing code
+
+2005-08-20  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.{c,h}:
+	- improve error reporting for sudo; tries to detect if sudo
+	  reported that the user cannot run the command for that user
+
+2005-08-02  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.3
+
+	* libgksu/Makefile.am:
+	- undo soname change because I stepped back from breaking the ABI
+
+	* libgksu/gksu-context.{c,h}:
+	- leave ask_and_run as deprecated functions to let software which
+	  used it at some point in development keep building and running
+
+	* libgksu/gksu-context.{c,h}:
+	- replaced ask_and_run with run_full for both su and sudo; the
+	  new API function which accepts another callback function that
+	  allows the user application to do something if a password was
+	  not needed like, for example, warning the user
+
+2005-08-01  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c, libgksu/Makefile.am, configure.ac:
+	- revert inclusion of gnome-keyring support, which should
+	  actually go into the app, not the lib
+
+2005-07-21  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/Makefile.am:
+	- increased minor version number because of the adition
+	  to the API
+
+	* libgksu/gksu-context.{c,h}, libgksu/test-gksu.c:
+	- implemented the gksu_context_ask_and_run counterpart
+	  for sudo
+
+2005-07-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.2 - The "Helsinki" Release!
+
+	* libgksu/Makefile.am:
+	- increase library minor version because API was added without
+	  breaking ABI (yet! =D)
+
+	* libgksu/gksu-context.c:
+	- wrap the keyring callback in the ENABLE_GNOME_KEYRING
+	  ifdef
+
+	* libgksu/gksu-context.c, docs/libgksu1.2-sections.txt:
+	- make sure every public API function is documented
+
+	* libgksu/gksu-context.c:
+	- small fixes and improvements to some info and error messages
+
+	* libgksu/gksu-context.c:
+	- handle the droping of the \n echoed after password was given
+	  if a password needed to be given, so we have wheel trust and
+	  other situations in which you don't need a password handled
+	  correctly
+
+2005-07-13  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- kill su in try_su_run instead of simply sending a "\n" if it
+	  asks for password, so we improve speed and avoid dead locks
+
+	* libgksu/gksu-context.c:
+	- after-password conversation with helper improved quite a bit
+	  and made simpler; should fix some problems with gksu-run:
+	  strings coming out eventually and prevent some cases of dead
+	  locks
+
+	* libgksu/gksu-context.c:
+	- accepted patch by Aurelien Jacobs <aurel@gnuage.org> that
+	  moves the keyring_create_item_cb outside of the function
+	  which calls it, so gksu will not segfault on AMD64, which
+	  does not permit execution of the stack; this addresses
+	  Debian bugs #318031, #307975 and #314369.
+
+2005-07-12  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- also use the ECHO trick for try_su_run
+
+	* libgksu/gksu-context.c:
+	- OK, so the call to usleep must be inside the while loop so
+	  gksu won't be eating CPU time
+
+2005-07-11  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/test-gksu.c:
+	- fixed su_ask_pass declaration to include the GError** argument
+
+	* libgksu/gksu-context.c:
+	- init buf on gksu_context_ask_and_run with \0's so we don't get 
+	  random weird stuff at the first time we read something to it
+
+	* libgksu/gksu-context.c:
+	- better checking of whether a prompt is waiting for a password
+	  or not to figure out if a password is needed or not; this enhances
+	  the 'only ask for password if really needed' approach and is one 
+	  more step on addressing Debian's #246652; this required some 
+	  tweaking to the logic used in conversation with gksu-run-helper.
+
+	* libgksu/gksu-context.c:
+	- Fixed wording on xauth warning message so it will not use first
+	  person; this addresses Debian bug #309563.
+
+2005-07-09  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- kill sudo when trying validation and wait a bit before
+	  wait()'ing, so gksu gets blocked for less time
+
+2005-06-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.{c,h}:
+	- modified the password-asking function to receive a GError**
+	  so we have the possibility of creating a 'problem reporting'
+	  interface for it
+	- also, check the return value of the function and bail out
+	  if it is FALSE
+
+2005-06-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- make a gksu_context_ask_and_run that receives a function
+	  pointer to request password if needed (so you don't have
+	  to fill context->password beforehand)
+	* libgksu/test-gksu.c:
+	- also test the new API function
+
+2005-06-18  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.1
+
+	* libgksu/test-gksu.c:
+	- s/strings.h/string.h/
+
+	* libgksu/gksu-context.c:
+	- call try_su_run before the gnome-keyring test; this solves
+	  lots of issues I was work-arounding before
+
+	* libgksu/gksu-context.c:
+	- fixed password checking to correct number of chars to compare
+	  and close fdpty after the comparison so su will not be blocked
+	  trying to write to the terminal
+
+	* libgksu/gksu-context.c:
+	- avoid using the keyring if su will simply work without
+	  a password or if the password is not there at the time
+	  it needs to be saved
+	- nullify the password when entering try_need_password
+	  and if su will run without it (it may have been reset
+	  by try_gnome_keyring)
+
+	* libgksu/gksu-context.c:
+	- implemented a new test to simply try to run su and
+	  see what happens to check if we need a password
+	- the above involved some changes to the _run method
+	  so it won't simply bail out if a password is not
+	  supplied and will also be more careful while discarting
+	  su output, which will simply not exist in some cases
+
+2005-06-16  Gustavo Noronha Silva  <kov@debian.org>
+
+	* ligbksu/gksu-context.c:
+	- only save the password in the GNOME keyring if try_need_password
+	  has been called
+
+2005-06-15  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/test-gksu.c:
+	- use the new API function for testing if a sudo password
+	  is needed
+	- accept --su and --sudo arguments to try only su or sudo
+	  respectively
+
+	* libgksu/gksu-context.{c,h}:
+	- added a gksu_context_sudo_try_need_password to
+	  pre-check if we need a password; this uses sudo -v
+	  for now but will incorporate other ways of doing the
+	  check soon
+
+2005-06-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added ro to ALL_LINGUAS
+
+2005-06-13  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.3.0
+
+2005-06-09  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac, libgksu/Makefile.am:
+	- changes based on the patch by Szilard Novaki to provide a
+	  --enable-gnome-keyring option to configure, disabled by
+	  default
+	- new development version (1.3.0), API/ABI will not really be
+	  guaranteed to be that stable from now on 'till 1.4
+
+	* docs/libgksu1.2-sections.txt:
+	- updated so that the new public API function will appear
+	  in the documentation
+
+	* libgksu/gksu-context.{c,h}:
+	- added new public API function gksu_context_try_need_pass
+	  to check if we need to request a password
+	  (API version went up to 0:1:0, keeping compatibility)
+	- implemented a method of getting a password from and saving 
+	  it to the gnome-keyring, based on a patch provided to
+	  gksu by Szilard Novaki <novaki@agmen-software.com>
+
+2005-06-01  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added eu to ALL_LINGUAS
+
+2005-05-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added sk and nl to ALL_LINGUAS
+
+2005-05-13  Miroslav Kure <kurem@debian.cz>
+
+        * configure.ac:
+        - added cs to ALL_LINGUAS
+
+2005-05-12  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added pl to ALL_LINGUAS
+
+2005-05-07  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- accepted patch by Michael Vogt <mvogt@acm.org> to make the
+	  process which uses libgksu the session leader
+
+2005-04-27  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added hu to ALL_LINGUAS
+
+	* configure.ac:
+	- renamed no_NB to nb on ALL_LINGUAS
+
+2005-04-05  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.6
+
+	* libgksu/gksu-context.c:
+	- use other tatic to grab xauth cookie to make XDM and
+	  remote users happy. Should address Debian bugs #280914
+	  and #245092.
+
+	* libgksu/gksu-context.c:
+	- applied patch from Michael Vogt to have correct perms
+	  on the .Xauthority file that is created for sudo
+
+	* libgksu/gksu-context.c:
+	- some code cleanup and minor glitches were fixed
+
+	* libgksu/gksu-run-helper.c:
+	- changes to set XAUTHORITY in a more sane way and
+	  call the real command separately
+
+2004-10-17  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.5a
+
+	* libgksu/gksu-context.c:
+	- (gksu_context_sudo_run): added some more debugging stuff 
+	  and fixed aditional space when checking if GNOME_SUDO_PASS 
+	  was received, now sudo functionality works again.
+	- (gksu_context_sudo_run): find out if password failed
+
+2004-10-16  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.5
+
+	* libgksu/gksu-context.c:
+	- (gksu_context_run): ignore first line when reading the 
+	  output of gksu-run-helper - this should fix Debian bug 
+	  #272133
+	- (gksu_context_sudo_run): fixed the command building
+	  so that -H will only be used if context->keep_env is
+	  set - fixes Debian bug #276720
+
+2004-10-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* ChangeLog:
+	- converted to UTF-8
+
+	* libgksu/gksu-context.c:
+	- prepare_xauth was modified to always get what comes after
+	  the ':' character, even if context->ssh_fwd is not set,
+	  thus making this variable unused for now... this probably
+	  fixed Debian bug #273819
+
+	* configure.ac:
+	- added no_NB to ALL_LINGUAS
+
+2004-09-07  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.4
+
+	* libgksu/gksu-context.c:
+	- applied patch by Martin Pitt <martin.pitt@canonical.com>
+	  to fix buffer overflows
+
+2004-08-15  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.3
+
+	* configure.ac:
+	- added ca to ALL_LINGUAS
+
+2004-06-24  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.2
+
+	* libgksu/gksu-context.h:
+	- added missing G_END_DECLS to fix C++ pre-processing
+	  (Debian bug #255607)
+
+2004-05-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.1
+
+2004-05-27  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.ver, libgksu/Makefile.am:
+	- build the library with versioned symbols (thanks
+	  to Steve Langasek's [vorlon's] talk on "Escaping
+	  the dependency hell" at Debian Conference 4
+
+2004-05-18  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.2.0!
+
+	* libgksu/gksu-context.c:
+	- fixed string about Xauthority file already existing
+	  when being created for the target user
+
+	* docs/libgksu-sections.txt:
+	- removed the macros and the get_type function,
+	  added gksu_context_free
+
+	* libgksu/gksu-context.{c,h}:
+	- document GksuContext and gksu_context_free
+
+2004-05-05  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.1.5
+
+	* libgksu/gksu-context.{c,h}:
+	- new error for xauth stuff problems
+	- now gksu looks at the XAUTHORITY environment
+	  variable to get the source from which to copy
+	  the Xauthorization file.
+
+2004-04-11  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- more select->sleep to fix bugs in linux 2.6
+
+2004-03-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/test-gksu.c:
+	- changed the command that is called from ls to
+	  xterm
+
+	* libgksu/gksu-context.c:
+	- remove the password displaying debug stuff
+	  (it is not safe ;))
+	- add an usleep to wait 200 usecs on each loop
+	  on the while that prints messages... it seems
+	  like linux 2.6's select() does not want to
+	  wait =)
+
+2004-03-27  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-context.c:
+	- added some wait time before sending the
+	  password to su - the password was not
+	  being sent correctly without this.
+
+2004-03-21  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu.h, gksu-context.h:
+	- changed double quotes to <> in gksu.h,
+	  fixed double inclusion of glib.h and
+	  self-inclusion on gksu-context.h, thanks
+	  to Max Reinhold Jahnke for the later fix
+
+2004-03-19  Gustavo Noronha Silva  <kov@debian.org>
+
+	* COPYING, libgksu/*:
+	- change license to LGPL version 2
+
+2004-03-08  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-main*, libgksu/gksu-context*:
+	- moved -main stuff to -context, made the _run
+	  stuff be methods of the GksuContext object
+	  also wrote a get_type function to the enum
+	  to help bindings
+
+	* libgksu/gksu-context.{h,c}:
+	- removed title, message and icon related methods
+	  as they are now to be used with the gksuui-dialog
+	  widget available in libgksuui
+	- fixed problems with the naming of the GObject-related
+	  macros, so for example TYPE_GKSU_CONTEXT becomes
+	  GKSU_TYPE_CONTEXT -> I had misunderstood the docs and
+	  this seems to confuse the python binding generator
+
+2004-03-07  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/*:
+	- loads of reorganization and code fixing to have
+	  it support the new build system, etc
+
+	* separating libgksu into its own source package
+
+2004-03-05  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add intl.
+	(DIST_SUBDIRS): Add intl.
+	* configure.ac (AC_CONFIG_FILES): Add intl/Makefile.
+
+2004-03-05  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add m4.
+	(DIST_SUBDIRS): Add m4.
+	(EXTRA_DIST): New variable.
+	* configure.ac (AC_CONFIG_FILES): Add m4/Makefile.
+	(AM_GNU_GETTEXT_VERSION): Bump to 0.14.1.
+
+2004-02-03  Gustavo Noronha Silva  <kov@debian.org> [1.1.1]
+
+	* configure.ac:
+	- polished a bit
+
+	* libgksu/gksu-private.c:
+	- fixed wrong error checking (duh)
+
+	* libgksu/gksu-context.[ch]:
+	- new implementation of GksuContext, based on
+	  the GObject glib facility
+
+	* libgksu/libgksu.c, gksu/gksu.c:
+	- port to the new GObject-based GksuContext
+
+2004-02-02  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/gksu-private.c, libgksu-gksu-private.h:
+	- added a gksu_init_check function to init
+	  gtk
+
+	* libgksu/libgksu.c, libgksu/gksu.h:
+	- added printf-like format support for title and
+	  message setters
+	- call gksu_init_check on all the three main functions
+	  to make sure gtk will be inited
+
+2004-01-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* gksu/gksu.c:
+	- ported to the new API
+
+	* libgksu/libgksu.c, libgksu/gksu-private.c:
+	- more well-defined separation between exported
+	  and not export symbols (now even using the
+	  visibility __attribute__)
+	- new API, based on contexts, preparation for
+	  1.2
+
+	* gksu/gksuexec.c:
+	- accepted patch from Jorgen Viksell <jorgen.viksell@telia.com>
+	  to have gksuexec show a combo listing all the users on the
+	  system, thanks!
+
+2004-01-20  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.0.3
+
+	* libgksu/libgksu.c:
+	- fixed _gksu_conf->dir allocation for gksu_sudo_run
+	  to work
+
+	* libgksu/libgksu.c:
+	- added aditional error checking code to the xauth
+	  exec to avoid a segfault when it returns nothing
+	  patch by Doug Holland <meldroc@frii.com>
+
+2004-01-18  Gustavo Noronha Silva  <kov@debian.org>
+
+	* gksu/gksu.c, Makefile.am:
+	- added support to sudo, when called as 'gksudo'
+	- create the symlink on install
+
+2004-01-17  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.0.2
+
+2004-01-16  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c, libgksu/gksu.h:
+	- improved error checking
+	- improved error reporting on sudo related stuff
+	- added gksu_sudo_run, with sudo support
+
+	* remove the common directory and library, integrate
+	  the relevant parts into libgksu and gksu separately
+
+	* libgksu/libgksu.c, common/gksutils.c:
+	- incorporated code from gnome-sudo with some
+	  modifications to have gksu handle sudo, too
+	  untested, probably unstable code, needs testing
+	  to be exposed
+
+	* libgksu/Makefile.am:
+	- build the library with -fPIC, to allow prelinking
+
+	* configure.ac:
+	- added da to ALL_LINGUAS
+
+2004-01-15  Gustavo Noronha Silva  <kov@debian.org>
+
+	* libgksu/libgksu.c:
+	- Fixed problems with gksu closing the application
+	  when canceled
+	- gtk_init_check instead of gtk_init, to avoid failures
+	  killing the "parent" application	
+
+2004-01-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.0.1
+
+	* Major update on the documentation stuff
+
+	* Small corrections to the locale handling code
+
+2003-12-19  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 1.0.0
+
+	* introducing libgksu! I believe the code is stable
+	  enough for a 1.0 release -- althought the change to
+	  a library might be a big move, the code has not
+	  being changed a lot... let's see if the Debian
+	  unstable trial proves me wrong.
+
+2003-11-18  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.18
+
+	* src/gui.c:
+	- does not quit when grab fails, warns and continues...
+
+	* po/de.po:
+	- small fix, thanks to Michael Vogt <mvogt@acm.org>
+
+	* src/gksu-run-helper.c:
+	- fix bashism
+
+2003-11-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.17
+
+	* autogen.sh:
+	- use automake 1.7, instead of 1.6
+
+	* configure.ac, po/pl.po: 
+	- added polish translation, thanks to Emil <emil5@go2.pl>
+
+	* src/gksu-run-helper.c:
+	- added, to help fix the stupid security bug
+
+	* src/gksu.{c,h}, src/su.c, src/xauth.c:
+	- modified to use the gksu-run-helper, which will
+	  fix the security bug in which the Xauth token
+	  appears on a ps auxwww
+
+2003-08-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.16
+
+2003-08-26  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/xauth.c:
+	- take care to take the MIT-MAGIC-COOKIE-1 from
+	  xauth list, XDM auth strings were biting gksu
+
+2003-08-08  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.15
+
+2003-08-06  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac:
+	- added 'de' (German) to ALL_LINGUAS
+
+	* gksu.desktop, gksuexec.desktop:
+	- added German translation, thanks to:
+	  Sebastian Heinlein <sebastian.heinlein@campus.lmu.de>
+
+2003-07-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.14
+
+	* src/su.c:
+	- shows a nicer dialog with 'Wrong password.'
+	  instead of simply 'Child exited with error
+	  1' thingy if su returns 'Authentication failure'
+
+	* src/su.c:
+	- use >& to redirect instead of 2>&1 to make
+	  non-bash shells happy (Closes: #203386,
+	  #203387)
+
+2003-07-24  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.13
+
+	* README:
+	- some explanations added
+
+	* src/gui.c, src/su.c:
+	- some modifications on the default label that's 
+	  presented explaining why it wants the password,
+	  and in the label behavior, in general
+
+	* src/gksu.c, src/xauth.c:
+	- added --ssh-fwd option, which uses just the :x.x
+	  part of display when working with xauth, for gksu
+	  to work on ssh X11 forwarding 
+	  (Closes Debian bug: #202532)
+
+2003-07-23  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.12
+
+2003-07-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/xauth.c:
+	- added output about xauth token, file, directory and
+	  display, for debuging purposes (when --debug is enabled)
+	- fixed clean_dir to remove the directory if it is empty
+	  before clean_dir is called
+
+	* src/su.c:
+	- do not show xauth's output, unless --debug is given
+	- get rid of bashism when calling xauth by using the
+	  env command
+
+	* src/gksu.c:
+	- added a --debug option, to ask for more verbose
+	  output
+
+2003-07-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* man/gksu.1:
+	- fixed --icon position
+
+2003-06-14  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (ACLOCAL_AMFLAGS): New variable.
+	* configure.ac (AC_CONFIG_FILES): Add m4/Makefile.
+	(AM_GNU_GETTEXT_VERSION): Bump to 0.12.1.
+
+2003-06-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.11
+
+	* Applied patch from Álvaro Peña <apg@esware.com>
+	  to HIG-ify gksu a bit more
+
+2003-05-24  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.10
+
+	* src/su.c:
+	- Why the hell do I want gksu to automaticaly go to
+	  background? Changed that, I guess that'll help
+	  lots of scripts.
+
+2003-05-10  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.9
+
+	* src/gksuexec.c:
+	- fixed the way the command is passed as argument
+	  to gksu to fix running programs with arguments (duh)
+
+2003-05-08  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/su.c:
+	- fixed bug which did not allow gksu to run programs
+	  with arguments like, say, 'emacs /etc/mozpluggerrc' =)
+
+2003-05-06  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac: added es.po to ALL_LINGUAS
+
+2003-05-02  Gustavo Noronha Silva  <kov@debian.org>
+
+	* configure.ac: added ru.po to ALL_LINGUAS
+
+2003-04-05  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.8
+
+	* src/xauth.c:
+	- initialize 'xauth' to avoid problems with junk
+	  thanks to Alex Stewart <am2stewa@uwaterloo.ca>
+
+	* src/gui.c:
+	- wait a bit longer before checking for the effectiveness of
+	  the keyboard/mouse grab
+
+2003-03-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.7
+
+	* src/gksu.c, src/xauth.c:
+	- remove references to sudo, at least for now
+
+	* src/sudo.{c,h}:
+	- removed, no longer provide sudo functionality, it
+	  doesn't work as well as it should
+
+2003-03-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/su.c:
+	- use xauth information to make the magic work
+
+	* src/xauth.c:
+	- implement prepare_xauth_su to handle Xauth in a safer way,
+	  by using the 'xauth' program instead of a world readable
+	  .Xauthorization file
+	- move the old way of doing things to the prepare_xauth_sudo
+	  function... sudo is a difficult piece of software to handle
+
+	* src/gksu.c:
+	- moved as much xauth specific stuff as I could to xauth.c
+
+2003-02-01  Allan Douglas  <allan_douglas@gmx.net>
+
+	* src/sudo.c:
+	- cleanups
+	
+2003-01-31  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.1
+
+	* AUTHORS:
+	- added Allan Douglas
+
+2003-01-31  Allan Douglas  <allan_douglas@gmx.net>
+
+	* src/su.c:
+	- fixed the "missing output" bug
+
+2003-01-30  Allan Douglas  <allan_douglas@gmx.net>
+
+	* configure.ac:
+	- removed yacc dependency
+
+	* src/su.c:
+	- cleanups
+
+2003-01-30 Gustavo Noronha Silva   <kov@debian.org>
+
+	* src/su.c, src/sudo.c: 
+	- fixed some stuff pointed by my friend "o_0" =P
+
+	* src/gksuexec.c:
+	- has an 'advanced' dialog to select options
+	'login_shell' and '--preserv-env' for gksu
+
+2003-01-30  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/gksuexec.c:
+	- has an 'advanced' dialog to select options
+	  'login_shell' and '--preserv-env' for gksu
+
+2003-01-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* man/gksu.1:
+	- added reference for gksuexec command
+	- updated with the help of the 'help2man' command
+
+	* man/gksuexec.1: (new)
+	- wrote manpage to the new command
+
+	* man/Makefile.am: (new)
+	- install manpages
+
+	* src/gksu.c:
+	- fixed small and harmless segfault when free'ing
+	  conf.title
+	- accept -i, --icon to set window's icon
+	- print-pass' message no longer assumes root user
+
+	* src/gui.c:
+	- use gksu's icon at the window, instead of the
+	  question mark
+	- use conf.icon to set gksu window's icon
+
+2003-01-29  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.9.0
+
+	* src/gksuexec.c:
+	- a new program, a dialog to ask for other informations
+	  as a wrapper to gksu's command line
+
+	* src/util.{c,h}, src/gui.{c,h}:
+	- moved gk_dialog from gui to util to make it easier
+	  for gksuexec to use it
+
+	* gksuexec.desktop:
+	- new icon for GNOME, to run gksuexec
+
+2003-01-28  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.8.5
+
+	* src/su.c:
+	- does not ask for password when the real uid
+	  is 0 (see http://bugs.debian.org/178675)
+
+	* src/gksu.c:
+	- minor aesthetical fixes
+
+2003-01-22  Gustavo Noronha Silva  <kov@debian.org>
+
+	* Release 0.8.4
+
+2003-01-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/Makefile.am:
+	- define DATA_DIR
+	- add optimization on compilation
+
+	* src/gui.c:
+	- set default windows icon (requires Gtk+2.2)
+
+	* gksu.png:
+	- new icon, from art.gnome.org, Authorization.png
+
+	* gksu.png -> gksu-terminal.png:
+	- renamed icon for gnome's desktop icon
+
+2003-01-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* 0.8.3 Release
+
+	* clean up to the build system, using autoconf
+	  2.50 and automake-1.6
+
+	* man/gksu.1:
+	- fixed WHATIS entry
+
+	* gksu.desktop, gksu.png:
+	- icon for GNOME's System menu, to open a terminal
+	  as the root user
+
+2003-01-14  Gustavo Noronha Silva  <kov@debian.org>
+
+	* 0.8.2 Release
+	- changed configure.in
+
+	* src/gksu.c:
+	- make reset environment the default, changed:
+	  reset-env, r to preserv-env, k
+	- make not login shell the default, again, it
+	  will make the Xauth stuff break... duh
+
+	* src/su.c, src/sudo.c:
+	- yes, yes, auto-background again =P
+
+	* src/gui.c:
+	- cleans the Xauth directory in case the dialog is
+	  canceled or closed
+	- changed buttons' positions to reflect the changes
+	  that happened to GNOME2
+
+	* src/gksu.c:
+	- made title more i18n friendly, fixed some small
+	  memory leaks
+
+	* po/pt_BR.po:
+	- updated translation
+
+2003-01-12  Gustavo Noronha Silva  <kov@debian.org>
+
+	* src/gksu.c:
+	- make login shell by default
+
+	* src/su.c, src/sudo.c:
+	- no grandchild, no auto-background anymore
+	- fixes on outputing things
+
+2002-08-13  gettextize  <bug-gnu-gettext@gnu.org>
+
+	* Makefile.am (SUBDIRS): Add m4.
+	(SUBDIRS): Remove intl.
+	(ACLOCAL_AMFLAGS): New variable.
+	(EXTRA_DIST): New variable.
+
+	* configure.in (AC_OUTPUT): Add m4/Makefile.
+
+2002-02-18  Gustavo Noronha Silva  <kov@debian.org>
+
+	* gksu: initial version.
+

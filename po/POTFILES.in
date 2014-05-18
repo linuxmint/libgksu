@@ -1,0 +1,7 @@
+libgksu/libgksu.c
+libgksuui/gksuui-dialog.c
+gksu-properties/gksu-properties.c
+gksu-properties/gksu-properties.desktop.in
+[type: gettext/glade]gksu-properties/gksu-properties.ui
+gksu.schemas.in
+libgksu/gksu-run-helper.c

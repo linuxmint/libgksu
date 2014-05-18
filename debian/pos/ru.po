@@ -1,0 +1,460 @@
+# Translation of libgksu.po to Russian
+#
+# Copyright (C) 2003 Free Software Foundation, Inc.
+# This file is distributed under the same license as the libgksu package.
+#
+# Aleksander <murygin@aitoc.com>, 2003.
+# Yuri Kozlov <yuray@komyakino.ru>, 2011.
+# Alexander Sashanov <sashanov.a@mail.ru>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgksu-2.0.13~pre1-3_ru\n"
+"Report-Msgid-Bugs-To: kov@debian.org\n"
+"POT-Creation-Date: 2011-01-06 20:55+0300\n"
+"PO-Revision-Date: 2011-01-06 21:49+0300\n"
+"Last-Translator: Alexander Sashanov <sashanov.a@mail.ru>\n"
+"Language-Team: russian <debian-l10-russian@lists.debian.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"\"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\\n\n"
+"X-Generator: Lokalize 1.0\n"
+
+#: ../libgksu/libgksu.c:126
+#, c-format
+msgid "Not using locking for read only lock file %s"
+msgstr "Не используется блокировка файлом %s доступного только для чтения"
+
+#: ../libgksu/libgksu.c:146
+#, c-format
+msgid "Not using locking for nfs mounted lock file %s"
+msgstr "Не используется блокировка файлом %s на смонтированном разделе с nfs"
+
+#: ../libgksu/libgksu.c:502
+msgid ""
+"<b><big>Could not grab your mouse.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>Невозможно захватить мышь.</big></b>\n"
+"\n"
+"Возможно присутствует вредоносный клиент, который перехватывает данные "
+"вашего сеанса, или вы только что нажали меню, или какое-либо приложение "
+"просто получило фокус ввода.\n"
+"\n"
+"Попробуйте снова."
+
+#: ../libgksu/libgksu.c:514
+msgid ""
+"<b><big>Could not grab your keyboard.</big></b>\n"
+"\n"
+"A malicious client may be eavesdropping on your session or you may have just "
+"clicked a menu or some application just decided to get focus.\n"
+"\n"
+"Try again."
+msgstr ""
+"<b><big>Невозможно захватить клавиатуру.</big></b>\n"
+"\n"
+"Возможно присутствует вредоносный клиент, который перехватывает данные "
+"вашего сеанса, или вы только что нажали меню, или какое-либо приложение "
+"просто получило фокус ввода.\n"
+"\n"
+"Попробуйте снова."
+
+#: ../libgksu/libgksu.c:877
+#, c-format
+msgid ""
+"<b><big>Enter your password to perform administrative tasks</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Введите пароль для выполнения административных задач</big></b>\n"
+"\n"
+"Приложение «%s» позволит изменить необходимые параметры вашей системы."
+
+#: ../libgksu/libgksu.c:884
+#, c-format
+msgid ""
+"<b><big>Enter your password to run the application '%s' as user %s</big></b>"
+msgstr ""
+"<b><big>Введите ваш пароль для запуска приложения «%s» с правами "
+"пользователя %s</big></b>"
+
+#: ../libgksu/libgksu.c:892
+#, c-format
+msgid ""
+"<b><big>Enter the administrative password</big></b>\n"
+"\n"
+"The application '%s' lets you modify essential parts of your system."
+msgstr ""
+"<b><big>Введите административный пароль</big></b>\n"
+"\n"
+"Приложение «%s» позволит изменить необходимые параметры вашей системы."
+
+#: ../libgksu/libgksu.c:899
+#, c-format
+msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgstr ""
+"<b><big>Введите пароль пользователя %s для запуска приложения «%s»</big></b>"
+
+#: ../libgksu/libgksu.c:930
+#, c-format
+msgid "Password prompt canceled."
+msgstr "Запрос пароля снят."
+
+#: ../libgksu/libgksu.c:1002
+#, c-format
+msgid ""
+"<b><big>Granted permissions without asking for password</big></b>\n"
+"\n"
+"The '%s' program was started with the privileges of the %s user without the "
+"need to ask for a password, due to your system's authentication mechanism "
+"setup.\n"
+"\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
+"\n"
+"This is not a problem report; it's simply a notification to make sure you "
+"are aware of this."
+msgstr ""
+"<b><big>Предоставление прав без запроса пароля</big></b>\n"
+"\n"
+"Программа «%s» запущена с правами пользователя %s без запроса пароля "
+"согласно настройкам аутентификации в системе.\n"
+"\n"
+"Это возможно, если вам разрешено запускать конкретные программы с правами "
+"пользователя %s без необходимости ввода пароля или из-за того, что пароль "
+"кэшируется.\n"
+"\n"
+"Это не сообщение о проблеме, а просто уведомление, чтобы вы знали об этом."
+
+#: ../libgksu/libgksu.c:1026
+msgid "Do _not display this message again"
+msgstr "Не _выводить это сообщение в следующий раз"
+
+#: ../libgksu/libgksu.c:1046
+msgid ""
+"<b>Would you like your screen to be \"grabbed\"\n"
+"while you enter the password?</b>\n"
+"\n"
+"This means all applications will be paused to avoid\n"
+"the eavesdropping of your password by a a malicious\n"
+"application while you type it."
+msgstr ""
+"<b>«Захватить» экран на время ввода пароля?</ b>\n"
+"\n"
+"Это означает, что все приложения будут приостановлены, чтобы избежать\n"
+"подслушивания вашего пароля при вводе с применением вредоносных\n"
+"программ."
+
+#: ../libgksu/libgksu.c:1323
+msgid "Granting Rights"
+msgstr "Предоставление прав"
+
+#: ../libgksu/libgksu.c:1951
+#, c-format
+msgid "gksu_run needs a command to be run, none was provided."
+msgstr "Программа gksu_run не получила команду, которую нужно выполнить."
+
+#: ../libgksu/libgksu.c:1962
+#, c-format
+msgid "The gksu-run-helper command was not found or is not executable."
+msgstr "Команда gksu-run-helper не существует или не может быть выполнена."
+
+#: ../libgksu/libgksu.c:1970 ../libgksu/libgksu.c:2544
+#, c-format
+msgid "Unable to copy the user's Xauthorization file."
+msgstr "Невозможно скопировать пользовательский файл X-авторизации."
+
+#: ../libgksu/libgksu.c:2018 ../libgksu/libgksu.c:2708
+#, c-format
+msgid "Failed to fork new process: %s"
+msgstr "Не удалось создать новый процесс: %s"
+
+#: ../libgksu/libgksu.c:2167
+#, c-format
+msgid "Wrong password got from keyring."
+msgstr "Получен неверный пароль из брелка."
+
+#: ../libgksu/libgksu.c:2171 ../libgksu/libgksu.c:2879
+#, c-format
+msgid "Wrong password."
+msgstr "Неверный пароль."
+
+#: ../libgksu/libgksu.c:2226 ../libgksu/libgksu.c:2240
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received:\n"
+" %s\n"
+"While expecting:\n"
+" %s"
+msgstr ""
+"Не удалось соединиться с gksu-run-helper.\n"
+"\n"
+"Получено:\n"
+" %s\n"
+"Ожидается:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2232
+#, c-format
+msgid ""
+"Failed to communicate with gksu-run-helper.\n"
+"\n"
+"Received bad string while expecting:\n"
+" %s"
+msgstr ""
+"Не удалось соединиться с gksu-run-helper.\n"
+"\n"
+"Получена неправильная строка при ожидании:\n"
+" %s"
+
+#: ../libgksu/libgksu.c:2341
+#, c-format
+msgid "su terminated with %d status"
+msgstr "Программа su завершилась с кодом %d"
+
+#: ../libgksu/libgksu.c:2512
+#, c-format
+msgid "gksu_sudo_run needs a command to be run, none was provided."
+msgstr "Программа gksu_sudo_run не получила команду, которую нужно запустить."
+
+#: ../libgksu/libgksu.c:2668 ../libgksu/libgksu.c:2676
+#, c-format
+msgid "Error creating pipe: %s"
+msgstr "Ошибка при создании канала: %s"
+
+#: ../libgksu/libgksu.c:2700
+#, c-format
+msgid "Failed to exec new process: %s"
+msgstr "Не удалось запустить новый процесс: %s"
+
+#: ../libgksu/libgksu.c:2731 ../libgksu/libgksu.c:2741
+#, c-format
+msgid "Error opening pipe: %s"
+msgstr "Ошибка при открытии канала: %s"
+
+#: ../libgksu/libgksu.c:2809
+msgid "Password: "
+msgstr "Пароль: "
+
+#: ../libgksu/libgksu.c:2891 ../libgksu/libgksu.c:2955
+#, c-format
+msgid ""
+"The underlying authorization mechanism (sudo) does not allow you to run this "
+"program. Contact the system administrator."
+msgstr ""
+"Система авторизации (sudo) не позволяет запускать данную программу. "
+"Обратитесь к системному администратору."
+
+#: ../libgksu/libgksu.c:2975
+#, c-format
+msgid "sudo terminated with %d status"
+msgstr "Программа sudo завершилась с кодом %d"
+
+#: ../libgksuui/gksuui-dialog.c:149
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Нажата клавиша CapsLock</b>"
+
+#: ../libgksuui/gksuui-dialog.c:219
+msgid "Remember password"
+msgstr "Запомнить пароль"
+
+#: ../libgksuui/gksuui-dialog.c:236
+msgid "Save for this session"
+msgstr "Сохранить для этого сеанса"
+
+#: ../libgksuui/gksuui-dialog.c:241
+msgid "Save in the keyring"
+msgstr "Сохранить в брелок"
+
+#. label
+#: ../libgksuui/gksuui-dialog.c:335
+msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+msgstr "<span weight=\"bold\" size=\"larger\">Введите пароль root.</span>\n"
+
+#. entry label
+#: ../libgksuui/gksuui-dialog.c:356
+msgid "Password:"
+msgstr "Пароль:"
+
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr ""
+"Не удалось загрузить файл gtkui, проверьте правильность установки пакета."
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:1
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Настройка поведения из утилиты предоставления привилегий"
+
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Privilege granting"
+msgstr "Предоставляемые привилегии"
+
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "<b>Behavior</b>"
+msgstr "<b>Поведение</b>"
+
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Захват экрана</b>"
+
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "_Authentication mode:"
+msgstr "Режим _аутентификации:"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "_Grab mode:"
+msgstr "Режим _захвата:"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "disable"
+msgstr "отключить"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "enable"
+msgstr "включить"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
+msgid "force enable"
+msgstr "включить принудительно"
+
+#: ../gksu-properties/gksu-properties.ui.h:8
+msgid "prompt"
+msgstr "запрос"
+
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu.schemas.in.h:1
+msgid "Disable keyboard and mouse grab"
+msgstr "Отключить захват клавиатуры и мыши"
+
+#: ../gksu.schemas.in.h:2
+msgid "Display information message when no password is needed"
+msgstr "Вывести сообщение, если не требуется ввод пароля"
+
+#: ../gksu.schemas.in.h:3
+msgid "Force keyboard and mouse grab"
+msgstr "Принудительно захватить клавиатуру и мышь"
+
+#: ../gksu.schemas.in.h:4
+msgid ""
+"Grab keyboard and mouse even if -g has been passed as argument on the "
+"command line."
+msgstr ""
+"Захватывать клавиатуру и мышь, даже если в командной строке присутствует "
+"аргумент «-g»."
+
+#: ../gksu.schemas.in.h:5
+msgid "Keyring to which passwords will be saved"
+msgstr "Брелок, в котором будут храниться пароли"
+
+#: ../gksu.schemas.in.h:6
+msgid "Prompt for grabbing"
+msgstr "Запрос на захват"
+
+#: ../gksu.schemas.in.h:7
+msgid "Save password to gnome-keyring"
+msgstr "Сохранить пароль в gnome-keyring"
+
+#: ../gksu.schemas.in.h:8
+msgid "Sudo mode"
+msgstr "Режим sudo"
+
+#: ../gksu.schemas.in.h:9
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"gksu использует названия брелока для своей работы. Обычно встречается "
+"название «session», такой брелок хранит пароли на время открытого сеанса. "
+"Также применяется брелок «default», в нём хранятся пароли в независимости от "
+"продолжительности сеанса."
+
+#: ../gksu.schemas.in.h:10
+msgid ""
+"This option determines whether a message dialog will be displayed informing "
+"the user that the program is being run without the need of a password being "
+"asked for some reason."
+msgstr ""
+"Этот параметр определяет будет ли показано диалоговое окно, информирующее "
+"пользователя о том, что программа выполнятся без запроса пароля по некоторой "
+"причине."
+
+#: ../gksu.schemas.in.h:11
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"Этот параметр заставит gksu вывести пользователю запрос о захвате экрана "
+"перед вводом пароля. Заметим, что это происходит только если не указан "
+"параметр принудительного захвата (force-grab)."
+
+#: ../gksu.schemas.in.h:12
+msgid ""
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
+msgstr ""
+"Определяет, будет ли sudo использоваться как метод аутентификации по "
+"умолчанию. Также метод можно задать с помощью параметра -S или запустив "
+"«gksudo» вместо «gksu»."
+
+#: ../gksu.schemas.in.h:13
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr ""
+"Определяет, будет ли отключён захват клавиатуры и мыши. Это может привести к "
+"несанкционированному получению вводимых с клавиатуры данных другими "
+"графическими приложениями, что приведёт к невозможности защиты от "
+"вредоносных программ, которые могут быть запущены в этот момент."
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"gksu can save the password you type to the gnome-keyring so you'll not be "
+"asked everytime"
+msgstr ""
+"gksu может сохранить набранный пароль в gnome-keyring, таким образом "
+"пользователю не надо будет вводить его каждый раз."
+
+#: ../libgksu/gksu-run-helper.c:167
+#, c-format
+msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
+msgstr ""
+"Не удалось получить ключ xauth: xauth не был найден в месте своего "
+"расположения."
+
+#~ msgid "Could not read from the pipe with the child: %s"
+#~ msgstr "Невозможно прочитать из канала потомка: %s"
+
+#~ msgid ""
+#~ "enable\n"
+#~ "disable\n"
+#~ "force enable\n"
+#~ "prompt\n"
+#~ msgstr ""
+#~ "включить\n"
+#~ "отключить\n"
+#~ "включить принудительно\n"
+#~ "запрос\n"
+
+#~ msgid "gtk-close"
+#~ msgstr "gtk-close"
