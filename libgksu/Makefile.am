@@ -27,7 +27,7 @@ pkgconfigdir = ${libdir}/pkgconfig
 pkgconfig_DATA = libgksu2.pc
 
 pkglibdir = ${libdir}/${PACKAGE}
-pkglib_PROGRAMS = gksu-run-helper
+bin_PROGRAMS = gksu-run-helper
 gksu_run_helper_LDFLAGS = `pkg-config --libs glib-2.0`
 gksu_run_helper_SOURCES = gksu-run-helper.c
 
