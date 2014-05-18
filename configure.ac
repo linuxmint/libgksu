@@ -40,8 +40,8 @@ AM_CONDITIONAL(USE_VERSION_SCRIPT, test x$use_version_script = xyes)
 AC_PATH_PROG(GCONFTOOL, gconftool-2)
 AM_GCONF_SOURCE_2
 
-PKG_CHECK_MODULES(LIBGKSU, [gtk+-2.0 >= 2.4.0, gconf-2.0, libstartup-notification-1.0, gnome-keyring-1, libgtop-2.0])
-PKG_CHECK_MODULES(GKSU_PROPERTIES, [gtk+-2.0 >= 2.12, gconf-2.0])
+PKG_CHECK_MODULES(LIBGKSU, [gtk+-2.0 >= 2.4.0, gconf-2.0, libstartup-notification-1.0, gnome-keyring-1, libgtop-2.0, x11])
+PKG_CHECK_MODULES(GKSU_PROPERTIES, [gtk+-2.0 >= 2.12, gconf-2.0, x11])
 
 # Checks for library functions.
 ALL_LINGUAS="ca cs da de es eu fr hu it ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"

@@ -1,10 +1,10 @@
 AM_CFLAGS = -g -O2 -Wall
-INCLUDES = `pkg-config --cflags gtk+-2.0 gconf-2.0`
+INCLUDES = `pkg-config --cflags gtk+-2.0 gconf-2.0 x11`
 AM_CPPFLAGS = -DLOCALEDIR=\"$(datadir)/locale\" -DDATA_DIR=\"$(datadir)\" -DPREFIX=\"$(prefix)\"
 
 noinst_LTLIBRARIES = libgksuui1.0.la
 libgksuui1_0_la_SOURCES = gksuui-dialog.c
-libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0`
+libgksuui1_0_la_LDFLAGS = -Wl,-O1 `pkg-config --libs gtk+-2.0 gconf-2.0 x11`
 
 noinst_HEADERS = defines.h gksuui.h gksuui-dialog.h
 includedir = ${prefix}/include/$(PACKAGE)
