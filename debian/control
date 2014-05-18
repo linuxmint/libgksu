@@ -20,7 +20,8 @@ Build-Depends: cdbs,
                gnome-pkg-tools (>= 0.10),
                libgtop2-dev,
                libglib2.0-doc,
-               intltool
+               intltool,
+               xorg-dev
 Standards-Version: 3.9.2
 Homepage: http://www.nongnu.org/gksu
 XS-Debian-Vcs-Browser: http://svn.debian.org/wsvn/pkg-gnome/packages/unstable/libgksu/
