@@ -1,3 +1,9 @@
+libgksu (2.0.13~pre1-7linuxmint1) qiana; urgency=medium
+
+  * Removed fade animation
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 19 May 2014 09:50:10 +0100
+
 libgksu (2.0.13~pre1-6ubuntu4) trusty; urgency=medium
 
   * Use dh-autoreconf to update libtool macros for new ports.  This requires
