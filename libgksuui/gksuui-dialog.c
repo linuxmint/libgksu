@@ -603,7 +603,7 @@ _transparent_clear_cb (GtkWidget      *widget,
 {
   cairo_t  *cr;
   GtkStyle *style;
-  gdouble  opacity       = 0.85f;
+  gdouble  opacity       = 1.00f;
   gdouble  corner_radius = 3.75f;
 
   /* create context */
