@@ -2,32 +2,33 @@
 # Copyright (C) 2007 Free Software Foundation, Inc.
 # This file is distributed under the same license as the libgksu package.
 # Andrea Zagli <azagli@inwind.it>, 2005-2007.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: libgksu 2.0.3\n"
 "Report-Msgid-Bugs-To: kov@debian.org\n"
-"POT-Creation-Date: 2007-02-28 19:17+0100\n"
-"PO-Revision-Date: 2007-02-28 19:16+0100\n"
+"POT-Creation-Date: 2013-04-02 13:48+0000\n"
+"PO-Revision-Date: 2013-04-02 20:27+0000\n"
 "Last-Translator: Andrea Zagli <azagli@inwind.it>\n"
 "Language-Team: Italian <tp@lists.linux.it>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Launchpad-Export-Date: 2015-11-13 17:16+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
-#: ../libgksu/libgksu.c:119
+#: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
-msgstr "Non si sta usando il blocco per leggere il file di sola lettura «%s»"
+msgstr "Blocco disabilitato per il file di blocco in sola lettura %s"
 
-#: ../libgksu/libgksu.c:139
+#: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
-msgstr "Non si sta usando il blocco per il file «%s» montato via nfs"
+msgstr "Blocco disabilitato per il file di blocco %s montato via nfs"
 
-#: ../libgksu/libgksu.c:495
+#: ../libgksu/libgksu.c:612
 msgid ""
 "<b><big>Could not grab your mouse.</big></b>\n"
 "\n"
@@ -36,15 +37,15 @@ msgid ""
 "\n"
 "Try again."
 msgstr ""
-"<b><big>Impossibile catturare il mouse.</big></b>\n"
+"<b><big>Impossibile prendere il controllo del mouse.</big></b>\n"
 "\n"
 "Un client malevolo potrebbe essere in ascolto di nascosto nella propria "
 "sessione oppure si è appena fatto clic su un menù oppure qualche "
 "applicazione ha appena deciso di prendere il focus.\n"
 "\n"
-"Provare ancora."
+"Provare di nuovo."
 
-#: ../libgksu/libgksu.c:507
+#: ../libgksu/libgksu.c:624
 msgid ""
 "<b><big>Could not grab your keyboard.</big></b>\n"
 "\n"
@@ -53,28 +54,28 @@ msgid ""
 "\n"
 "Try again."
 msgstr ""
-"<b><big>Impossibile catturare la tastiera.</big></b>\n"
+"<b><big>Impossibile prendere il controllo della tastiera.</big></b>\n"
 "\n"
-"Un client malevolo potrebbe essere in ascolto di nascosto nella propria "
-"sessione oppure si è appena fatto clic su un menù oppure qualche "
-"applicazione ha appena deciso di prendere il focus.\n"
+"È possibile che un client malevolo sia in ascolto di nascosto nella sessione "
+"in corso, che si sia fatto clic su un menù oppure che qualche applicazione "
+"abbia deciso di prendere il focus.\n"
 "\n"
-"Provare ancora."
+"Provare di nuovo."
 
-#: ../libgksu/libgksu.c:855
+#: ../libgksu/libgksu.c:992
 #, c-format
 msgid ""
 "<b><big>Enter your password to perform administrative tasks</big></b>\n"
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
-"<b><big>Inserire la propria password per eseguire attività amministrative</"
-"big></b>\n"
+"<b><big>Inserire la propria password per compiere azioni di "
+"amministrazione</big></b>\n"
 "\n"
-"L'applicazione «%s» Permette di modificare parti essenziali del proprio "
-"sistema."
+"L'applicazione «%s» consente di modificare parti essenziali del sistema in "
+"uso."
 
-#: ../libgksu/libgksu.c:862
+#: ../libgksu/libgksu.c:999
 #, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
@@ -82,29 +83,31 @@ msgstr ""
 "<b><big>Inserire la propria password per eseguire l'applicazione «%s» come "
 "utente %s</big></b>"
 
-#: ../libgksu/libgksu.c:870
+#: ../libgksu/libgksu.c:1007
 #, c-format
 msgid ""
 "<b><big>Enter the administrative password</big></b>\n"
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
-"<b><big>Inserire la password di amministratore</big></b>\n"
+"<b><big>Inserire la password di amministrazione</big></b>\n"
 "\n"
-"L'applicazione «%s» permette di modificare parti essenziali del proprio "
-"sistema."
+"L'applicazione «%s» consente di modificare parti essenziali del sistema in "
+"uso."
 
-#: ../libgksu/libgksu.c:877
+#: ../libgksu/libgksu.c:1014
 #, c-format
-msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgid ""
+"<b><big>Enter the password of %s to run the application '%s'</big></b>"
 msgstr ""
 "<b><big>Inserire la password di %s per eseguire l'applicazione «%s»</big></b>"
 
-#: ../libgksu/libgksu.c:908
+#: ../libgksu/libgksu.c:1045
+#, c-format
 msgid "Password prompt canceled."
-msgstr "Richiesta password annullata."
+msgstr "Richiesta della password annullata"
 
-#: ../libgksu/libgksu.c:978
+#: ../libgksu/libgksu.c:1117
 #, c-format
 msgid ""
 "<b><big>Granted permissions without asking for password</big></b>\n"
@@ -113,30 +116,30 @@ msgid ""
 "need to ask for a password, due to your system's authentication mechanism "
 "setup.\n"
 "\n"
-"It is possible that you are being allowed to run specific programs as user %"
-"s without the need for a password, or that the password is cached.\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
 "\n"
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
 msgstr ""
-"<b><big>Concessione permessi senza richiesta di password</big></b>\n"
+"<b><big>Permessi garantiti senza richiesta di password</big></b>\n"
 "\n"
-"Il programma «%s» è terminato con i privilegi dell'utente %s senza la "
-"necessità di richiedere la password, a causa delle impostazioni del "
-"meccanismo di autenticazione del sistema.\n"
+"Il programma «%s» è stato avviato con i privilegi dell'utente %s senza la "
+"necessità di richiedere una password, a causa delle impostazioni del "
+"meccanismo di autenticazione del sistema in uso.\n"
 "\n"
-"È possibile che si sia autorizzati a eseguire specifici programmi come "
-"utente %s senza la necessità di una password, oppure la password è in "
-"memoria.\n"
+"È possibile che si abbia il consenso di eseguire specifici programmi come "
+"utente %s senza la necessità di una password, oppure che la password sia "
+"temporaneamente memorizzata.\n"
 "\n"
-"Questa non è una segnalazione di problema, ma semplicemente per assicurarsi "
-"che si sia consci di questo."
+"Questa non è la segnalazione di un problema; è semplicemente una notifica "
+"che chiarisce il perché di tale comportamento."
 
-#: ../libgksu/libgksu.c:1002
+#: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
-msgstr "_Non visualizzare nuovamente questo messaggio"
+msgstr "_Non mostrare più questo messaggio"
 
-#: ../libgksu/libgksu.c:1022
+#: ../libgksu/libgksu.c:1161
 msgid ""
 "<b>Would you like your screen to be \"grabbed\"\n"
 "while you enter the password?</b>\n"
@@ -145,46 +148,54 @@ msgid ""
 "the eavesdropping of your password by a a malicious\n"
 "application while you type it."
 msgstr ""
-"<b>Si vuole che lo schermo sia catturato\n"
-"mentre si inserisce la password?</b>\n"
+"<b>\"Prendere il controllo\" dello schermo\n"
+"durante l'inserimento della password?</b>\n"
 "\n"
-"Questo significa che tutte le applicazioni verranno messe in pausa\n"
-"per evitare l'ascolto di nascosto della proprio password, mentre la si "
-"digita,\n"
-"da parte di un'applicazione malevola."
+"Questo significa che tutte le applicazioni saranno messe in pausa\n"
+"per evitare la cattura di nascosto della propria password\n"
+"da parte di un client malevolo mentre la si inserisce."
 
-#: ../libgksu/libgksu.c:1299
+#: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
-msgstr "Concessione diritti"
+msgstr "Acquisizione privilegi"
 
-#: ../libgksu/libgksu.c:1854
+#: ../libgksu/libgksu.c:1442
+msgid "Starting Administrative Application"
+msgstr "Avvio applicazione amministrativa"
+
+#: ../libgksu/libgksu.c:2083
+#, c-format
 msgid "gksu_run needs a command to be run, none was provided."
 msgstr ""
 "gksu_run necessita di un comando da eseguire, ma non ne è stato fornito "
 "alcuno."
 
-#: ../libgksu/libgksu.c:1865
+#: ../libgksu/libgksu.c:2094
+#, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
 msgstr "Il comando gksu-run-helper non è stato trovato o non è eseguibile."
 
-#: ../libgksu/libgksu.c:1873 ../libgksu/libgksu.c:2379
+#: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
+#, c-format
 msgid "Unable to copy the user's Xauthorization file."
 msgstr "Impossibile copiare il file Xauthorization dell'utente."
 
-#: ../libgksu/libgksu.c:1919 ../libgksu/libgksu.c:2513
+#: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
 msgstr "Fallito il fork del nuovo processo: %s"
 
-#: ../libgksu/libgksu.c:2050
+#: ../libgksu/libgksu.c:2299
+#, c-format
 msgid "Wrong password got from keyring."
 msgstr "Password errata ottenuta dal portachiavi."
 
-#: ../libgksu/libgksu.c:2054 ../libgksu/libgksu.c:2664
+#: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
+#, c-format
 msgid "Wrong password."
 msgstr "Password errata."
 
-#: ../libgksu/libgksu.c:2109 ../libgksu/libgksu.c:2123
+#: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -201,7 +212,7 @@ msgstr ""
 "Mentre si attendeva:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2115
+#: ../libgksu/libgksu.c:2366
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -214,42 +225,39 @@ msgstr ""
 "Ricevuta una stringa errata mentre si attendeva:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2191
-#, c-format
-msgid "Could not read from the pipe with the child: %s"
-msgstr "Impossibile leggere dalla pipe con il figlio: %s"
-
-#: ../libgksu/libgksu.c:2238
+#: ../libgksu/libgksu.c:2475
 #, c-format
 msgid "su terminated with %d status"
 msgstr "su è terminato con stato %d"
 
-#: ../libgksu/libgksu.c:2353
+#: ../libgksu/libgksu.c:2646
+#, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
 msgstr ""
 "gksu_sudo_run necessita di un comando da eseguire, ma non ne è stato fornito "
 "alcuno."
 
-#: ../libgksu/libgksu.c:2494 ../libgksu/libgksu.c:2503
+#: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
 msgstr "Errore nel creare la pipe: %s"
 
-#: ../libgksu/libgksu.c:2529
+#: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
 msgstr "Fallita l'esecuzione del nuovo processo: %s"
 
-#: ../libgksu/libgksu.c:2546 ../libgksu/libgksu.c:2556
+#: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
 msgstr "Errore nell'aprire la pipe: %s"
 
-#: ../libgksu/libgksu.c:2614
+#: ../libgksu/libgksu.c:2957
 msgid "Password: "
 msgstr "Password: "
 
-#: ../libgksu/libgksu.c:2667 ../libgksu/libgksu.c:2681
+#: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
+#, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
@@ -257,99 +265,107 @@ msgstr ""
 "Il meccanismo di autorizzazione sottostante (sudo) non permette di eseguire "
 "questo programma. Contattare l'amministratore di sistema."
 
-#: ../libgksu/libgksu.c:2734
+#: ../libgksu/libgksu.c:3132
 #, c-format
 msgid "sudo terminated with %d status"
 msgstr "sudo è terminato con stato %d"
 
-#: ../libgksuui/gksuui-dialog.c:218
-msgid "Remember password"
-msgstr "Ricorda password"
+#: ../libgksuui/gksuui-dialog.c:150
+msgid "<b>You have capslock on</b>"
+msgstr "<b>BlocMaiusc attivo</b>"
 
-#: ../libgksuui/gksuui-dialog.c:235
+#: ../libgksuui/gksuui-dialog.c:220
+msgid "Remember password"
+msgstr "Ricordare la password"
+
+#: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
 msgstr "Salva per questa sessione"
 
-#: ../libgksuui/gksuui-dialog.c:240
+#: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
-msgstr "Salva nel portachiavi"
+msgstr "Salvare nel portachiavi"
 
 #. label
-#: ../libgksuui/gksuui-dialog.c:334
-msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+#: ../libgksuui/gksuui-dialog.c:772
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">Digitare la password di root.</span>\n"
 
 #. entry label
-#: ../libgksuui/gksuui-dialog.c:355
+#: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
 msgstr "Password:"
 
-#. label capslock warning
-#: ../libgksuui/gksuui-dialog.c:376
-msgid "<b>You have capslock on</b>"
-msgstr "<b>BlocMaiusc attivo</b>"
-
-#: ../gksu-properties/gksu-properties.c:248
-msgid "Failed to load glade file; please check your installation."
-msgstr "Fallito il caricamento del file glade; controllare l'installazione."
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr ""
+"Caricamento del file gtkui non riuscito. Controllare l'installazione."
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
-msgid "Configure behavior of the privilege-granting tool"
-msgstr "Configura il comportamento dello strumento di concessione privilegi"
-
-#: ../gksu-properties/gksu-properties.desktop.in.h:2
 msgid "Privilege granting"
 msgstr "Concessione privilegi"
 
-#: ../gksu-properties/gksu-properties.glade.h:1
-msgid "<b>Behavior</b>"
-msgstr "<b>Comportamento</b>"
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Configura il comportamento dello strumento di concessione privilegi"
 
-#: ../gksu-properties/gksu-properties.glade.h:2
-msgid "<b>Screen Grabbing</b>"
-msgstr "<b>Cattura schermo</b>"
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr "abilita"
 
-#: ../gksu-properties/gksu-properties.glade.h:3
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr "disabilita"
+
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr "forza abilita"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr "prompt"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
 msgstr "Modalità _autenticazione:"
 
-#: ../gksu-properties/gksu-properties.glade.h:4
+#: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
 msgstr "Modalità _cattura:"
 
-#: ../gksu-properties/gksu-properties.glade.h:5
-msgid ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
-msgstr ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Cattura schermo</b>"
 
-#: ../gksu-properties/gksu-properties.glade.h:10
-msgid "gtk-close"
-msgstr "gtk-close"
-
-#: ../gksu-properties/gksu-properties.glade.h:11
-msgid ""
-"su\n"
-"sudo"
-msgstr ""
-"su\n"
-"sudo"
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>Comportamento</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
 msgstr "Disabilita la cattura di tastiera e mouse"
 
 #: ../gksu.schemas.in.h:2
-msgid "Display information message when no password is needed"
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
 msgstr ""
-"Visualizza un messaggio informativo quando la password non è necessaria"
+"Se la cattura di tastiera e mouse debba essere disabilitata. Questo renderà "
+"possibile ad altre applicazioni X di ascoltare eventi di inserimento da "
+"tastiera, rendendo così impossibile la protezione da applicazioni malevole "
+"che possono essere in esecuzione."
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
@@ -364,30 +380,36 @@ msgstr ""
 "sulla linea di comando."
 
 #: ../gksu.schemas.in.h:5
-msgid "Keyring to which passwords will be saved"
-msgstr "Portachiavi nel quale le password verranno salvate"
-
-#: ../gksu.schemas.in.h:6
-msgid "Prompt for grabbing"
-msgstr "Richiede se catturare"
-
-#: ../gksu.schemas.in.h:7
-msgid "Save password to gnome-keyring"
-msgstr "Salva la password in gnome-keyring"
-
-#: ../gksu.schemas.in.h:8
 msgid "Sudo mode"
 msgstr "Modalità sudo"
 
-#: ../gksu.schemas.in.h:9
+#: ../gksu.schemas.in.h:6
 msgid ""
-"The name of the keyring gksu should use. Usual values are \"session\", which "
-"saves the password for the session, and \"default\", which saves the "
-"password with no timeout."
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
 msgstr ""
-"Il nome del portachiavi che gksu dovrebbe utilizzare. Valori usuali sono "
-"\"session\", che salva la password per la sessione, e \"default\", che salva "
-"la password senza una scadenza."
+"Se sudo debba essere il metodo sottostante predefinito. Questo metodo è "
+"altrimenti accessibile attraverso l'argomento -S o eseguendo 'gksudo' invece "
+"di 'gksu'."
+
+#: ../gksu.schemas.in.h:7
+msgid "Prompt for grabbing"
+msgstr "Richiede se catturare"
+
+#: ../gksu.schemas.in.h:8
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"Questa opzione farà sì che gksu chieda all'utente se vuole avere lo schermo "
+"catturato prima dell'inserimento della password. Notare che questo ha "
+"effetto solo se force-grab è disabilitato."
+
+#: ../gksu.schemas.in.h:9
+msgid "Display information message when no password is needed"
+msgstr ""
+"Visualizza un messaggio informativo quando la password non è necessaria"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
@@ -400,37 +422,10 @@ msgstr ""
 "necessità di richiesta di una password per qualche ragione."
 
 #: ../gksu.schemas.in.h:11
-msgid ""
-"This option will make gksu prompt the user if he wants to have the screen "
-"grabbed before entering the password. Notice that this only has an effect if "
-"force-grab is disabled."
-msgstr ""
-"Questa opzione farà sì che gksu chieda all'utente se vuole avere lo schermo "
-"catturato prima dell'inserimento della password. Notare che questo ha "
-"effetto solo se force-grab è disabilitato."
+msgid "Save password to gnome-keyring"
+msgstr "Salva la password in gnome-keyring"
 
 #: ../gksu.schemas.in.h:12
-msgid ""
-"Whether sudo should be the default backend method. This method is otherwise "
-"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-"Se sudo debba essere il metodo sottostante predefinito. Questo metodo è "
-"altrimenti accessibile attraverso l'argomento -S o eseguendo 'gksudo' invece "
-"di 'gksu'."
-
-#: ../gksu.schemas.in.h:13
-msgid ""
-"Whether the keyboard and mouse grabbing should be turned off. This will make "
-"it possible for other X applications to listen to keyboard input events, "
-"thus making it not possible to shield from malicious applications which may "
-"be running."
-msgstr ""
-"Se la cattura di tastiera e mouse debba essere disabilitata. Questo renderà "
-"possibile ad altre applicazioni X di ascoltare eventi di inserimento da "
-"tastiera, rendendo così impossibile la protezione da applicazioni malevole "
-"che possono essere in esecuzione."
-
-#: ../gksu.schemas.in.h:14
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
@@ -438,7 +433,21 @@ msgstr ""
 "gksu può salvare la password digitata in gnome-keyring così da non essere "
 "richiesta ogni volta"
 
-#: ../libgksu/gksu-run-helper.c:149
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "Portachiavi nel quale le password verranno salvate"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"Il nome del portachiavi che gksu dovrebbe utilizzare. Valori usuali sono "
+"\"session\", che salva la password per la sessione, e \"default\", che salva "
+"la password senza una scadenza."
+
+#: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
 msgstr ""

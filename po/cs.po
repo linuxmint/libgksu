@@ -7,25 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgksu\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-03 12:27-0200\n"
-"PO-Revision-Date: 2006-09-03 10:49+0200\n"
+"POT-Creation-Date: 2013-04-02 13:48+0000\n"
+"PO-Revision-Date: 2013-04-02 20:27+0000\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-11-13 17:16+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
-#: ../libgksu/libgksu.c:119
+#: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
 msgstr "Nepoužívám zámek pro zámkový soubor %s, který je jen pro čtení"
 
-#: ../libgksu/libgksu.c:139
+#: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
 msgstr "Nepoužívám zámek pro zámkový soubor %s připojený přes nfs"
 
-#: ../libgksu/libgksu.c:495
+#: ../libgksu/libgksu.c:612
 msgid ""
 "<b><big>Could not grab your mouse.</big></b>\n"
 "\n"
@@ -41,7 +43,7 @@ msgstr ""
 "\n"
 "Zkuste to prosím znovu."
 
-#: ../libgksu/libgksu.c:507
+#: ../libgksu/libgksu.c:624
 msgid ""
 "<b><big>Could not grab your keyboard.</big></b>\n"
 "\n"
@@ -57,7 +59,7 @@ msgstr ""
 "\n"
 "Zkuste to prosím znovu."
 
-#: ../libgksu/libgksu.c:855
+#: ../libgksu/libgksu.c:992
 #, c-format
 msgid ""
 "<b><big>Enter your password to perform administrative tasks</big></b>\n"
@@ -68,15 +70,15 @@ msgstr ""
 "\n"
 "Aplikace '%s' vás nechá měnit nezbytné části systému."
 
-#: ../libgksu/libgksu.c:862
+#: ../libgksu/libgksu.c:999
 #, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
 msgstr ""
-"<b><big>Zadejte své heslo pro spuštění aplikace '%s' pod uživatelem %s</"
-"big></b>"
+"<b><big>Zadejte své heslo pro spuštění aplikace '%s' pod uživatelem "
+"%s</big></b>"
 
-#: ../libgksu/libgksu.c:870
+#: ../libgksu/libgksu.c:1007
 #, c-format
 msgid ""
 "<b><big>Enter the administrative password</big></b>\n"
@@ -87,17 +89,19 @@ msgstr ""
 "\n"
 "Aplikace '%s' vás nechá měnit nezbytné části systému."
 
-#: ../libgksu/libgksu.c:877
+#: ../libgksu/libgksu.c:1014
 #, c-format
-msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgid ""
+"<b><big>Enter the password of %s to run the application '%s'</big></b>"
 msgstr ""
 "<b><big>Zadejte heslo uživatele %s pro spuštění aplikace '%s'</big></b>"
 
-#: ../libgksu/libgksu.c:908
+#: ../libgksu/libgksu.c:1045
+#, c-format
 msgid "Password prompt canceled."
 msgstr "Dotaz na heslo byl zrušen."
 
-#: ../libgksu/libgksu.c:978
+#: ../libgksu/libgksu.c:1117
 #, c-format
 msgid ""
 "<b><big>Granted permissions without asking for password</big></b>\n"
@@ -106,8 +110,8 @@ msgid ""
 "need to ask for a password, due to your system's authentication mechanism "
 "setup.\n"
 "\n"
-"It is possible that you are being allowed to run specific programs as user %"
-"s without the need for a password, or that the password is cached.\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
 "\n"
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
@@ -117,18 +121,18 @@ msgstr ""
 "Díky autentizačnímu mechanismu vašeho systému byl spuštěn program '%s' s "
 "oprávněními uživatele %s bez nutnosti zadání hesla.\n"
 "\n"
-"Je možné, že máte oprávnění ke spouštění některých programů pod uživatelem %"
-"s, aniž byste museli zadávat heslo (třeba z důvodu uložení hesla ve "
+"Je možné, že máte oprávnění ke spouštění některých programů pod uživatelem "
+"%s, aniž byste museli zadávat heslo (třeba z důvodu uložení hesla ve "
 "vyrovnávací paměti).\n"
 "\n"
 "Toto není chybové hlášení, ale pouze konstatování, abyste si danou "
 "skutečnost uvědomili."
 
-#: ../libgksu/libgksu.c:1002
+#: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
 msgstr "Tuto hlášku již příště _nezobrazovat"
 
-#: ../libgksu/libgksu.c:1022
+#: ../libgksu/libgksu.c:1161
 msgid ""
 "<b>Would you like your screen to be \"grabbed\"\n"
 "while you enter the password?</b>\n"
@@ -144,36 +148,45 @@ msgstr ""
 "abychom tak při zadávání hesla předešli jeho\n"
 "odposlechnutí zlomyslnou aplikací."
 
-#: ../libgksu/libgksu.c:1299
+#: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
 msgstr "Uděluji oprávnění"
 
-#: ../libgksu/libgksu.c:1854
+#: ../libgksu/libgksu.c:1442
+msgid "Starting Administrative Application"
+msgstr "Spouštím správcovskou aplikaci"
+
+#: ../libgksu/libgksu.c:2083
+#, c-format
 msgid "gksu_run needs a command to be run, none was provided."
 msgstr "gksu_run vyžaduje příkaz, který má spustit; žádný nebyl zadán."
 
-#: ../libgksu/libgksu.c:1865
+#: ../libgksu/libgksu.c:2094
+#, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
 msgstr "Příkaz gksu-run-helper nebyl nalezen, nebo nemá práva pro spouštění."
 
-#: ../libgksu/libgksu.c:1873 ../libgksu/libgksu.c:2379
+#: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
+#, c-format
 msgid "Unable to copy the user's Xauthorization file."
 msgstr "Nemohu zkopírovat uživatelův soubor Xauthorization."
 
-#: ../libgksu/libgksu.c:1919 ../libgksu/libgksu.c:2513
+#: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
 msgstr "Selhalo oddělení nového procesu: %s"
 
-#: ../libgksu/libgksu.c:2050
+#: ../libgksu/libgksu.c:2299
+#, c-format
 msgid "Wrong password got from keyring."
 msgstr "Z klíčenky jsme obdrželi chybné heslo."
 
-#: ../libgksu/libgksu.c:2054 ../libgksu/libgksu.c:2664
+#: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
+#, c-format
 msgid "Wrong password."
 msgstr "Chybné heslo."
 
-#: ../libgksu/libgksu.c:2109 ../libgksu/libgksu.c:2123
+#: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -190,7 +203,7 @@ msgstr ""
 "Očekáváno:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2115
+#: ../libgksu/libgksu.c:2366
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -203,40 +216,37 @@ msgstr ""
 "Obdržen chybný řetězec, zatímco byl očekáván:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2191
-#, c-format
-msgid "Could not read from the pipe with the child: %s"
-msgstr "Nemohu číst z roury s potomkem: %s"
-
-#: ../libgksu/libgksu.c:2238
+#: ../libgksu/libgksu.c:2475
 #, c-format
 msgid "su terminated with %d status"
 msgstr "su skončil se stavem %d"
 
-#: ../libgksu/libgksu.c:2353
+#: ../libgksu/libgksu.c:2646
+#, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
 msgstr "gksu_sudo_run vyžaduje příkaz, který má spustit; žádný nebyl zadán."
 
-#: ../libgksu/libgksu.c:2494 ../libgksu/libgksu.c:2503
+#: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
 msgstr "Chyba při vytváření roury: %s"
 
-#: ../libgksu/libgksu.c:2529
+#: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
 msgstr "Selhalo spuštění nového procesu: %s"
 
-#: ../libgksu/libgksu.c:2546 ../libgksu/libgksu.c:2556
+#: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
 msgstr "Chyba při otevírání roury: %s"
 
-#: ../libgksu/libgksu.c:2614
+#: ../libgksu/libgksu.c:2957
 msgid "Password: "
 msgstr "Heslo: "
 
-#: ../libgksu/libgksu.c:2667 ../libgksu/libgksu.c:2681
+#: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
+#, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
@@ -244,98 +254,105 @@ msgstr ""
 "Níže ležící autentizační mechanismus (sudo) nepovoluje spuštění tohoto "
 "programu. Kontaktujte prosím svého systémového správce."
 
-#: ../libgksu/libgksu.c:2734
+#: ../libgksu/libgksu.c:3132
 #, c-format
 msgid "sudo terminated with %d status"
 msgstr "sudo skončilo se stavem %d"
 
-#: ../libgksuui/gksuui-dialog.c:218
+#: ../libgksuui/gksuui-dialog.c:150
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Máte zapnutý CapsLock</b>"
+
+#: ../libgksuui/gksuui-dialog.c:220
 msgid "Remember password"
 msgstr "Zapamatovat heslo"
 
-#: ../libgksuui/gksuui-dialog.c:235
+#: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
 msgstr "Uložit pro toto sezení"
 
-#: ../libgksuui/gksuui-dialog.c:240
+#: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
 msgstr "Uložit na klíčenku"
 
 #. label
-#: ../libgksuui/gksuui-dialog.c:334
-msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+#: ../libgksuui/gksuui-dialog.c:772
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
 msgstr ""
 "<span weight=\"bold\" size=\"larger\">Zadejte heslo uživatele root.</span>\n"
 
 #. entry label
-#: ../libgksuui/gksuui-dialog.c:355
+#: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
 msgstr "Heslo:"
 
-#. label capslock warning
-#: ../libgksuui/gksuui-dialog.c:376
-msgid "<b>You have capslock on</b>"
-msgstr "<b>Máte zapnutý CapsLock</b>"
-
-#: ../gksu-properties/gksu-properties.c:248
-msgid "Failed to load glade file; please check your installation."
-msgstr "Načtení souboru .glade selhalo; zkontrolujte prosím svou instalaci."
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr "Selhalo načtení souboru gtkui. Ověřte prosím svou instalaci."
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
-msgid "Configure behavior of the privilege-granting tool"
-msgstr "Nastavuje chování nástroje pro přidělování práv"
-
-#: ../gksu-properties/gksu-properties.desktop.in.h:2
 msgid "Privilege granting"
 msgstr "Přidělování práv"
 
-#: ../gksu-properties/gksu-properties.glade.h:1
-msgid "<b>Behavior</b>"
-msgstr "<b>Chování</b>"
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Nastavuje chování nástroje pro přidělování práv"
 
-#: ../gksu-properties/gksu-properties.glade.h:2
-msgid "<b>Screen Grabbing</b>"
-msgstr "<b>Zachytávání obrazovky</b>"
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr "povolit"
 
-#: ../gksu-properties/gksu-properties.glade.h:3
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr "zakázat"
+
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr "vynutit povolení"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr "výzva"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
 msgstr "Způsob _autentizace:"
 
-#: ../gksu-properties/gksu-properties.glade.h:4
+#: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
 msgstr "Způsob _zachytávání:"
 
-#: ../gksu-properties/gksu-properties.glade.h:5
-msgid ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
-msgstr ""
-"povoleno\n"
-"zakázáno\n"
-"vynuceno\n"
-"výzva\n"
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Zachytávání obrazovky</b>"
 
-#: ../gksu-properties/gksu-properties.glade.h:10
-msgid "gtk-close"
-msgstr "gtk-close"
-
-#: ../gksu-properties/gksu-properties.glade.h:11
-msgid ""
-"su\n"
-"sudo"
-msgstr ""
-"su\n"
-"sudo"
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>Chování</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
 msgstr "Zakáže zachytávání klávesnice a myši"
 
 #: ../gksu.schemas.in.h:2
-msgid "Display information message when no password is needed"
-msgstr "Pokud není potřeba heslo, upozorní na to hláškou"
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr ""
+"Zda se má vypnout zachytávání klávesnice a myši. Tímto umožníte jiným X "
+"aplikacím, aby naslouchaly událostem vstupu z klávesnice a tím pádem "
+"ztrácíte ochranu před zlovolnými aplikacemi, které by mohly v systému běžet."
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
@@ -350,30 +367,34 @@ msgstr ""
 "parametr -g."
 
 #: ../gksu.schemas.in.h:5
-msgid "Keyring to which passwords will be saved"
-msgstr "Klíčenka, ve které se budou uchovávat hesla"
-
-#: ../gksu.schemas.in.h:6
-msgid "Prompt for grabbing"
-msgstr "Dotáže se na zachycení"
-
-#: ../gksu.schemas.in.h:7
-msgid "Save password to gnome-keyring"
-msgstr "Uložit hesla do klíčenky gnome-keyring"
-
-#: ../gksu.schemas.in.h:8
 msgid "Sudo mode"
 msgstr "Režim sudo"
 
-#: ../gksu.schemas.in.h:9
+#: ../gksu.schemas.in.h:6
 msgid ""
-"The name of the keyring gksu should use. Usual values are \"session\", which "
-"saves the password for the session, and \"default\", which saves the "
-"password with no timeout."
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
 msgstr ""
-"Jméno klíčenky, kterou má gksu použít. Obvyklé hodnoty jsou „session\", což "
-"uloží heslo po dobu sezení a „default\", což uloží heslo bez časového "
-"omezení."
+"Zda má být sudo výchozím backendem. Tento backend je jinak dostupný \n"
+"přepínačem -S, nebo spuštěním „gksudo\" místo „gksu\"."
+
+#: ../gksu.schemas.in.h:7
+msgid "Prompt for grabbing"
+msgstr "Dotáže se na zachycení"
+
+#: ../gksu.schemas.in.h:8
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"Povolením této volby zajistíte, aby se gksu před zadáním hesla zeptal "
+"uživatele, zda chce zachytit obrazovku. Toto však funguje pouze v případě, "
+"že je vypnuta volba force-grab."
+
+#: ../gksu.schemas.in.h:9
+msgid "Display information message when no password is needed"
+msgstr "Pokud není potřeba heslo, upozorní na to hláškou"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
@@ -385,35 +406,10 @@ msgstr ""
 "program spustit bez nutnosti zadání hesla."
 
 #: ../gksu.schemas.in.h:11
-msgid ""
-"This option will make gksu prompt the user if he wants to have the screen "
-"grabbed before entering the password. Notice that this only has an effect if "
-"force-grab is disabled."
-msgstr ""
-"Povolením této volby zajistíte, aby se gksu před zadáním hesla zeptal "
-"uživatele, zda chce zachytit obrazovku. Toto však funguje pouze v případě, "
-"že je vypnuta volba force-grab."
+msgid "Save password to gnome-keyring"
+msgstr "Uložit hesla do klíčenky gnome-keyring"
 
 #: ../gksu.schemas.in.h:12
-msgid ""
-"Whether sudo should be the default backend method. This method is otherwise "
-"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-"Zda má být sudo výchozím backendem. Tento backend je jinak dostupný \n"
-"přepínačem -S, nebo spuštěním „gksudo\" místo „gksu\"."
-
-#: ../gksu.schemas.in.h:13
-msgid ""
-"Whether the keyboard and mouse grabbing should be turned off. This will make "
-"it possible for other X applications to listen to keyboard input events, "
-"thus making it not possible to shield from malicious applications which may "
-"be running."
-msgstr ""
-"Zda se má vypnout zachytávání klávesnice a myši. Tímto umožníte jiným X "
-"aplikacím, aby naslouchaly událostem vstupu z klávesnice a tím pádem "
-"ztrácíte ochranu před zlovolnými aplikacemi, které by mohly v systému běžet."
-
-#: ../gksu.schemas.in.h:14
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
@@ -421,7 +417,21 @@ msgstr ""
 "gksu může ukládat zadaná hesla do gnome-keyring, takže nebudete dotazováni "
 "při každém použití gksu."
 
-#: ../libgksu/gksu-run-helper.c:149
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "Klíčenka, ve které se budou uchovávat hesla"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"Jméno klíčenky, kterou má gksu použít. Obvyklé hodnoty jsou „session\", což "
+"uloží heslo po dobu sezení a „default\", což uloží heslo bez časového "
+"omezení."
+
+#: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
 msgstr ""

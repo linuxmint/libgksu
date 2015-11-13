@@ -1,18 +1,16 @@
-# Slovak translation of libgksu.
-# Copyright (C) 2005 Free Software Foundation, Inc.
+# Chinese (Hong Kong) translation for libgksu
+# Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
 # This file is distributed under the same license as the libgksu package.
-# Peter Chabada <sk-i18n_chabada_sk>, 2005.
-# , fuzzy
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: libgksu 1.2.6\n"
-"Report-Msgid-Bugs-To: \n"
+"Project-Id-Version: libgksu\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-04-02 13:48+0000\n"
-"PO-Revision-Date: 2013-04-02 20:27+0000\n"
-"Last-Translator: Sebastien Bacher <seb128@ubuntu.com>\n"
-"Language-Team: Slovak <sk-i18n@linux.sk>\n"
+"PO-Revision-Date: 2010-09-27 05:40+0000\n"
+"Last-Translator: Roy Chan <roy.chan@linux.org.hk>\n"
+"Language-Team: Chinese (Hong Kong) <zh_HK@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,12 +20,12 @@ msgstr ""
 #: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
-msgstr "Súbor so zámkom %s je len na čítanie - neuzamykám."
+msgstr "不對唯讀的鎖定檔 %s 進行鎖定"
 
 #: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
-msgstr "Súbor so zámkom %s je na nfs zväzku - neuzamykám."
+msgstr "不對 nfs 掛載的鎖定檔 %s 進行鎖定"
 
 #: ../libgksu/libgksu.c:612
 msgid ""
@@ -38,12 +36,9 @@ msgid ""
 "\n"
 "Try again."
 msgstr ""
-"<b><big>Nepodarilo sa mi zachytiť vašu myš.</big></b>\n"
-"\n"
-"Je možné, že ju odpočúva nejaký zákerný program alebo ste práve klikli na "
-"ponuku alebo aplikáciu, ktorá sa aktivovala.\n"
-"\n"
-"Skúste znovu."
+"<b><big>無法擷取您的滑鼠。</big></b>\n"
+"一個惡意的用戶端可能在竊聽您的程序，或是您可能剛剛點選了某個恰好獲得焦點的選單或應用程式。\n"
+"請再試一次。"
 
 #: ../libgksu/libgksu.c:624
 msgid ""
@@ -54,12 +49,9 @@ msgid ""
 "\n"
 "Try again."
 msgstr ""
-"<b><big>Nepodarilo sa mi zachytiť vašu myš.</big></b>\n"
-"\n"
-"Je možné, že ju odpočúva nejaký zákerný program alebo ste práve klikli na "
-"ponuku alebo aplikáciu, ktorá sa aktivovala.\n"
-"\n"
-"Skúste znovu."
+"<b><big>無法擷取您的鍵盤。</big></b>\n"
+"一個惡意的用戶端可能在竊聽您的程序，或是您可能剛剛點選了某個恰好獲得焦點的選單或應用程式。\n"
+"請再試一次。"
 
 #: ../libgksu/libgksu.c:992
 #, c-format
@@ -68,18 +60,15 @@ msgid ""
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
-"<b><big>Zadajte svoje heslo, aby ste mohli vykonávať správcovské "
-"činnosti</big></b>\n"
+"<b><big>輸入您的密碼以進行管理工作</big></b>\n"
 "\n"
-"Program „%s“ umožňuje meniť dôležité časti vášho systému."
+"應用程式 '%s' 讓您修改系統的重要部份。"
 
 #: ../libgksu/libgksu.c:999
 #, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
-msgstr ""
-"<b><big>Zadajte vaše heslo pre spustenie aplikácie „%s“ ako používateľ "
-"%s</big></b>"
+msgstr "<b><big>輸入您的密碼以使用者 %s 的身份執行應用程式 '%s' </big></b>"
 
 #: ../libgksu/libgksu.c:1007
 #, c-format
@@ -88,23 +77,20 @@ msgid ""
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
-"<b><big>Zadajte heslo správcu</big></b>\n"
+"<b><big>輸入管理者密碼</big></b>\n"
 "\n"
-"Program „%s“ umožňuje meniť dôležité časti vášho systému, preto na jeho "
-"spustenie musíte zadať heslo správcu."
+"這個應用程式 '%s' 讓您更動系統最核心的部份。"
 
 #: ../libgksu/libgksu.c:1014
 #, c-format
 msgid ""
 "<b><big>Enter the password of %s to run the application '%s'</big></b>"
-msgstr ""
-"<b><big>Zadajte heslo používateľa %s, aby sa spustila aplikácia "
-"„%s“</big></b>"
+msgstr "<b><big>輸入 %s 的密碼以執行應用程式 '%s'</big></b>"
 
 #: ../libgksu/libgksu.c:1045
 #, c-format
 msgid "Password prompt canceled."
-msgstr "Výzva na zadanie hesla zrušená."
+msgstr "取消密碼提示。"
 
 #: ../libgksu/libgksu.c:1117
 #, c-format
@@ -121,20 +107,17 @@ msgid ""
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
 msgstr ""
-"<b><big>Udelené práva bez pýtania hesla</big></b>\n"
+"<b><big>不問密碼即給予權限</big></b>\n"
 "\n"
-"Program „%s“ bol spustený s právami používateľa %s bez potreby pýtať sa ho "
-"na heslo, pretože je tak nastavený autentifikačný mechanizmus systému.\n"
+"根據系統稽核機制的設定，程式 '%s' 被使用者 %s 執行但不需詢問密碼。\n"
 "\n"
-"Je možné, že vám bolo umožnené spustiť niektoré programy ako používateľ %s "
-"bez nutnosti zadať heslo alebo je heslo dočasne uložené.\n"
+"可能使用者 %s 被允許在執行特定程式時不需詢問密碼，或密碼已經被暫存了。\n"
 "\n"
-"Toto nie je správa o probléme, je to iba informácia, aby ste si toho boli "
-"vedomí."
+"這不是個問題回報；只是提醒一下您該曉得這件事。"
 
 #: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
-msgstr "Túto správu už viac _nezobrazovať"
+msgstr "不要再次顯示這個訊息(_N)"
 
 #: ../libgksu/libgksu.c:1161
 msgid ""
@@ -145,49 +128,49 @@ msgid ""
 "the eavesdropping of your password by a a malicious\n"
 "application while you type it."
 msgstr ""
-"<b>Chcete \"uzamknúť\" obrazovku, kým budete zadávať heslo?</b>\n"
+"<b>您是否希望在輸入密碼的時候，\n"
+"可以「鎖定」螢幕？</b>\n"
 "\n"
-"Znamená to, že všetky ostatné aplikácie budú pozastavené,\n"
-"aby sa počas písania zamedzilo odchyteniu hesla\n"
-"nejakým zákerným programom."
+"這表示所有的應用程式將會被暫停，避免在您\n"
+"輸入密碼的時候，遭到惡意程式的竊聽。"
 
 #: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
-msgstr "Pridelenie práv"
+msgstr "給予權限中"
 
 #: ../libgksu/libgksu.c:1442
 msgid "Starting Administrative Application"
-msgstr "Spúšťa sa program s právami správcu"
+msgstr "啟動管理程式"
 
 #: ../libgksu/libgksu.c:2083
 #, c-format
 msgid "gksu_run needs a command to be run, none was provided."
-msgstr "gksu_run potrebuje príkaz, ktorý má spustiť, no žiadny nebol zadaný."
+msgstr "gksu_run 執行時需要指令，而您並未提供。"
 
 #: ../libgksu/libgksu.c:2094
 #, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
-msgstr "Príkaz gksu-run-helper nebol nájdený alebo nie je spustiteľný."
+msgstr "找不到 gksu-run-helper 這個指令，或它不是可執行檔。"
 
 #: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
 #, c-format
 msgid "Unable to copy the user's Xauthorization file."
-msgstr "Nepodarilo sa skopírovať súbor Xautority používateľa."
+msgstr "無法複製使用者的 Xauthorization 檔案"
 
 #: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
-msgstr "Nepodarilo sa spustiť nový proces: %s"
+msgstr "建立新的程序失敗：%s"
 
 #: ../libgksu/libgksu.c:2299
 #, c-format
 msgid "Wrong password got from keyring."
-msgstr "Chybné heslo zo zväzku kľúčov."
+msgstr "從 keyring 得到錯誤密碼"
 
 #: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
 #, c-format
 msgid "Wrong password."
-msgstr "Chybné heslo."
+msgstr "密碼錯誤。"
 
 #: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
@@ -199,12 +182,12 @@ msgid ""
 "While expecting:\n"
 " %s"
 msgstr ""
-"Nepodarilo sa spojiť so službou gksu-run-helper.\n"
+"無法和 gksu-run-helper 取得連繫。\n"
 "\n"
-"Prijatá správa:\n"
-" %s\n"
-"Očakávaná správa:\n"
-" %s"
+"收到：\n"
+"%s\n"
+"預期：\n"
+"%s"
 
 #: ../libgksu/libgksu.c:2366
 #, c-format
@@ -214,139 +197,134 @@ msgid ""
 "Received bad string while expecting:\n"
 " %s"
 msgstr ""
-"Nepodarilo sa spojiť so službou gksu-run-helper.\n"
+"無法和 gksu-run-helper 取得連繫。\n"
 "\n"
-"Bol prijatý nesprávny reťazec. Očakával sa:\n"
-" %s"
+"收到的字串和預期不符：\n"
+"%s"
 
 #: ../libgksu/libgksu.c:2475
 #, c-format
 msgid "su terminated with %d status"
-msgstr "Program su skončil so statusom %d"
+msgstr "su 在 %d 狀態下結束"
 
 #: ../libgksu/libgksu.c:2646
 #, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
-msgstr ""
-"gksu_sudo_run potrebuje príkaz, ktorý má spustiť, no žiadny nebol zadaný."
+msgstr "gksu_sudo_run 需要指令來執行，而您並未提供。"
 
 #: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
-msgstr "Chyba počas vytvárania komunikačnej rúry: %s"
+msgstr "建立 pipe 時發生錯誤： %s"
 
 #: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
-msgstr "Nepodarilo sa spustiť proces: %s"
+msgstr "執行新程序失敗：%s"
 
 #: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
-msgstr "Chyba počas otvárania komunikačnej rúry: %s"
+msgstr "開啟 pipe 時發生錯誤： %s"
 
 #: ../libgksu/libgksu.c:2957
 msgid "Password: "
-msgstr "Heslo: "
+msgstr "密碼： "
 
 #: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
 #, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
-msgstr ""
-"Použitý autorizačný mechanizmus (sudo) vám nepovolil spustiť požadovaný "
-"program. Ak si myslíte, že to nie je v poriadku, obráťte sa na správcu "
-"systému."
+msgstr "底層的稽核機制 (sudo) 不允許您執行此程式。請聯絡系統管理員。"
 
 #: ../libgksu/libgksu.c:3132
 #, c-format
 msgid "sudo terminated with %d status"
-msgstr "Program sudo skončil so statusom %d"
+msgstr "sudo 在 %d 狀態下結束"
 
 #: ../libgksuui/gksuui-dialog.c:150
 msgid "<b>You have capslock on</b>"
-msgstr "<b>Máte zapnutý CapsLock</b>"
+msgstr "<b>您啟動了字母大寫鎖定</b>"
 
 #: ../libgksuui/gksuui-dialog.c:220
 msgid "Remember password"
-msgstr "Zapamätať si heslo"
+msgstr "記住密碼"
 
 #: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
-msgstr "Uložiť heslo pre túto reláciu"
+msgstr "只在這個作業階段裡儲存"
 
 #: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
-msgstr "Uložiť heslo na zväzok kľúčov"
+msgstr "存放於鑰匙圈 (keyring)"
 
 #. label
 #: ../libgksuui/gksuui-dialog.c:772
 msgid ""
 "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
-msgstr ""
-"<span weight=\"bold\" size=\"larger\">Zadajte heslo správcu systému.</span>\n"
+msgstr "<span weight=\"bold\" size=\"larger\">請輸入 root 密碼。</span>\n"
 
 #. entry label
 #: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
-msgstr "Heslo:"
+msgstr "密碼："
 
 #: ../gksu-properties/gksu-properties.c:259
 msgid "Failed to load gtkui file; please check your installation."
-msgstr ""
+msgstr "無法載入 gtkui 檔案，請驗查您的安裝是否完整。"
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
 msgid "Privilege granting"
-msgstr "Udeľovanie práv"
+msgstr "授予權限"
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:2
 msgid "Configure behavior of the privilege-granting tool"
-msgstr "Nastaviť správanie nástroja na udeľovanie práv"
+msgstr "設置權限授權工具的行為"
 
 #: ../gksu-properties/gksu-properties.ui.h:1
 msgid "enable"
-msgstr ""
+msgstr "啟用"
 
 #: ../gksu-properties/gksu-properties.ui.h:2
 msgid "disable"
-msgstr ""
+msgstr "停用"
 
 #: ../gksu-properties/gksu-properties.ui.h:3
 msgid "force enable"
-msgstr ""
+msgstr "強制啟用"
 
 #: ../gksu-properties/gksu-properties.ui.h:4
 msgid "prompt"
-msgstr ""
+msgstr "提示"
 
 #: ../gksu-properties/gksu-properties.ui.h:5
 msgid "su"
-msgstr ""
+msgstr "su"
 
 #: ../gksu-properties/gksu-properties.ui.h:6
 msgid "sudo"
-msgstr ""
+msgstr "sudo"
 
 #: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
-msgstr "Režim _autentifikácie:"
+msgstr "認證模式(_A):"
 
 #: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
-msgstr "Režim _zachytávania:"
+msgstr "擷取模式(_G):"
 
 #: ../gksu-properties/gksu-properties.ui.h:9
 msgid "<b>Screen Grabbing</b>"
-msgstr "<b>Zachytávanie obrazovky</b>"
+msgstr "<b>擷取螢幕</b>"
 
 #: ../gksu-properties/gksu-properties.ui.h:10
 msgid "<b>Behavior</b>"
-msgstr "<b>Správanie</b>"
+msgstr "<b>行為</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
-msgstr "Vypnúť „zachytávanie“ klávesnice a myši"
+msgstr "停用鍵盤和滑鼠鎖定"
 
 #: ../gksu.schemas.in.h:2
 msgid ""
@@ -354,78 +332,63 @@ msgid ""
 "it possible for other X applications to listen to keyboard input events, "
 "thus making it not possible to shield from malicious applications which may "
 "be running."
-msgstr ""
-"Táto voľba určuje, či má byť vypnuté zachytávanie klávesnice a myši. Spôsobí "
-"to však, že iné programy budú môcť potenciálne odpočúvať vašu klávesnicu a "
-"myš, a tak zistiť vaše heslo."
+msgstr "是否要停用鍵盤和滑鼠鎖定。 這會使得其他 X 應用程式可以監聽鍵盤輸入訊息，而可能無法避免惡意程式的擷取。"
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
-msgstr "Vynútiť „zachytávanie“ klávesnice a myši"
+msgstr "強迫擷取鍵盤和滑鼠"
 
 #: ../gksu.schemas.in.h:4
 msgid ""
 "Grab keyboard and mouse even if -g has been passed as argument on the "
 "command line."
-msgstr ""
-"„Zachytávať“ klávesnicu a myš, aj keď je z príkazového riadka zadaný "
-"parameter -g (--disable-grab)."
+msgstr "即使有在命令列傳入 -g 參數，仍然擷取鍵盤和滑鼠。"
 
 #: ../gksu.schemas.in.h:5
 msgid "Sudo mode"
-msgstr "Režim sudo"
+msgstr "Sudo 模式"
 
 #: ../gksu.schemas.in.h:6
 msgid ""
 "Whether sudo should be the default backend method. This method is otherwise "
 "accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-"Táto voľba určuje, či sa má použíť „sudo“ namiesto „su“. Toto je možné "
-"dosiahnuť aj použitím prepínača -S alebo spustením príkazu „gksudo“ namiesto "
-"„gksu“."
+msgstr "是否應使用 sudo 作為後端。 否則這個方法必須透過 -S 開關或執行 'gksudo' 而非 'gksu' 來存取。"
 
 #: ../gksu.schemas.in.h:7
 msgid "Prompt for grabbing"
-msgstr "Spýtať sa pred „zachytením“ klávesnice a myši"
+msgstr "鎖定前提示"
 
 #: ../gksu.schemas.in.h:8
 msgid ""
 "This option will make gksu prompt the user if he wants to have the screen "
 "grabbed before entering the password. Notice that this only has an effect if "
 "force-grab is disabled."
-msgstr ""
-"Táto voľba určuje, či sa má gksu spýtať, či má pred zadaním hesla zachytiť "
-"terminál. Táto voľba sa uplatní iba v prípade, že zachytenie teminálu nie je "
-"vynútené."
+msgstr "這個選項會使 gksu 提示使用者，輸入密碼前是否要鎖定螢幕。 注意這只有在強迫鎖定停用的時候才有效。"
 
 #: ../gksu.schemas.in.h:9
 msgid "Display information message when no password is needed"
-msgstr "Zobraziť správu, keď nie je potrebné zadať heslo"
+msgstr "當不需要密碼時，顯示訊息通知。"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
 "This option determines whether a message dialog will be displayed informing "
 "the user that the program is being run without the need of a password being "
 "asked for some reason."
-msgstr ""
-"Táto voľba určuje, či sa má zobraziť dialógové okno informujúce používateľa, "
-"že sa spúšťa program bez potreby zadania hesla."
+msgstr "這個選項決定是否要顯示訊息，通知使用者程式因為某些理由，不需要密碼即可執行。"
 
 #: ../gksu.schemas.in.h:11
 msgid "Save password to gnome-keyring"
-msgstr "Uložiť heslo do gnome-keyring"
+msgstr "將密碼儲存在 gnome-keyring 內"
 
 #: ../gksu.schemas.in.h:12
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
-msgstr ""
-"gksu dokáže uložiť zadané heslo do zväzku kľúčov Gnome, takže ho nebudete "
-"musieť vždy zadávať"
+msgstr "gksu 可以將您輸入的密碼儲存到 gnome-keyring，這樣就不必每次都詢問密碼"
 
 #: ../gksu.schemas.in.h:13
 msgid "Keyring to which passwords will be saved"
-msgstr "Zväzok kľúčov, do ktorého bude heslo uložené"
+msgstr "將會儲存密碼的 keyring"
 
 #: ../gksu.schemas.in.h:14
 msgid ""
@@ -433,12 +396,10 @@ msgid ""
 "saves the password for the session, and \"default\", which saves the "
 "password with no timeout."
 msgstr ""
-"Názov miesta, kam sa má uložiť heslo. Zvyčajné hodnoty sú „session“ na "
-"uloženie hesla pre jednu reláciu a „default“ na trvalé uloženie hesla."
+"gksu 應該使用的 keyring 名稱。 一般使用的數值是 \"session\"，會為目前作業階段儲存密碼，或使用 "
+"\"default\"，會永久儲存，密碼不過會時。"
 
 #: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
-msgstr ""
-"Zlyhalo získavanie xauth kľúča: xauth binary nebol nájdený na zvyčajnom "
-"mieste"
+msgstr "無法取得 xauth key：無法在平常的位置存取到 xauth 的二元檔案"

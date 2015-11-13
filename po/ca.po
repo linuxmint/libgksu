@@ -7,27 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgksu 2.0.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-03 12:27-0200\n"
-"PO-Revision-Date: 2007-06-09 17:52-0300\n"
+"POT-Creation-Date: 2013-04-02 13:48+0000\n"
+"PO-Revision-Date: 2013-04-02 20:27+0000\n"
 "Last-Translator: Jordi Mallach <jordi@sindominio.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-11-13 17:16+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
-#: ../libgksu/libgksu.c:119
+#: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
 msgstr ""
 "No s'està utilitzant blocatge per al fitxer de blocatge de només lectura %s"
 
-#: ../libgksu/libgksu.c:139
+#: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
 msgstr ""
 "No s'està utilitzant blocatge per al fitxer de blocatge muntat per nfs %s"
 
-#: ../libgksu/libgksu.c:495
+#: ../libgksu/libgksu.c:612
 msgid ""
 "<b><big>Could not grab your mouse.</big></b>\n"
 "\n"
@@ -38,12 +40,12 @@ msgid ""
 msgstr ""
 "<b><big>No s'ha pogut capturar el ratolí.</big></b>\n"
 "\n"
-"Un client malciós pot estar espiant la vostra sessió, o potser acabeu de fer "
-"clic a un menú, o alguna aplicació ha decidit obtenir el focus ara mateix.\n"
+"Pot ser que un client maliciós estigui tafanejant la vostra sessió, que "
+"hàgiu fet clic a un menú o que alguna aplicació hagi obtingut el focus.\n"
 "\n"
 "Torneu-ho a provar."
 
-#: ../libgksu/libgksu.c:507
+#: ../libgksu/libgksu.c:624
 msgid ""
 "<b><big>Could not grab your keyboard.</big></b>\n"
 "\n"
@@ -59,7 +61,7 @@ msgstr ""
 "\n"
 "Torneu-ho a provar."
 
-#: ../libgksu/libgksu.c:855
+#: ../libgksu/libgksu.c:992
 #, c-format
 msgid ""
 "<b><big>Enter your password to perform administrative tasks</big></b>\n"
@@ -71,7 +73,7 @@ msgstr ""
 "\n"
 "L'aplicació «%s» us permet modificar parts essencials del sistema."
 
-#: ../libgksu/libgksu.c:862
+#: ../libgksu/libgksu.c:999
 #, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
@@ -79,7 +81,7 @@ msgstr ""
 "<b><big>Introduïu la vostra contrasenya per a executar l'aplicació «%s» com "
 "a l'usuari %s</big></b>"
 
-#: ../libgksu/libgksu.c:870
+#: ../libgksu/libgksu.c:1007
 #, c-format
 msgid ""
 "<b><big>Enter the administrative password</big></b>\n"
@@ -90,18 +92,20 @@ msgstr ""
 "\n"
 "L'aplicació «%s» us permet modificar parts essencials del sistema."
 
-#: ../libgksu/libgksu.c:877
+#: ../libgksu/libgksu.c:1014
 #, c-format
-msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgid ""
+"<b><big>Enter the password of %s to run the application '%s'</big></b>"
 msgstr ""
-"<b><big>Introduïu la contrasenya de %s per a executar l'aplicació «%s»</"
-"big></b>"
+"<b><big>Introduïu la contrasenya de %s per a executar l'aplicació "
+"«%s»</big></b>"
 
-#: ../libgksu/libgksu.c:908
+#: ../libgksu/libgksu.c:1045
+#, c-format
 msgid "Password prompt canceled."
 msgstr "S'ha cancel·lat la petició de contrasenya."
 
-#: ../libgksu/libgksu.c:978
+#: ../libgksu/libgksu.c:1117
 #, c-format
 msgid ""
 "<b><big>Granted permissions without asking for password</big></b>\n"
@@ -110,23 +114,28 @@ msgid ""
 "need to ask for a password, due to your system's authentication mechanism "
 "setup.\n"
 "\n"
-"It is possible that you are being allowed to run specific programs as user %"
-"s without the need for a password, or that the password is cached.\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
 "\n"
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
 msgstr ""
 "<b><big>S'han atorgat permisos sense demanar-se una contrasenya</big></b>\n"
 "\n"
-"El programa «%s» s'ha iniciat amb els privilegis de l'usuari %s sense que s'haja demanat una contrasenya, degut a la configuració del mecanisme d'autenticació del vostre sistema.\n"
+"El programa «%s» s'ha iniciat amb els privilegis de l'usuari %s sense que "
+"s'haja demanat una contrasenya, degut a la configuració del mecanisme "
+"d'autenticació del vostre sistema.\n"
 "\n"
-"És possible que se us permeta executar programes específics com a l'usuari %s sense que calga una contrasenya, o que la contrasenya estiga a la memòria cau. Això no és un informe d'un problema, només és una notificació per a que n'esteu al corrent."
+"És possible que se us permeta executar programes específics com a l'usuari "
+"%s sense que calga una contrasenya, o que la contrasenya estiga a la memòria "
+"cau. Això no és un informe d'un problema, només és una notificació per a que "
+"n'esteu al corrent."
 
-#: ../libgksu/libgksu.c:1002
+#: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
 msgstr "_No mostres aquest missatge de nou"
 
-#: ../libgksu/libgksu.c:1022
+#: ../libgksu/libgksu.c:1161
 msgid ""
 "<b>Would you like your screen to be \"grabbed\"\n"
 "while you enter the password?</b>\n"
@@ -142,37 +151,45 @@ msgstr ""
 "a evitar que una aplicació maliciosa us espie mentre\n"
 "introduïu la vostra contrasenya."
 
-#: ../libgksu/libgksu.c:1299
+#: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
 msgstr "S'estan atorgant els privilegis"
 
-#: ../libgksu/libgksu.c:1854
+#: ../libgksu/libgksu.c:1442
+msgid "Starting Administrative Application"
+msgstr "S'està iniciant l'aplicació administrativa"
+
+#: ../libgksu/libgksu.c:2083
+#, c-format
 msgid "gksu_run needs a command to be run, none was provided."
 msgstr "gksu_run necessita una ordre a executar, no s'ha donat cap."
 
-#: ../libgksu/libgksu.c:1865
+#: ../libgksu/libgksu.c:2094
+#, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
 msgstr "L'ordre gksu-run-helper no s'ha trobat o no és executable."
 
-#: ../libgksu/libgksu.c:1873 ../libgksu/libgksu.c:2379
+#: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
+#, c-format
 msgid "Unable to copy the user's Xauthorization file."
 msgstr "No s'ha pogut copiar el fitxer d'autorització d'X de l'usuari."
 
-#: ../libgksu/libgksu.c:1919 ../libgksu/libgksu.c:2513
+#: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
 msgstr "No s'ha pogut crear un procés nou: %s"
 
-#: ../libgksu/libgksu.c:2050
-#, fuzzy
+#: ../libgksu/libgksu.c:2299
+#, c-format
 msgid "Wrong password got from keyring."
-msgstr "Contrasenya incorrecta."
+msgstr "S'ha obtingut una contrasenya incorrecta de l'anell de claus."
 
-#: ../libgksu/libgksu.c:2054 ../libgksu/libgksu.c:2664
+#: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
+#, c-format
 msgid "Wrong password."
 msgstr "Contrasenya incorrecta."
 
-#: ../libgksu/libgksu.c:2109 ../libgksu/libgksu.c:2123
+#: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -189,7 +206,7 @@ msgstr ""
 "Quan s'esperava:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2115
+#: ../libgksu/libgksu.c:2366
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -202,40 +219,37 @@ msgstr ""
 "S'ha rebut una cadena errònia quan s'esperava:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2191
-#, c-format
-msgid "Could not read from the pipe with the child: %s"
-msgstr "No s'ha pogut llegir del conducte amb el fill: %s"
-
-#: ../libgksu/libgksu.c:2238
+#: ../libgksu/libgksu.c:2475
 #, c-format
 msgid "su terminated with %d status"
 msgstr "su ha finalitzat amb l'estat %d"
 
-#: ../libgksu/libgksu.c:2353
+#: ../libgksu/libgksu.c:2646
+#, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
 msgstr "gksu_sudo_run necessita una ordre a executar, no s'ha donat cap."
 
-#: ../libgksu/libgksu.c:2494 ../libgksu/libgksu.c:2503
+#: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
 msgstr "S'ha produït un error en crear el conducte: %s"
 
-#: ../libgksu/libgksu.c:2529
+#: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
 msgstr "No s'ha pogut executar un procés nou: %s"
 
-#: ../libgksu/libgksu.c:2546 ../libgksu/libgksu.c:2556
+#: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
 msgstr "S'ha produït un error en obrir el conducte: %s"
 
-#: ../libgksu/libgksu.c:2614
+#: ../libgksu/libgksu.c:2957
 msgid "Password: "
 msgstr "Contrasenya: "
 
-#: ../libgksu/libgksu.c:2667 ../libgksu/libgksu.c:2681
+#: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
+#, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
@@ -243,127 +257,152 @@ msgstr ""
 "El mecanisme d'autorització subjacent (sudo) no us permet executar aquest "
 "programa. Contacteu amb l'administrador del sistema."
 
-#: ../libgksu/libgksu.c:2734
+#: ../libgksu/libgksu.c:3132
 #, c-format
 msgid "sudo terminated with %d status"
 msgstr "sudo ha finalitzat amb l'estat %d"
 
-#: ../libgksuui/gksuui-dialog.c:218
+#: ../libgksuui/gksuui-dialog.c:150
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Teniu el bloqueig de majúscules activat</b>"
+
+#: ../libgksuui/gksuui-dialog.c:220
 msgid "Remember password"
 msgstr "Recorda la contrasenya"
 
-#: ../libgksuui/gksuui-dialog.c:235
+#: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
 msgstr "Desa per a aquesta sessió"
 
-#: ../libgksuui/gksuui-dialog.c:240
+#: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
 msgstr "Desa a l'anell de claus"
 
 #. label
-#: ../libgksuui/gksuui-dialog.c:334
-msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+#: ../libgksuui/gksuui-dialog.c:772
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
 msgstr ""
-"<span weight=\"bold\" size=\"larger\">Introduïu la contrasenya de root.</"
-"span>\n"
+"<span weight=\"bold\" size=\"larger\">Introduïu la contrasenya de "
+"root.</span>\n"
 
 #. entry label
-#: ../libgksuui/gksuui-dialog.c:355
+#: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
 msgstr "Contrasenya:"
 
-#. label capslock warning
-#: ../libgksuui/gksuui-dialog.c:376
-msgid "<b>You have capslock on</b>"
-msgstr "<b>Teniu el bloqueig de majúscules activat</b>"
-
-#: ../gksu-properties/gksu-properties.c:248
-msgid "Failed to load glade file; please check your installation."
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
 msgstr ""
+"Ha fallat la càrrega del fitxer gtkui. Hauríeu de comprovar la vostra "
+"instal·lació."
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
-msgid "Configure behavior of the privilege-granting tool"
-msgstr ""
+msgid "Privilege granting"
+msgstr "Atorgament de permisos"
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:2
-msgid "Privilege granting"
-msgstr ""
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Configura el comportament de l'eina d'atorgament de permisos"
 
-#: ../gksu-properties/gksu-properties.glade.h:1
-msgid "<b>Behavior</b>"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr "habilita"
 
-#: ../gksu-properties/gksu-properties.glade.h:2
-msgid "<b>Screen Grabbing</b>"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr "inhabilita"
 
-#: ../gksu-properties/gksu-properties.glade.h:3
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr "força l'habilitació"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr "línia d'ordres"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
-msgstr ""
+msgstr "Mode d'_autenticació:"
 
-#: ../gksu-properties/gksu-properties.glade.h:4
+#: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
-msgstr ""
+msgstr "Mode de _captura:"
 
-#: ../gksu-properties/gksu-properties.glade.h:5
-msgid ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Captura de pantalla</b>"
 
-#: ../gksu-properties/gksu-properties.glade.h:10
-msgid "gtk-close"
-msgstr ""
-
-#: ../gksu-properties/gksu-properties.glade.h:11
-msgid ""
-"su\n"
-"sudo"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>Comportament</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
-msgstr ""
+msgstr "Inhabilita la captura del teclat i del ratolí"
 
 #: ../gksu.schemas.in.h:2
-msgid "Display information message when no password is needed"
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
 msgstr ""
+"Si s'hauria de desactivar el bloqueig del teclat i del ratolí. Això farà "
+"possible que altres aplicacions de les X escoltin els esdeveniments "
+"d'entrada del teclat, per tant serà impossible defensar-se d'aplicacions "
+"malicioses que puguin estar executant-se."
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
-msgstr ""
+msgstr "Força la captura del teclat i del ratolí"
 
 #: ../gksu.schemas.in.h:4
 msgid ""
 "Grab keyboard and mouse even if -g has been passed as argument on the "
 "command line."
 msgstr ""
+"Captura el teclat i el ratolí encara que s'hagi passat -g com a paràmetre a "
+"la línia d'ordres."
 
 #: ../gksu.schemas.in.h:5
-msgid "Keyring to which passwords will be saved"
-msgstr ""
+msgid "Sudo mode"
+msgstr "Mode sudo"
 
 #: ../gksu.schemas.in.h:6
-msgid "Prompt for grabbing"
+msgid ""
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
 msgstr ""
+"Si el sudo hauria de ser el mètode de rerefons predeterminat. Si no, s'hi "
+"pot accedir a traves del commutador -S o executant «gksudo» en lloc de "
+"«gksu»."
 
 #: ../gksu.schemas.in.h:7
-#, fuzzy
-msgid "Save password to gnome-keyring"
-msgstr "Desa a l'anell de claus"
+msgid "Prompt for grabbing"
+msgstr "Sol·licita si s'ha de fer una captura"
 
 #: ../gksu.schemas.in.h:8
-msgid "Sudo mode"
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
 msgstr ""
+"Aquesta opció farà que el gksu sol·liciti a l'usuari si vol bloquejar la "
+"pantalla abans d'introduir la contrasenya. Només té efecte si el bloqueig "
+"forçat està inhabilitat."
 
 #: ../gksu.schemas.in.h:9
-msgid ""
-"The name of the keyring gksu should use. Usual values are \"session\", which "
-"saves the password for the session, and \"default\", which saves the "
-"password with no timeout."
-msgstr ""
+msgid "Display information message when no password is needed"
+msgstr "Mostra un missatge informatiu quan no calgui cap contrasenya"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
@@ -371,309 +410,40 @@ msgid ""
 "the user that the program is being run without the need of a password being "
 "asked for some reason."
 msgstr ""
+"Aquesta opció determina si es mostrarà un diàleg de missatge informant a "
+"l'usuari de que el programa s'està executant sense la necessitat de que es "
+"demani la contrasenya per cap raó."
 
 #: ../gksu.schemas.in.h:11
-msgid ""
-"This option will make gksu prompt the user if he wants to have the screen "
-"grabbed before entering the password. Notice that this only has an effect if "
-"force-grab is disabled."
-msgstr ""
+msgid "Save password to gnome-keyring"
+msgstr "Desa la contrasenya a l'anell de claus del GNOME"
 
 #: ../gksu.schemas.in.h:12
-msgid ""
-"Whether sudo should be the default backend method. This method is otherwise "
-"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-
-#: ../gksu.schemas.in.h:13
-msgid ""
-"Whether the keyboard and mouse grabbing should be turned off. This will make "
-"it possible for other X applications to listen to keyboard input events, "
-"thus making it not possible to shield from malicious applications which may "
-"be running."
-msgstr ""
-
-#: ../gksu.schemas.in.h:14
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
 msgstr ""
+"El gksu pot desar la contrasenya que teclegeu a l'anell de claus del GNOME "
+"de manera que no us la sol·licitarà cada cop"
 
-#: ../libgksu/gksu-run-helper.c:149
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "Anell de claus on desar les contrasenyes"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"El nom de l'anell de claus que el gksu hauria d'utilitzar. Els valors "
+"habituals són «session» (sessió), el qual desa la contrasenya durant la "
+"sessió, i «default» (predeterminat), el qual desa la contrasenya sense temps "
+"d'espera."
+
+#: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
 msgstr ""
-
-#~ msgid "Error copying '%s' to '%s': %s"
-#~ msgstr "S'ha produït un error en copiar «%s» a «%s»: %s"
-
-#~ msgid "Option not accepted for --disable-grab: %s\n"
-#~ msgstr "No s'ha acceptat l'opció per a --disable-grab: %s\n"
-
-#~ msgid "Option not accepted for --sudo-mode: %s\n"
-#~ msgstr "No s'ha acceptat l'opció per a --sudo-mode: %s\n"
-
-#~ msgid "Option not accepted for --prompt: %s\n"
-#~ msgstr "No s'ha acceptat l'opció per a --prompt: %s\n"
-
-#~ msgid "<b>Please enter %s's password</b>"
-#~ msgstr "<b>Si us plau, introduïu la contrasenya de l'usuari %s</b>"
-
-#~ msgid "Missing command to run."
-#~ msgstr "Manca l'ordre a executar."
-
-#~ msgid ""
-#~ "<b>Failed to run %s as user %s.</b>\n"
-#~ "\n"
-#~ "%s"
-#~ msgstr ""
-#~ "<b>No s'ha pogut executar %s com a l'usuari %s:</b>\n"
-#~ "\n"
-#~ "%s"
-
-#~ msgid "Advanced options"
-#~ msgstr "Opcions avançades"
-
-#~ msgid "<b>Options to use when changing user</b>"
-#~ msgstr "<b>Opcions a utilitzar quan es canvia d'usuari</b>"
-
-#~ msgid "_login shell"
-#~ msgstr "_intèrpret d'entrada"
-
-#~ msgid "_preserve environment"
-#~ msgstr "_preserva l'entorn"
-
-#~ msgid "Run program"
-#~ msgstr "Executa el programa"
-
-#~ msgid "Run:"
-#~ msgstr "Executa:"
-
-#~ msgid "As user:"
-#~ msgstr "Com a l'usuari:"
-
-#~ msgid "_Advanced"
-#~ msgstr "_Avançat"
-
-#, fuzzy
-#~ msgid ""
-#~ "GKsu version %s\n"
-#~ "\n"
-#~ "Usage: %s [-u <user>] [-k] [-l] <command>\n"
-#~ "\n"
-#~ "  --always-ask-password, -a\n"
-#~ "    Do not try to check if a password is really\n"
-#~ "    needed for running the command, or if there\n"
-#~ "    are other means of obtaining it: simply ask for it.\n"
-#~ "  --debug, -d\n"
-#~ "    Print information on the screen that might be\n"
-#~ "    useful for diagnosing and/or solving problems.\n"
-#~ "  --disable-grab, -g\n"
-#~ "    Disable the \"locking\" of the keyboard, mouse,\n"
-#~ "    and focus done by the program when asking for\n"
-#~ "    password.\n"
-#~ "  --icon <icon>, -i <icon>\n"
-#~ "    Replace the default window icon with the argument.\n"
-#~ "  --message <message>, -m <message>\n"
-#~ "    Replace the standard message shown to ask for\n"
-#~ "    password for the argument passed to the option.\n"
-#~ "  --print-pass, -p\n"
-#~ "    Ask gksu to print the password to stdout, just\n"
-#~ "    like ssh-askpass. Useful to use in scripts with\n"
-#~ "    programs that accept receiving the password on\n"
-#~ "    stdin.\n"
-#~ "  --prompt, -P\n"
-#~ "    Ask the user if they want to have their keyboard\n"
-#~ "    and mouse grabbed before doing so.\n"
-#~ "  --ssh-fwd, -s\n"
-#~ "    Strip the host part of the $DISPLAY variable, so that\n"
-#~ "    GKSu will work on SSH X11 Forwarding.\n"
-#~ "  --sudo-mode, -S\n"
-#~ "    Make GKSu use sudo instead of su, as if it had been\n"
-#~ "    run as \"gksudo\".\n"
-#~ "  --title <title>, -t <title>\n"
-#~ "    Replace the default title with the argument.\n"
-#~ "  --user <user>, -u <user>\n"
-#~ "    Call <command> as the specified user.\n"
-#~ "  --desktop <file>, -D <file>\n"
-#~ "    Use a .desktop file to get the name of the application    and the "
-#~ "icon from.\n"
-#~ "\n"
-#~ "  --preserve-env, -k\n"
-#~ "    Preserve the current environments, does not set $HOME\n"
-#~ "    nor $PATH, for example.\n"
-#~ "  --login, -l\n"
-#~ "    Make this a login shell. Beware this may cause\n"
-#~ "    problems with the Xauthority magic. Run xhost\n"
-#~ "    to allow the target user to open windows on your\n"
-#~ "    display!\n"
-#~ "\n"
-#~ "\n"
-#~ msgstr ""
-#~ "GKsu versió %s\n"
-#~ "\n"
-#~ "Forma d'ús: %s [-u <usuari>] [-k] [-l] <ordre>\n"
-#~ "\n"
-#~ "  --debug, -d\n"
-#~ "    Imprimeix informació a la pantalla que pot ser\n"
-#~ "    útil per a diagnosticar i/o resoldre problemes.\n"
-#~ "  --disable-grab, -g\n"
-#~ "    Inhabilita el «blocatge» del teclat, ratolí i focus\n"
-#~ "    que realitza el programa quan demana una contrasenya.\n"
-#~ "  --icon <icona>, -i <icona>\n"
-#~ "    Reemplaça la icona per defecte de la finestra amb\n"
-#~ "    l'argument.\n"
-#~ "  --message <missatge>, -m <missatge>\n"
-#~ "    Reemplaça el missatge estàndard que es mostra quan\n"
-#~ "    es demana una contrasenya amb l'argument donat a\n"
-#~ "    l'opció.\n"
-#~ "  --print-pass, -p\n"
-#~ "    Imprimeix la contrasenya a la sortida estàndard,\n"
-#~ "    igual que ssh-askpass. És útil per a utilitzar-ho a\n"
-#~ "    seqüències amb programes que accepten rebre la\n"
-#~ "    contrasenya per l'entrada estàndard.\n"
-#~ "  --prompt, -P\n"
-#~ "    Pregunta si es vol que es capture el teclat i el\n"
-#~ "    ratolí abans de fer-ho.\n"
-#~ "  --ssh-fwd, -s\n"
-#~ "    Elimina la part del servidor de la variable\n"
-#~ "    $DISPLAY, per a que GKSu funcione amb les redireccions X11\n"
-#~ "    d'SSH.\n"
-#~ "  --sudo-mode, -S\n"
-#~ "    Fes que GKSu utilitze sudo en comptes de su, com si s'haguès\n"
-#~ "    executat com a «gksudo».\n"
-#~ "  --title <títol>, -t <títol>\n"
-#~ "    Reemplaça el títol per defecte amb l'argument.\n"
-#~ "  --user <usuari>, -u <usuari>\n"
-#~ "    Executa <ordre> com l'usuari especificat.\n"
-#~ "\n"
-#~ "  --preserve-env, -k\n"
-#~ "    Preserva els entorns actuals, no estableixes $HOME, o $PATH,\n"
-#~ "    per exemple.\n"
-#~ "  --login, -l\n"
-#~ "    Fes que aquest intèrpret siga d'entrada. Això pot causar\n"
-#~ "    problemes amb la màgia Xauthority. Executeu xhost per a\n"
-#~ "    permetre que usuari objectiu puga obrir finestres a la vostra\n"
-#~ "    visualització.\n"
-#~ "\n"
-#~ "\n"
-
-#~ msgid "WARNING: Could not stat %s: %s.\n"
-#~ msgstr "AVÍS: No s'ha pogut fer stat sobre %s: %s.\n"
-
-#~ msgid "FATAL: File %s is not owned by root.\n"
-#~ msgstr "FATAL: El propietari del fitxer %s no és root.\n"
-
-#~ msgid "FATAL: File %s is not owned by group root.\n"
-#~ msgstr "FATAL: El grup del fitxer %s no és root.\n"
-
-#~ msgid "FATAL: File %s has wrong permissions, should be 0644.\n"
-#~ msgstr "FATAL: El fitxer %s té permisos incorrectes, hauria de ser 0644.\n"
-
-#~ msgid "FATAL: Could not open %s: %s.\n"
-#~ msgstr "FATAL: No s'ha pogut obrir %s: %s.\n"
-
-#~ msgid ""
-#~ "<b>Please enter %s's password\n"
-#~ "to run %s.</b>"
-#~ msgstr ""
-#~ "<b>Si us plau, introduïu la contrasenya de l'usuari %s\n"
-#~ "per a executar %s.</b>"
-
-#~ msgid ""
-#~ "GKsu version %s\n"
-#~ "\n"
-#~ "Usage: %s [-u <user>] [-k] [-l] <command>\n"
-#~ "\n"
-#~ "  --user <user>, -u <user>\n"
-#~ "    Calls <command> as the specified user\n"
-#~ "  --message <message>, -m <message>\n"
-#~ "    Replaces the standard message shown to ask for\n"
-#~ "    password for the argument passed to the option\n"
-#~ "  --title <title>, -t <title>\n"
-#~ "    Replaces the default title with the argument\n"
-#~ "  --icon <icon>, -i <icon>\n"
-#~ "    Replaces the default window icon with the argument\n"
-#~ "  --print-pass, -p\n"
-#~ "    Asks gksu to print the password to stdout, just\n"
-#~ "    like ssh-askpass. Useful to use in scripts with\n"
-#~ "    programs that accept receiving the password on\n"
-#~ "    stdin.\n"
-#~ "  --disable-grab, -g\n"
-#~ "    Disables the \"locking\" of the keyboard, mouse,\n"
-#~ "    and focus done by the program when asking for\n"
-#~ "    password\n"
-#~ "  --ssh-fwd, -s\n"
-#~ "    Strip the host part of the $DISPLAY variable, so that\n"
-#~ "    GKSu will work on SSH X11 Forwarding.\n"
-#~ "\n"
-#~ "  --login, -l\n"
-#~ "    Makes this a login shell. Beware this may cause\n"
-#~ "    problems with the Xauthority magic. Run xhost\n"
-#~ "    to allow the target user to open windows on your\n"
-#~ "    display!\n"
-#~ "  --preserve-env, -k\n"
-#~ "    Preserve the current environments, does not set $HOME\n"
-#~ "    nor $PATH, for example.\n"
-#~ "\n"
-#~ "\n"
-#~ msgstr ""
-#~ "GKsu versió %s\n"
-#~ "\n"
-#~ "Forma d'ús: %s [-u <usuari>] [-k] [-l] <ordre>\n"
-#~ "\n"
-#~ "  --user <usuari>, -u <usuari>\n"
-#~ "    Executa <ordre> com a l'usuari especificat\n"
-#~ "  --message <missatge>, -m <missatge>\n"
-#~ "    Reemplaça el missatge estàndard mostrat per a\n"
-#~ "    demanar la contrasenya per l'argument passat a\n"
-#~ "    l'opció\n"
-#~ "  --title <títol>, -t <títol>\n"
-#~ "    Reemplaça el títol per defecte amb l'argument\n"
-#~ "  --icon <icona>, -i <icona>\n"
-#~ "    Reemplaça la icona predeterminada de la finestra\n"
-#~ "    amb l'argument\n"
-#~ "  --print-pass, -p\n"
-#~ "    Demana a gksu que mostre la contrasenya per\n"
-#~ "    la sortida estàndard, com ssh-askpass. Útil per a\n"
-#~ "    l'ús en scripts amb programes que accepten rebre\n"
-#~ "    la contrasenya per l'entrada estàndard.\n"
-#~ "  --disable-grab, -g\n"
-#~ "    Inhabilita el «blocatge» del teclat, ratolí i focus\n"
-#~ "    fet pel programa quan demana una contrasenya\n"
-#~ "  --ssh-fwd, -s\n"
-#~ "    Elimina la part del servidor de la variable $DISPLAY,\n"
-#~ "    per a que GKSu funcione amb les redireccions X11 de SSH\n"
-#~ "\n"
-#~ "  --login, -l\n"
-#~ "    Fes això un intèrpret d'entrada. Teniu en compte que això\n"
-#~ "    pot causar problemes amb la màgia Xauthority. Executeu\n"
-#~ "    xhost per a permetre a l'usuari objectiu obrir finestres\n"
-#~ "    a la vostra visualització!\n"
-#~ "  --preserve-env, -k\n"
-#~ "    Preserva l'entorn actual, no estableixes $HOME o $PATH,\n"
-#~ "    per exemple.\n"
-#~ "\n"
-#~ "\n"
-
-#~ msgid "Using %s as username...\n"
-#~ msgstr "S'està utilitzant %s com a nom d'usuari...\n"
-
-#~ msgid ""
-#~ "libgksu: Failed to init the Gtk+ library, GKSu is not able to continue.\n"
-#~ msgstr ""
-#~ "libgksu: No s'ha pogut inicialitzar la biblioteca Gtk+, GKsu no pot "
-#~ "continuar.\n"
-
-#~ msgid "Changing user..."
-#~ msgstr "S'està canviant d'usuari..."
-
-#~ msgid "No password was supplied and sudo needs it."
-#~ msgstr "No s'ha donat cap contrasenya i sudo la necessita."
-
-#~ msgid ""
-#~ "The X authority file i am trying to create for the target user already "
-#~ "exists! This is highly suspicous!"
-#~ msgstr ""
-#~ "El fitxer d'autoritat d'X que s'està intentant crear per a l'usuari "
-#~ "objectiu ja existeix! Això és molt sospitós!"
+"Ha fallat en obtenir la clau xauth: no s'ha trobat el binari xauth a les "
+"ubicacions habituals"
