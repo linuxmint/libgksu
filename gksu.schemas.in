@@ -70,7 +70,7 @@
       <applyto>/apps/gksu/display-no-pass-info</applyto>
       <owner>gksu</owner>
       <type>bool</type>
-      <default>false</default>
+      <default>true</default>
       <locale name="C">
 	<short>Display information message when no password is needed</short>
 	<long>
@@ -86,7 +86,7 @@
       <applyto>/apps/gksu/save-to-keyring</applyto>
       <owner>gksu</owner>
       <type>bool</type>
-      <default>false</default>
+      <default>true</default>
       <locale name="C">
 	<short>Save password to gnome-keyring</short>
 	<long>
