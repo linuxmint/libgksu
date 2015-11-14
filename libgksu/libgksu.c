@@ -496,6 +496,14 @@ get_configuration_options (GksuContext *context)
 
   context->sudo_mode = gconf_client_get_bool (gconf_client, BASE_PATH "sudo-mode",
 						 NULL);
+  // UBUNTU specific - if the sudo mode is not set, check if we actualy have
+  // a registered schema for it, upgrades sometimes blew it away (lp: #59079)
+  if(context->sudo_mode == FALSE) {
+     GConfValue* v = gconf_client_get_default_from_schema(gconf_client, BASE_PATH "sudo-mode", NULL);
+     if(!v)
+	context->sudo_mode = TRUE;
+     gconf_value_free(v);
+  }
 }
 
 /**

@@ -5,14 +5,12 @@ set -e
 #DEBHELPER#
 
 update-alternatives --install /usr/share/gconf/defaults/10_libgksu \
-    libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-su \
+    libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo \
     30
 
 update-alternatives --install /usr/share/gconf/defaults/10_libgksu \
-    libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-sudo \
+    libgksu-gconf-defaults /usr/share/libgksu/debian/gconf-defaults.libgksu-su \
     20
-
-update-alternatives --auto libgksu-gconf-defaults
 
 # hack to work-around a problem with update-gconf-defaults not being
 # able to handle dangling symlinks correctly (see prerm)
