@@ -44,7 +44,7 @@ PKG_CHECK_MODULES(LIBGKSU, [gtk+-2.0 >= 2.4.0, gconf-2.0, libstartup-notificatio
 PKG_CHECK_MODULES(GKSU_PROPERTIES, [gtk+-2.0 >= 2.12, gconf-2.0])
 
 # Checks for library functions.
-ALL_LINGUAS="ca cs da de es eu fr hu it ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"
+ALL_LINGUAS="ca cs da de es eu fr hu it ja ko lt pl pt_BR ro ru sk sv nb nl th zh_CN zh_HK zh_TW"
 
 AC_DEFINE(GETTEXT_PACKAGE, AC_PACKAGE_NAME, [gettext package])
 GETTEXT_PACKAGE=AC_PACKAGE_NAME

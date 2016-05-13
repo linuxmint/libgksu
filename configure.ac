@@ -48,7 +48,7 @@ PKG_CHECK_MODULES(LIBGKSUUI, [gtk+-2.0, gconf-2.0, x11])
 PKG_CHECK_MODULES(TEST_GKSUUI, [glib-2.0, x11])
 
 # Checks for library functions.
-ALL_LINGUAS="ca cs da de es eu fr hu it ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"
+ALL_LINGUAS="ca cs da de es eu fr hu it ja ko lt pl pt_BR ro ru sk sv nb nl th zh_CN zh_HK zh_TW"
 
 AC_DEFINE(GETTEXT_PACKAGE, AC_PACKAGE_NAME, [gettext package])
 GETTEXT_PACKAGE=AC_PACKAGE_NAME

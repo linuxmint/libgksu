@@ -7,27 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgksu HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-03 12:27-0200\n"
-"PO-Revision-Date: 2006-11-15 15:12-0200\n"
-"Last-Translator: Kelemen Gábor <kelemeng@gnome.hu>\n"
+"POT-Creation-Date: 2013-04-02 13:48+0000\n"
+"PO-Revision-Date: 2013-04-02 20:27+0000\n"
+"Last-Translator: Gabor Kelemen <kelemeng@openscope.org>\n"
 "Language-Team: Hungarian <gnome@gnome.hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.2\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Launchpad-Export-Date: 2015-11-13 17:16+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
-#: ../libgksu/libgksu.c:119
+#: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
-msgstr "Nem használom zárolásra \"%s\" csak olvasható zárolási fájlt"
+msgstr "Nem használom zárolásra „%s” csak olvasható zárolási fájlt"
 
-#: ../libgksu/libgksu.c:139
+#: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
-msgstr "Nem használom zárolásra \"%s\" NFS-csatlakoztatású zárolási fájlt"
+msgstr "Nem használom zárolásra „%s” NFS-csatlakoztatású zárolási fájlt"
 
-#: ../libgksu/libgksu.c:495
+#: ../libgksu/libgksu.c:612
 msgid ""
 "<b><big>Could not grab your mouse.</big></b>\n"
 "\n"
@@ -44,7 +44,7 @@ msgstr ""
 "\n"
 "Próbálja újra."
 
-#: ../libgksu/libgksu.c:507
+#: ../libgksu/libgksu.c:624
 msgid ""
 "<b><big>Could not grab your keyboard.</big></b>\n"
 "\n"
@@ -61,51 +61,53 @@ msgstr ""
 "\n"
 "Próbálja újra."
 
-#: ../libgksu/libgksu.c:855
+#: ../libgksu/libgksu.c:992
 #, c-format
 msgid ""
 "<b><big>Enter your password to perform administrative tasks</big></b>\n"
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
-"<b><big>Adja meg jelszavát adminisztrációs feladatok végrehajtásához</b></"
-"big>\n"
+"<b><big>Adja meg jelszavát adminisztrációs feladatok "
+"végrehajtásához</big></b>\n"
 "\n"
-"A(z) \"%s\" alkalmazás a rendszer alapvető részeinek módosítását teszi "
+"A(z) „%s” alkalmazás a rendszer alapvető részeinek módosítását teszi "
 "lehetővé."
 
-#: ../libgksu/libgksu.c:862
+#: ../libgksu/libgksu.c:999
 #, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
 msgstr ""
-"<b><big>Adja meg jelszavát a(z) \"%s\" alkalmazás futtatásához %s "
+"<b><big>Adja meg jelszavát a(z) „%s” alkalmazás futtatásához %s "
 "felhasználóként</big></b>"
 
-#: ../libgksu/libgksu.c:870
+#: ../libgksu/libgksu.c:1007
 #, c-format
 msgid ""
 "<b><big>Enter the administrative password</big></b>\n"
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
-"<b><big>Adja meg adminisztrációs jelszavát</b></big>\n"
+"<b><big>Adja meg adminisztrációs jelszavát</big></b>\n"
 "\n"
-"A(z) \"%s\" alkalmazás a rendszer alapvető részeinek módosítását teszi "
+"A(z) „%s” alkalmazás a rendszer alapvető részeinek módosítását teszi "
 "lehetővé."
 
-#: ../libgksu/libgksu.c:877
+#: ../libgksu/libgksu.c:1014
 #, c-format
-msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgid ""
+"<b><big>Enter the password of %s to run the application '%s'</big></b>"
 msgstr ""
-"<b><big>Adja meg %s felhasználó jelszavát a(z) \"%s\" alkalmazás "
+"<b><big>Adja meg %s felhasználó jelszavát a(z) „%s” alkalmazás "
 "futtatásához</big></b>"
 
-#: ../libgksu/libgksu.c:908
+#: ../libgksu/libgksu.c:1045
+#, c-format
 msgid "Password prompt canceled."
 msgstr "Jelszóbekérés megszakítva."
 
-#: ../libgksu/libgksu.c:978
+#: ../libgksu/libgksu.c:1117
 #, c-format
 msgid ""
 "<b><big>Granted permissions without asking for password</big></b>\n"
@@ -114,15 +116,15 @@ msgid ""
 "need to ask for a password, due to your system's authentication mechanism "
 "setup.\n"
 "\n"
-"It is possible that you are being allowed to run specific programs as user %"
-"s without the need for a password, or that the password is cached.\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
 "\n"
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
 msgstr ""
 "<b><big>Jogosultság megadva jelszó bekérése nélkül</big></b>\n"
 "\n"
-"A(z) \"%s\" program %s felhasználó jogosultságaival indult el, a jelszó "
+"A(z) „%s” program %s felhasználó jogosultságaival indult el, a jelszó "
 "bekérésének szükségessége nélkül, a rendszere hitelesítési mechanizmusainak "
 "beállításai miatt.\n"
 "\n"
@@ -133,11 +135,11 @@ msgstr ""
 "Ez nem hibajelentés, egyszerűen csak egy értesítés, hogy biztosan tudatában "
 "legyen ennek."
 
-#: ../libgksu/libgksu.c:1002
+#: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
 msgstr "_Ne mutassa még egyszer ezt az üzenetet"
 
-#: ../libgksu/libgksu.c:1022
+#: ../libgksu/libgksu.c:1161
 msgid ""
 "<b>Would you like your screen to be \"grabbed\"\n"
 "while you enter the password?</b>\n"
@@ -146,44 +148,53 @@ msgid ""
 "the eavesdropping of your password by a a malicious\n"
 "application while you type it."
 msgstr ""
-"<b>Szeretné, ha a képernyője \"zárolva\" lenne\n"
+"<b>Szeretné, ha a képernyője „zárolva” lenne\n"
 "amíg beírja a jelszót?</b>\n"
 "\n"
 "Ez azt jelenti, hogy minden alkalmazás fel lesz\n"
 "függesztve, hogy jelszavát ne tudják rosszindulatú\n"
 "programok lehallgatni, amíg begépeli."
 
-#: ../libgksu/libgksu.c:1299
+#: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
 msgstr "Jogosultságok megadása"
 
-#: ../libgksu/libgksu.c:1854
+#: ../libgksu/libgksu.c:1442
+msgid "Starting Administrative Application"
+msgstr "Adminisztrációs alkalmazás indítása"
+
+#: ../libgksu/libgksu.c:2083
+#, c-format
 msgid "gksu_run needs a command to be run, none was provided."
 msgstr ""
 "A gksu_run-nak szüksége van a futtatandó parancsra, de Ön azt nem adta meg."
 
-#: ../libgksu/libgksu.c:1865
+#: ../libgksu/libgksu.c:2094
+#, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
 msgstr "A gksu-run-helper parancs nem található vagy nem futtatható."
 
-#: ../libgksu/libgksu.c:1873 ../libgksu/libgksu.c:2379
+#: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
+#, c-format
 msgid "Unable to copy the user's Xauthorization file."
 msgstr "Nem lehet a felhasználó Xauthorization fájlját másolni."
 
-#: ../libgksu/libgksu.c:1919 ../libgksu/libgksu.c:2513
+#: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
 msgstr "Nem sikerült új folyamatot létrehozni: %s"
 
-#: ../libgksu/libgksu.c:2050
+#: ../libgksu/libgksu.c:2299
+#, c-format
 msgid "Wrong password got from keyring."
 msgstr "Hibás jelszó érkezett a kulcstartóról."
 
-#: ../libgksu/libgksu.c:2054 ../libgksu/libgksu.c:2664
+#: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
+#, c-format
 msgid "Wrong password."
 msgstr "Rossz jelszó."
 
-#: ../libgksu/libgksu.c:2109 ../libgksu/libgksu.c:2123
+#: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -200,7 +211,7 @@ msgstr ""
 "Az alábbi helyett:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2115
+#: ../libgksu/libgksu.c:2366
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -213,42 +224,39 @@ msgstr ""
 "Hibás karakterlánc érkezett az alábbi helyett:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2191
-#, c-format
-msgid "Could not read from the pipe with the child: %s"
-msgstr "Nem lehet olvasni a(z) %s gyermeknél lévő csőből"
-
-#: ../libgksu/libgksu.c:2238
+#: ../libgksu/libgksu.c:2475
 #, c-format
 msgid "su terminated with %d status"
 msgstr "A su %d állapottal fejeződött be"
 
-#: ../libgksu/libgksu.c:2353
+#: ../libgksu/libgksu.c:2646
+#, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
 msgstr ""
 "A gksu_sudo_run-nak szüksége van a futtatandó parancsra, de Ön azt nem adta "
 "meg."
 
-#: ../libgksu/libgksu.c:2494 ../libgksu/libgksu.c:2503
+#: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
 msgstr "Hiba a cső létrehozása közben: %s"
 
-#: ../libgksu/libgksu.c:2529
+#: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
 msgstr "Nem sikerült új folyamatot végrehajtani: %s"
 
-#: ../libgksu/libgksu.c:2546 ../libgksu/libgksu.c:2556
+#: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
 msgstr "Hiba a cső megnyitása közben: %s"
 
-#: ../libgksu/libgksu.c:2614
+#: ../libgksu/libgksu.c:2957
 msgid "Password: "
 msgstr "Jelszó: "
 
-#: ../libgksu/libgksu.c:2667 ../libgksu/libgksu.c:2681
+#: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
+#, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
@@ -256,99 +264,107 @@ msgstr ""
 "Az alapul szolgáló hitelesítési mechanizmus (sudo) nem engedélyezi Önnek "
 "ezen program futtatását. Lépjen kapcsolatba a rendszergazdával."
 
-#: ../libgksu/libgksu.c:2734
+#: ../libgksu/libgksu.c:3132
 #, c-format
 msgid "sudo terminated with %d status"
 msgstr "A sudo %d állapottal fejeződött be"
 
-#: ../libgksuui/gksuui-dialog.c:218
+#: ../libgksuui/gksuui-dialog.c:150
+msgid "<b>You have capslock on</b>"
+msgstr "<b>A Caps Lock be van kapcsolva</b>"
+
+#: ../libgksuui/gksuui-dialog.c:220
 msgid "Remember password"
 msgstr "Jelszó megjegyzése"
 
-#: ../libgksuui/gksuui-dialog.c:235
+#: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
 msgstr "Mentés ehhez a munkamenethez"
 
-#: ../libgksuui/gksuui-dialog.c:240
+#: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
 msgstr "Mentés a kulcstartóra"
 
 #. label
-#: ../libgksuui/gksuui-dialog.c:334
-msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+#: ../libgksuui/gksuui-dialog.c:772
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
 msgstr ""
-"<span weight=\"bold\" size=\"larger\">Írja be a root felhasználó jelszavát.</"
-"span>\n"
+"<span weight=\"bold\" size=\"larger\">Írja be a rendszergazda felhasználó "
+"jelszavát.</span>\n"
 
 #. entry label
-#: ../libgksuui/gksuui-dialog.c:355
+#: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
 msgstr "Jelszó:"
 
-#. label capslock warning
-#: ../libgksuui/gksuui-dialog.c:376
-msgid "<b>You have capslock on</b>"
-msgstr "<b>A Caps Lock be van kapcsolva</b>"
-
-#: ../gksu-properties/gksu-properties.c:248
-msgid "Failed to load glade file; please check your installation."
-msgstr "A glade fájl betöltése meghiúsult, ellenőrizze a telepítését."
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr "A gtkui fájl betöltése meghiúsult, ellenőrizze a telepítést."
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
-msgid "Configure behavior of the privilege-granting tool"
-msgstr "A jogosultságmegadó eszköz viselkedésének beállítása"
-
-#: ../gksu-properties/gksu-properties.desktop.in.h:2
 msgid "Privilege granting"
 msgstr "Jogosultság megadása"
 
-#: ../gksu-properties/gksu-properties.glade.h:1
-msgid "<b>Behavior</b>"
-msgstr "<b>Viselkedés</b>"
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "A jogosultságmegadó eszköz viselkedésének beállítása"
 
-#: ../gksu-properties/gksu-properties.glade.h:2
-msgid "<b>Screen Grabbing</b>"
-msgstr "<b>Képernyő megragadása</b>"
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr "engedélyezés"
 
-#: ../gksu-properties/gksu-properties.glade.h:3
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr "letiltás"
+
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr "engedélyezés kényszerítése"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr "bekérés"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
 msgstr "_Hitelesítési mód:"
 
-#: ../gksu-properties/gksu-properties.glade.h:4
+#: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
 msgstr "_Megragadási mód:"
 
-#: ../gksu-properties/gksu-properties.glade.h:5
-msgid ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
-msgstr ""
-"engedélyezés\n"
-"tiltás\n"
-"engedélyezés kényszerítése\n"
-"kérdés\n"
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Képernyő megragadása</b>"
 
-#: ../gksu-properties/gksu-properties.glade.h:10
-msgid "gtk-close"
-msgstr "gtk-close"
-
-#: ../gksu-properties/gksu-properties.glade.h:11
-msgid ""
-"su\n"
-"sudo"
-msgstr ""
-"su\n"
-"sudo"
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>Viselkedés</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
 msgstr "Billentyűzet és egér zárolásának letiltása"
 
 #: ../gksu.schemas.in.h:2
-msgid "Display information message when no password is needed"
-msgstr "Információs üzenet megjelenítése, ha nincs szükség jelszóra"
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr ""
+"A billentyűzet és egér zárolása ki legyen-e kapcsolva. Ez lehetővé teszi már "
+"X alkalmazások számára, hogy figyeljék a billentyűzet bemeneti eseményeket "
+"és nem teszi lehetővé, hogy az esetlegesen futó rosszindulatú "
+"alkalmazásokkal szemben védelmet biztosítson."
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
@@ -362,30 +378,34 @@ msgstr ""
 "A billentyűzet és egér megragadása, még ha a -g paraméter meg is lett adva."
 
 #: ../gksu.schemas.in.h:5
-msgid "Keyring to which passwords will be saved"
-msgstr "A kulcstartó, amelyre a jelszavak mentve lesznek"
-
-#: ../gksu.schemas.in.h:6
-msgid "Prompt for grabbing"
-msgstr "Rákérdezés a zárolásra"
-
-#: ../gksu.schemas.in.h:7
-msgid "Save password to gnome-keyring"
-msgstr "Jelszó mentése a Gnome kulcstartóra"
-
-#: ../gksu.schemas.in.h:8
 msgid "Sudo mode"
 msgstr "Sudo mód"
 
-#: ../gksu.schemas.in.h:9
+#: ../gksu.schemas.in.h:6
 msgid ""
-"The name of the keyring gksu should use. Usual values are \"session\", which "
-"saves the password for the session, and \"default\", which saves the "
-"password with no timeout."
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
 msgstr ""
-"A gksu által használandó kulcstartó neve. A szokásos értékek a  \"session"
-"\" (munkamenet), amely a jelszót a munkamenet számára menti, és a  \"default"
-"\" (alapértelmezett), amely a jelszót időkorlát nélkül menti."
+"A sudo legyen-e az alapértelmezett háttér eljárás. Egyébként ez az eljárás a "
+"-S kapcsolóval érhető el, vagy a gksudo futtatásával a gksu helyett."
+
+#: ../gksu.schemas.in.h:7
+msgid "Prompt for grabbing"
+msgstr "Rákérdezés a zárolásra"
+
+#: ../gksu.schemas.in.h:8
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"Ezen kapcsoló hatására a gksu megkérdezi a felhasználót, hogy akarja-e a "
+"képernyő zárolását a jelszó megadása előtt. Ne feledje, hogy ez csak akkor "
+"hatásos, ha a force-grab kapcsoló le van tiltva."
+
+#: ../gksu.schemas.in.h:9
+msgid "Display information message when no password is needed"
+msgstr "Információs üzenet megjelenítése, ha nincs szükség jelszóra"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
@@ -398,36 +418,10 @@ msgstr ""
 "megadásának szükségessége nélkül fut."
 
 #: ../gksu.schemas.in.h:11
-msgid ""
-"This option will make gksu prompt the user if he wants to have the screen "
-"grabbed before entering the password. Notice that this only has an effect if "
-"force-grab is disabled."
-msgstr ""
-"Ezen kapcsoló hatására a gksu megkérdezi a felhasználót, hogy akarja-e a "
-"képernyő zárolását a jelszó megadása előtt. Ne feledje, hogy ez csak akkor "
-"hatásos, ha a force-grab kapcsoló le van tiltva."
+msgid "Save password to gnome-keyring"
+msgstr "Jelszó mentése a Gnome kulcstartóra"
 
 #: ../gksu.schemas.in.h:12
-msgid ""
-"Whether sudo should be the default backend method. This method is otherwise "
-"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-"A sudo legyen-e az alapértelmezett háttér eljárás. Egyébként ez az eljárás a "
-"-S kapcsolóval érhető el, vagy a gksudo futtatásával a gksu helyett."
-
-#: ../gksu.schemas.in.h:13
-msgid ""
-"Whether the keyboard and mouse grabbing should be turned off. This will make "
-"it possible for other X applications to listen to keyboard input events, "
-"thus making it not possible to shield from malicious applications which may "
-"be running."
-msgstr ""
-"A billentyűzet és egér zárolása ki legyen-e kapcsolva. Ez lehetővé teszi már "
-"X alkalmazások számára, hogy figyeljék a billentyűzet bemeneti eseményeket "
-"és nem teszi lehetővé, hogy az esetlegesen futó rosszindulatú "
-"alkalmazásokkal szemben védelmet biztosítson."
-
-#: ../gksu.schemas.in.h:14
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
@@ -435,7 +429,21 @@ msgstr ""
 "A gksu képes elmenteni a beírt jelszót a Gnome kulcstartóra, így nem kérdez "
 "rá minden alkalommal"
 
-#: ../libgksu/gksu-run-helper.c:149
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "A kulcstartó, amelyre a jelszavak mentve lesznek"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"A gksu által használandó kulcstartó neve. A szokásos értékek a  „session” "
+"(munkamenet), amely a jelszót a munkamenet számára menti, és a  „default” "
+"(alapértelmezett), amely a jelszót időkorlát nélkül menti."
+
+#: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
 msgstr ""

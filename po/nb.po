@@ -7,26 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gksu 1.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-02-03 12:27-0200\n"
-"PO-Revision-Date: 2004-10-14 24:39-0300\n"
-"Last-Translator: Vidar Braut Haarr <mabus_at_q1n_org>\n"
+"POT-Creation-Date: 2013-04-02 13:48+0000\n"
+"PO-Revision-Date: 2014-02-06 09:41+0000\n"
+"Last-Translator: Åka Sikrom <Unknown>\n"
 "Language-Team: Norwegian Bokmaal <bokmaal_at_firefox_no>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-11-13 17:16+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
-#: ../libgksu/libgksu.c:119
+#: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
-msgstr ""
+msgstr "Bruker ikke låsing for den skrivebeskyttede låsefilen %s"
 
-#: ../libgksu/libgksu.c:139
+#: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
-msgstr ""
+msgstr "Bruker ikke låsing på den nfs-monterte låsefilen %s"
 
-#: ../libgksu/libgksu.c:495
-#, fuzzy
+#: ../libgksu/libgksu.c:612
 msgid ""
 "<b><big>Could not grab your mouse.</big></b>\n"
 "\n"
@@ -35,12 +36,14 @@ msgid ""
 "\n"
 "Try again."
 msgstr ""
-"Kunne ikke låse tastaturet eller musen.\n"
-"Der er mulig at en annen klient overvåker\n"
-"din sesjon."
+"<b><big>Klarte ikke å låse musa.</big></b>\n"
+"\n"
+"Det er mulig at en ondsinnet klient overvåker denne økta, eller at en meny "
+"eller et program bestemte seg for å ta fokus.\n"
+"\n"
+"Prøv igjen."
 
-#: ../libgksu/libgksu.c:507
-#, fuzzy
+#: ../libgksu/libgksu.c:624
 msgid ""
 "<b><big>Could not grab your keyboard.</big></b>\n"
 "\n"
@@ -49,46 +52,56 @@ msgid ""
 "\n"
 "Try again."
 msgstr ""
-"Kunne ikke låse tastaturet eller musen.\n"
-"Der er mulig at en annen klient overvåker\n"
-"din sesjon."
+"<b><big>Klarte ikke å låse tastaturet.</big></b>\n"
+"Det er mulig at en ondsinnet klient overvåker denne økta, eller at en meny "
+"eller et program bestemte seg for å ta fokus.\n"
+"\n"
+"Prøv igjen."
 
-#: ../libgksu/libgksu.c:855
+#: ../libgksu/libgksu.c:992
 #, c-format
 msgid ""
 "<b><big>Enter your password to perform administrative tasks</big></b>\n"
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
+"<b><big>Skriv inn ditt passord for å utføre administrative "
+"oppgaver</big></b>\n"
+"\n"
+"Programmet '%s' lar deg endre viktige komponenter i ditt system."
 
-#: ../libgksu/libgksu.c:862
-#, fuzzy, c-format
+#: ../libgksu/libgksu.c:999
+#, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
 msgstr ""
-"<b>Jeg skal bruge %s's adgangskode til at kÃ¸re:</b>\n"
-"<i>%s</i>"
+"<b><big>Skriv inn passordet ditt for å kjøre programmet «%s» som brukeren "
+"%s</big></b>"
 
-#: ../libgksu/libgksu.c:870
+#: ../libgksu/libgksu.c:1007
 #, c-format
 msgid ""
 "<b><big>Enter the administrative password</big></b>\n"
 "\n"
 "The application '%s' lets you modify essential parts of your system."
 msgstr ""
+"<b><big>Skriv inn det administrative passordet</big></b>\n"
+"\n"
+"Programmet '%s' lar deg endre viktige komponenter i ditt system."
 
-#: ../libgksu/libgksu.c:877
-#, fuzzy, c-format
-msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+#: ../libgksu/libgksu.c:1014
+#, c-format
+msgid ""
+"<b><big>Enter the password of %s to run the application '%s'</big></b>"
 msgstr ""
-"<b>Jeg skal bruge %s's adgangskode til at kÃ¸re:</b>\n"
-"<i>%s</i>"
+"<b><big>Skriv inn passordet til %s for å kjøre programmet «%s»</big></b>"
 
-#: ../libgksu/libgksu.c:908
+#: ../libgksu/libgksu.c:1045
+#, c-format
 msgid "Password prompt canceled."
-msgstr ""
+msgstr "Passordgodkjenningen ble avbrutt."
 
-#: ../libgksu/libgksu.c:978
+#: ../libgksu/libgksu.c:1117
 #, c-format
 msgid ""
 "<b><big>Granted permissions without asking for password</big></b>\n"
@@ -97,18 +110,29 @@ msgid ""
 "need to ask for a password, due to your system's authentication mechanism "
 "setup.\n"
 "\n"
-"It is possible that you are being allowed to run specific programs as user %"
-"s without the need for a password, or that the password is cached.\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
 "\n"
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
 msgstr ""
+"<b><big>Tilgang ble gitt uten at det ble bedt om passord</big></b>\n"
+"\n"
+"Programmet '%s' ble startet med administrative rettigheter for brukeren %s "
+"uten at det var nødvendig å spørre etter passord på grunn av systemets "
+"godkjenningsinnstillinger.\n"
+"\n"
+"Det er mulig at du har tilgang til å kjøre dette programmet som brukeren %s "
+"uten at passord er nødvendig, eller at passordet er mellomlagret.\n"
+"\n"
+"Dette er ikke en feilmelding; bare en påminnelse slik at du er oppmerksom på "
+"dette."
 
-#: ../libgksu/libgksu.c:1002
+#: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
-msgstr ""
+msgstr "Ikke vis de_nne meldingen flere ganger"
 
-#: ../libgksu/libgksu.c:1022
+#: ../libgksu/libgksu.c:1161
 msgid ""
 "<b>Would you like your screen to be \"grabbed\"\n"
 "while you enter the password?</b>\n"
@@ -117,38 +141,52 @@ msgid ""
 "the eavesdropping of your password by a a malicious\n"
 "application while you type it."
 msgstr ""
+"<b>Vil du tillate at skjermen blir låst\n"
+"mens du skriver inn passordet?</b>\n"
+"\n"
+"Dette betyr at alle programmer vil bli deaktivert\n"
+"for å hindre at et skadelig program snapper opp\n"
+"passordet mens du skriver det."
 
-#: ../libgksu/libgksu.c:1299
+#: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
-msgstr ""
+msgstr "Gir rettigheter"
 
-#: ../libgksu/libgksu.c:1854
+#: ../libgksu/libgksu.c:1442
+msgid "Starting Administrative Application"
+msgstr "Starter administrasjonsprogram"
+
+#: ../libgksu/libgksu.c:2083
+#, c-format
 msgid "gksu_run needs a command to be run, none was provided."
 msgstr "gksu_run trenger en kommando å kjøre, men ingen ble gitt."
 
-#: ../libgksu/libgksu.c:1865
+#: ../libgksu/libgksu.c:2094
+#, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
 msgstr "gksu-run-helper kommandoen ble ikke funnet eller er ikke kjørbar"
 
-#: ../libgksu/libgksu.c:1873 ../libgksu/libgksu.c:2379
+#: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
+#, c-format
 msgid "Unable to copy the user's Xauthorization file."
-msgstr ""
+msgstr "Kunne ikke kopiere brukerens Xauthorization fil."
 
-#: ../libgksu/libgksu.c:1919 ../libgksu/libgksu.c:2513
+#: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
 msgstr "Klarer ikke spalte ut ny prosess: %s"
 
-#: ../libgksu/libgksu.c:2050
-#, fuzzy
+#: ../libgksu/libgksu.c:2299
+#, c-format
 msgid "Wrong password got from keyring."
-msgstr "Feil passord."
+msgstr "Fikk feil passord fra nøkkelringen."
 
-#: ../libgksu/libgksu.c:2054 ../libgksu/libgksu.c:2664
+#: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
+#, c-format
 msgid "Wrong password."
 msgstr "Feil passord."
 
-#: ../libgksu/libgksu.c:2109 ../libgksu/libgksu.c:2123
+#: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -158,8 +196,14 @@ msgid ""
 "While expecting:\n"
 " %s"
 msgstr ""
+"Klarte ikke å kommunisere med gksu-run-helper.\n"
+"\n"
+"Mottok:\n"
+" %s\n"
+"men ventet:\n"
+" %s"
 
-#: ../libgksu/libgksu.c:2115
+#: ../libgksu/libgksu.c:2366
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -167,167 +211,191 @@ msgid ""
 "Received bad string while expecting:\n"
 " %s"
 msgstr ""
+"Kunne ikke kommunisere med gksu-run-helper.\n"
+"\n"
+"Mottok ødelagt streng, men ventet:\n"
+" %s"
 
-#: ../libgksu/libgksu.c:2191
+#: ../libgksu/libgksu.c:2475
 #, c-format
-msgid "Could not read from the pipe with the child: %s"
-msgstr "Klarte ikke lese fra røret med barneprosessen: %s"
-
-#: ../libgksu/libgksu.c:2238
-#, fuzzy, c-format
 msgid "su terminated with %d status"
-msgstr "Barneprosess avsluttet med status %d"
+msgstr "su avsluttet med status %d"
 
-#: ../libgksu/libgksu.c:2353
+#: ../libgksu/libgksu.c:2646
+#, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
 msgstr "gksu_sudo_run trenger en kommando å kjøre, men ingen ble gitt."
 
-#: ../libgksu/libgksu.c:2494 ../libgksu/libgksu.c:2503
+#: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
 msgstr "Klarte ikke opprette rør: %s"
 
-#: ../libgksu/libgksu.c:2529
+#: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
 msgstr "Klarte ikke kjøre ny prosess: %s"
 
-#: ../libgksu/libgksu.c:2546 ../libgksu/libgksu.c:2556
+#: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
 msgstr "Klarte ikke åpne rør: %s"
 
-#: ../libgksu/libgksu.c:2614
-#, fuzzy
+#: ../libgksu/libgksu.c:2957
 msgid "Password: "
-msgstr "Adgangskode:"
+msgstr "Passord: "
 
-#: ../libgksu/libgksu.c:2667 ../libgksu/libgksu.c:2681
+#: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
+#, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
 msgstr ""
+"Den underliggende autorisasjonsmekanismen (sudo) tillater ikke at du kjører "
+"dette programmet. Kontakt din systemadministrator."
 
-#: ../libgksu/libgksu.c:2734
-#, fuzzy, c-format
+#: ../libgksu/libgksu.c:3132
+#, c-format
 msgid "sudo terminated with %d status"
-msgstr "Barneprosess avsluttet med status %d"
+msgstr "sudo avsluttet med status %d"
 
-#: ../libgksuui/gksuui-dialog.c:218
-#, fuzzy
+#: ../libgksuui/gksuui-dialog.c:150
+msgid "<b>You have capslock on</b>"
+msgstr "<b>Du har capslock på</b>"
+
+#: ../libgksuui/gksuui-dialog.c:220
 msgid "Remember password"
-msgstr "Feil passord."
+msgstr "Husk passord"
 
-#: ../libgksuui/gksuui-dialog.c:235
+#: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
-msgstr ""
+msgstr "Lagre for denne sesjonen"
 
-#: ../libgksuui/gksuui-dialog.c:240
+#: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
-msgstr ""
+msgstr "Lagre i nøkkelring"
 
 #. label
-#: ../libgksuui/gksuui-dialog.c:334
-msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+#: ../libgksuui/gksuui-dialog.c:772
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
 msgstr ""
+"<span weight=\"bold\" size=\"larger\">Skriv inn passordet til superbrukeren "
+"(root).</span>\n"
 
 #. entry label
-#: ../libgksuui/gksuui-dialog.c:355
-#, fuzzy
+#: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
-msgstr "Adgangskode:"
+msgstr "Passord:"
 
-#. label capslock warning
-#: ../libgksuui/gksuui-dialog.c:376
-msgid "<b>You have capslock on</b>"
-msgstr ""
-
-#: ../gksu-properties/gksu-properties.c:248
-msgid "Failed to load glade file; please check your installation."
-msgstr ""
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr "Kunne ikke laste gtkui-filen; vennligst sjekk din installasjon"
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
-msgid "Configure behavior of the privilege-granting tool"
-msgstr ""
+msgid "Privilege granting"
+msgstr "Tildeling av privilegier"
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:2
-msgid "Privilege granting"
-msgstr ""
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "Sett oppførselen til verktøyet som tildeler privilegier"
 
-#: ../gksu-properties/gksu-properties.glade.h:1
-msgid "<b>Behavior</b>"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr "aktiver"
 
-#: ../gksu-properties/gksu-properties.glade.h:2
-msgid "<b>Screen Grabbing</b>"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr "deaktiver"
 
-#: ../gksu-properties/gksu-properties.glade.h:3
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr "tving aktiver"
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr "ledetekst"
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr "su"
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr "sudo"
+
+#: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
-msgstr ""
+msgstr "_Autentiseringsmodus:"
 
-#: ../gksu-properties/gksu-properties.glade.h:4
+#: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
-msgstr ""
+msgstr "_Låsemodus:"
 
-#: ../gksu-properties/gksu-properties.glade.h:5
-msgid ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>Skjermlåsing</b>"
 
-#: ../gksu-properties/gksu-properties.glade.h:10
-msgid "gtk-close"
-msgstr ""
-
-#: ../gksu-properties/gksu-properties.glade.h:11
-msgid ""
-"su\n"
-"sudo"
-msgstr ""
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>Oppførsel</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
-msgstr ""
+msgstr "Slå av låsing av tastatur og mus"
 
 #: ../gksu.schemas.in.h:2
-msgid "Display information message when no password is needed"
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
 msgstr ""
+"Om låsing av tastatur og mus skal deaktiveres. Det vil gjøre det mulig for "
+"andre X programmer å fange opp informasjon som kommer fra tastaturet, som "
+"vil gjøre det umulig å beskytte seg mot eventuelle skadelige programmer som "
+"kjører."
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
-msgstr ""
+msgstr "Tving låsing av mus og tastatur"
 
 #: ../gksu.schemas.in.h:4
 msgid ""
 "Grab keyboard and mouse even if -g has been passed as argument on the "
 "command line."
 msgstr ""
+"Lås tastatur og mus selv om -g er sendt som argument på kommandolinjen."
 
 #: ../gksu.schemas.in.h:5
-msgid "Keyring to which passwords will be saved"
-msgstr ""
+msgid "Sudo mode"
+msgstr "Superbruker modus"
 
 #: ../gksu.schemas.in.h:6
-msgid "Prompt for grabbing"
+msgid ""
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
 msgstr ""
+"Om sudo skal være standard bakende. Denne metoden er ellers tilgjengelig via "
+"-S bryteren eller ved å kjøre «gksudo» istedenfor «gksu»."
 
 #: ../gksu.schemas.in.h:7
-msgid "Save password to gnome-keyring"
-msgstr ""
+msgid "Prompt for grabbing"
+msgstr "Spør om låsing"
 
 #: ../gksu.schemas.in.h:8
-msgid "Sudo mode"
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
 msgstr ""
+"Dette valget vil få gksu til å spørre brukeren om skjermen skal låses før "
+"passordet skrives inn. Merk at dette gjelder bare hvis \"force-grab\" er "
+"avslått."
 
 #: ../gksu.schemas.in.h:9
-msgid ""
-"The name of the keyring gksu should use. Usual values are \"session\", which "
-"saves the password for the session, and \"default\", which saves the "
-"password with no timeout."
-msgstr ""
+msgid "Display information message when no password is needed"
+msgstr "Gi beskjed når det ikke er nødvendig med passord"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
@@ -335,223 +403,39 @@ msgid ""
 "the user that the program is being run without the need of a password being "
 "asked for some reason."
 msgstr ""
+"Dette valget bestemmer om en melding skal vises for å informere brukeren om "
+"at programmet (av en eller annen grunn) kjøres uten at det blir spurt etter "
+"passord."
 
 #: ../gksu.schemas.in.h:11
-msgid ""
-"This option will make gksu prompt the user if he wants to have the screen "
-"grabbed before entering the password. Notice that this only has an effect if "
-"force-grab is disabled."
-msgstr ""
+msgid "Save password to gnome-keyring"
+msgstr "Lagre passordet til gnome-nøkkelring"
 
 #: ../gksu.schemas.in.h:12
-msgid ""
-"Whether sudo should be the default backend method. This method is otherwise "
-"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-
-#: ../gksu.schemas.in.h:13
-msgid ""
-"Whether the keyboard and mouse grabbing should be turned off. This will make "
-"it possible for other X applications to listen to keyboard input events, "
-"thus making it not possible to shield from malicious applications which may "
-"be running."
-msgstr ""
-
-#: ../gksu.schemas.in.h:14
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
 msgstr ""
+"gksu kan lagre passordet du skriver til gnome's nøkkelring så du ikke blir "
+"spurt hele tiden"
 
-#: ../libgksu/gksu-run-helper.c:149
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "Nøkkelring der passordene vil bli lagret"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"Navnet på nøkkelringen gksu burde bruke. Vanlige verdier  er \"session\", "
+"som lagrer passord for økter og \"default\", som lagrer passordet uten "
+"tidsbegrensing."
+
+#: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
 msgstr ""
-
-#~ msgid "Failed to obtain xauth key: %s"
-#~ msgstr "Klarte ikke hente xauth nøkkel: %s"
-
-#~ msgid "Error copying '%s' to '%s': %s"
-#~ msgstr "Klarte ikke kopiere '%s' til '%s': %s"
-
-#, fuzzy
-#~ msgid "Unable to run /bin/su: %s"
-#~ msgstr "Klarer ikke kjøre %s/bin/gksu: %s"
-
-#, fuzzy
-#~ msgid "<b>Please enter %s's password</b>"
-#~ msgstr "Vennligst skriv inn %s's passord"
-
-#~ msgid "Missing command to run."
-#~ msgstr "Mangler kommando for å kjøre."
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Failed to run %s as user %s.</b>\n"
-#~ "\n"
-#~ "%s"
-#~ msgstr ""
-#~ "<b>Jeg skal bruge %s's adgangskode til at kÃ¸re:</b>\n"
-#~ "<i>%s</i>"
-
-#, fuzzy
-#~ msgid ""
-#~ "Failed to run %s as user %s:\n"
-#~ " %s"
-#~ msgstr "Klarer ikke kjøre %s/bin/gksu: %s"
-
-#, fuzzy
-#~ msgid "Unable to run %s: %s"
-#~ msgstr "Klarer ikke kjøre /bin/su: %s"
-
-#~ msgid "Advanced options"
-#~ msgstr "Avanserte innstillinger"
-
-#~ msgid "<b>Options to use when changing user</b>"
-#~ msgstr "<b>Innstillinger til bruk under bytting av bruker</b>"
-
-#~ msgid "_login shell"
-#~ msgstr "inn_loggingsskal"
-
-#, fuzzy
-#~ msgid "_preserve environment"
-#~ msgstr "_behold miljøinnstillinger"
-
-#~ msgid "Run program"
-#~ msgstr "Kjør program"
-
-#~ msgid "Run:"
-#~ msgstr "Kjør:"
-
-#~ msgid "As user:"
-#~ msgstr "Som bruker:"
-
-#~ msgid "_Advanced"
-#~ msgstr "_Avansert"
-
-#, fuzzy
-#~ msgid "Always request a password"
-#~ msgstr "Vennligst skriv inn %s's passord"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>Please enter %s's password\n"
-#~ "to run %s.</b>"
-#~ msgstr ""
-#~ "<b>Jeg skal bruge %s's adgangskode til at kÃ¸re:</b>\n"
-#~ "<i>%s</i>"
-
-#, fuzzy
-#~ msgid ""
-#~ "GKsu version %s\n"
-#~ "\n"
-#~ "Usage: %s [-u <user>] [-k] [-l] <command>\n"
-#~ "\n"
-#~ "  --user <user>, -u <user>\n"
-#~ "    Calls <command> as the specified user\n"
-#~ "  --message <message>, -m <message>\n"
-#~ "    Replaces the standard message shown to ask for\n"
-#~ "    password for the argument passed to the option\n"
-#~ "  --title <title>, -t <title>\n"
-#~ "    Replaces the default title with the argument\n"
-#~ "  --icon <icon>, -i <icon>\n"
-#~ "    Replaces the default window icon with the argument\n"
-#~ "  --print-pass, -p\n"
-#~ "    Asks gksu to print the password to stdout, just\n"
-#~ "    like ssh-askpass. Useful to use in scripts with\n"
-#~ "    programs that accept receiving the password on\n"
-#~ "    stdin.\n"
-#~ "  --disable-grab, -g\n"
-#~ "    Disables the \"locking\" of the keyboard, mouse,\n"
-#~ "    and focus done by the program when asking for\n"
-#~ "    password\n"
-#~ "  --ssh-fwd, -s\n"
-#~ "    Strip the host part of the $DISPLAY variable, so that\n"
-#~ "    GKSu will work on SSH X11 Forwarding.\n"
-#~ "\n"
-#~ "  --login, -l\n"
-#~ "    Makes this a login shell. Beware this may cause\n"
-#~ "    problems with the Xauthority magic. Run xhost\n"
-#~ "    to allow the target user to open windows on your\n"
-#~ "    display!\n"
-#~ "  --preserve-env, -k\n"
-#~ "    Preserve the current environments, does not set $HOME\n"
-#~ "    nor $PATH, for example.\n"
-#~ "\n"
-#~ "\n"
-#~ msgstr ""
-#~ "GKsu versjon %s\n"
-#~ "\n"
-#~ "Bruk: %s [-u <bruker>] [-k] [-l] <kommando>\n"
-#~ "\n"
-#~ "  --user <bruker>, -u <bruker>\n"
-#~ "    Kaller <kommando> som den angitte bruker\n"
-#~ "  --message <beskjed>, -m <beskjed>\n"
-#~ "    Erstatter standardbeskjeden som viser når det\n"
-#~ "    blir spurt etter passord.\n"
-#~ "  --title <tittel>, -t <tittel>\n"
-#~ "    Erstatter standardtittelen med den angitte tittel.\n"
-#~ "  --icon <ikon>, -i <ikon>\n"
-#~ "    Erstatter standardikonet med det angitte ikonet.\n"
-#~ "  --print-pass, -p\n"
-#~ "    Ber gksu om å printe passordet til stdout,\n"
-#~ "    slik som ssh-askpass. Nyttig i skript for\n"
-#~ "    programmer som mottar passordet med stdin.\n"
-#~ "  --disable-grab, -g\n"
-#~ "    Deaktiver \"låsing\" av tastatureret og musen,\n"
-#~ "    og fokus når programmer spør om adgangskode.\n"
-#~ "  --ssh-fwd, -s\n"
-#~ "    Fjern værtsdelen av $DISPLAY variabelen, sånn at GKsu virker\n"
-#~ "    med SSH X11 Forwarding.\n"
-#~ "\n"
-#~ "  --login, -l\n"
-#~ "    Går dette til et login-shell. Merk at det kan skape\n"
-#~ "    problemer med Xauthority. Kjør xhost for å tillate\n"
-#~ "    brukeren å åpne vinduer på din skjerm!\n"
-#~ "  --preserv-env, -k\n"
-#~ "    Bruk de nåværende miljøinnstillinger. Dette unngør at f.eks.\n"
-#~ "    $HOME og $PATH blir satt.\n"
-#~ "\n"
-#~ "\n"
-
-#~ msgid "Changing user..."
-#~ msgstr "Skifter bruger..."
-
-#~ msgid ""
-#~ "<b>I need %s's password to run:</b>\n"
-#~ "<i>%s</i>"
-#~ msgstr ""
-#~ "<b>Jeg trenger %s's passord for å kjøre:</b>\n"
-#~ "<i>%s</i>"
-
-#, fuzzy
-#~ msgid "Child terminated with %d status"
-#~ msgstr "Barneprosess avsluttet med status %d"
-
-#~ msgid "Using %s as username...\n"
-#~ msgstr "Bruker %s som brukernavn...\n"
-
-#~ msgid ""
-#~ "libgksu: Failed to init the Gtk+ library, GKSu is not able to continue.\n"
-#~ msgstr ""
-#~ "libgksu: Det oppstod en feil under initialiseringen av Gtk+ biblioteket."
-#~ "Kan ikke fortsette.\n"
-
-#, fuzzy
-#~ msgid ""
-#~ "<b>I need your password to run:</b>\n"
-#~ "<i>%s</i>"
-#~ msgstr ""
-#~ "<b>Jeg trenger %s's passord for å kjøre:</b>\n"
-#~ "<i>%s</i>"
-
-#~ msgid "No password was supplied and sudo needs it."
-#~ msgstr "sudo trenger et passord, men ingen ble gitt."
-
-#, fuzzy
-#~ msgid ""
-#~ "The X authority file i am trying to create for the target user already "
-#~ "exists! This is highly suspicous!"
-#~ msgstr ""
-#~ "X autoritetsfilen jeg prøvde å lage for superbrukeren 'root' eksisterer "
-#~ "allerede. Dette er veldig merkelig!"
+"Klarte ikke å hente xauth-nøkkel: xauth-binærfil ble ikke funnet ved de "
+"vanlige plasseringene"

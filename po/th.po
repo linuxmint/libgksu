@@ -7,25 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libgksu 2.0.7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-27 09:23+0700\n"
-"PO-Revision-Date: 2009-01-28 17:24+0700\n"
+"POT-Creation-Date: 2013-04-02 13:48+0000\n"
+"PO-Revision-Date: 2011-01-02 11:33+0000\n"
 "Last-Translator: Theppitak Karoonboonyanan <thep@linux.thai.net>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2015-11-13 17:16+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
-#: ../libgksu/libgksu.c:122
+#: ../libgksu/libgksu.c:126
 #, c-format
 msgid "Not using locking for read only lock file %s"
 msgstr "จะไม่ใช้การล็อคกับแฟ้ม %s ที่อ่านได้อย่างเดียว"
 
-#: ../libgksu/libgksu.c:142
+#: ../libgksu/libgksu.c:146
 #, c-format
 msgid "Not using locking for nfs mounted lock file %s"
 msgstr "จะไม่ใช้การล็อคกับแฟ้ม %s ที่เมานท์ผ่าน NFS"
 
-#: ../libgksu/libgksu.c:498
+#: ../libgksu/libgksu.c:612
 msgid ""
 "<b><big>Could not grab your mouse.</big></b>\n"
 "\n"
@@ -36,12 +38,12 @@ msgid ""
 msgstr ""
 "<b><big>ไม่สามารถยึดครองเมาส์ได้</big></b>\n"
 "\n"
-"อาจมีบางโปรแกรมที่ไม่ประสงค์ดีกำลังดักข้อมูลการใช้วาระของคุณอยู่ หรือคุณอาจเพิ่งคลิกเมนูไป "
-"หรือบางโปรแกรมอาจดึงโฟกัสไป\n"
+"อาจมีบางโปรแกรมที่ไม่ประสงค์ดีกำลังดักข้อมูลการใช้วาระของคุณอยู่ "
+"หรือคุณอาจเพิ่งคลิกเมนูไป หรือบางโปรแกรมอาจดึงโฟกัสไป\n"
 "\n"
 "กรุณาลองใหม่"
 
-#: ../libgksu/libgksu.c:510
+#: ../libgksu/libgksu.c:624
 msgid ""
 "<b><big>Could not grab your keyboard.</big></b>\n"
 "\n"
@@ -52,12 +54,12 @@ msgid ""
 msgstr ""
 "<b><big>ไม่สามารถยึดครองแป้นพิมพ์ได้</big></b>\n"
 "\n"
-"อาจมีบางโปรแกรมที่ไม่ประสงค์ดีกำลังดักข้อมูลการใช้วาระของคุณอยู่ หรือคุณอาจเพิ่งคลิกเมนูไป "
-"หรือบางโปรแกรมอาจดึงโฟกัสไป\n"
+"อาจมีบางโปรแกรมที่ไม่ประสงค์ดีกำลังดักข้อมูลการใช้วาระของคุณอยู่ "
+"หรือคุณอาจเพิ่งคลิกเมนูไป หรือบางโปรแกรมอาจดึงโฟกัสไป\n"
 "\n"
 "กรุณาลองใหม่"
 
-#: ../libgksu/libgksu.c:867
+#: ../libgksu/libgksu.c:992
 #, c-format
 msgid ""
 "<b><big>Enter your password to perform administrative tasks</big></b>\n"
@@ -68,13 +70,15 @@ msgstr ""
 "\n"
 "โปรแกรม '%s' จะเปลี่ยนแปลงแก้ไขส่วนที่สำคัญของระบบ"
 
-#: ../libgksu/libgksu.c:874
+#: ../libgksu/libgksu.c:999
 #, c-format
 msgid ""
 "<b><big>Enter your password to run the application '%s' as user %s</big></b>"
-msgstr "<b><big>กรุณาป้อนรหัสผ่านของคุณเพื่อเรียกโปรแกรม '%s' ในนามของผู้ใช้ %s</big></b>"
+msgstr ""
+"<b><big>กรุณาป้อนรหัสผ่านของคุณเพื่อเรียกโปรแกรม '%s' ในนามของผู้ใช้ "
+"%s</big></b>"
 
-#: ../libgksu/libgksu.c:882
+#: ../libgksu/libgksu.c:1007
 #, c-format
 msgid ""
 "<b><big>Enter the administrative password</big></b>\n"
@@ -85,16 +89,18 @@ msgstr ""
 "\n"
 "โปรแกรม '%s' จะเปลี่ยนแปลงแก้ไขส่วนที่สำคัญของระบบ"
 
-#: ../libgksu/libgksu.c:889
+#: ../libgksu/libgksu.c:1014
 #, c-format
-msgid "<b><big>Enter the password of %s to run the application '%s'</big></b>"
+msgid ""
+"<b><big>Enter the password of %s to run the application '%s'</big></b>"
 msgstr "<b><big>กรุณาป้อนรหัสผ่านของ %s เพื่อเรียกโปรแกรม '%s'</big></b>"
 
-#: ../libgksu/libgksu.c:920
+#: ../libgksu/libgksu.c:1045
+#, c-format
 msgid "Password prompt canceled."
 msgstr "คำถามถามรหัสผ่านถูกยกเลิก"
 
-#: ../libgksu/libgksu.c:992
+#: ../libgksu/libgksu.c:1117
 #, c-format
 msgid ""
 "<b><big>Granted permissions without asking for password</big></b>\n"
@@ -103,8 +109,8 @@ msgid ""
 "need to ask for a password, due to your system's authentication mechanism "
 "setup.\n"
 "\n"
-"It is possible that you are being allowed to run specific programs as user %"
-"s without the need for a password, or that the password is cached.\n"
+"It is possible that you are being allowed to run specific programs as user "
+"%s without the need for a password, or that the password is cached.\n"
 "\n"
 "This is not a problem report; it's simply a notification to make sure you "
 "are aware of this."
@@ -117,13 +123,14 @@ msgstr ""
 "เป็นไปได้ว่าคุณจะได้รับอนุญาตให้เรียกโปรแกรมบางโปรแกรมในนามของผู้ใช้ %s ได้ "
 "โดยไม่จำเป็นต้องใช้รหัสผ่าน หรือมิฉะนั้น รหัสผ่านก็อาจถูกจำไว้ในระบบ\n"
 "\n"
-"ข้อความนี้ไม่ใช่การรายงานปัญหา แต่เป็นการแจ้งเพื่อให้แน่ใจว่าคุณทราบถึงเงื่อนไขนี้"
+"ข้อความนี้ไม่ใช่การรายงานปัญหา "
+"แต่เป็นการแจ้งเพื่อให้แน่ใจว่าคุณทราบถึงเงื่อนไขนี้"
 
-#: ../libgksu/libgksu.c:1016
+#: ../libgksu/libgksu.c:1141
 msgid "Do _not display this message again"
 msgstr "ไ_ม่ต้องแสดงข้อความนี้อีก"
 
-#: ../libgksu/libgksu.c:1036
+#: ../libgksu/libgksu.c:1161
 msgid ""
 "<b>Would you like your screen to be \"grabbed\"\n"
 "while you enter the password?</b>\n"
@@ -137,36 +144,45 @@ msgstr ""
 "การยึดครองดังกล่าว จะทำให้โปรแกรมทั้งหมดหยุดทำงานชั่วคราว\n"
 "เพื่อป้องกันโปรแกรมที่ไม่ประสงค์ดีดักจับรหัสผ่านขณะที่คุณพิมพ์"
 
-#: ../libgksu/libgksu.c:1313
+#: ../libgksu/libgksu.c:1438
 msgid "Granting Rights"
 msgstr "กำลังอนุญาตสิทธิ์"
 
-#: ../libgksu/libgksu.c:1901
+#: ../libgksu/libgksu.c:1442
+msgid "Starting Administrative Application"
+msgstr "เริ่มต้น"
+
+#: ../libgksu/libgksu.c:2083
+#, c-format
 msgid "gksu_run needs a command to be run, none was provided."
 msgstr "gksu_run ต้องระบุคำสั่งที่จะเรียกทำงานด้วย ซึ่งไม่มี"
 
-#: ../libgksu/libgksu.c:1912
+#: ../libgksu/libgksu.c:2094
+#, c-format
 msgid "The gksu-run-helper command was not found or is not executable."
 msgstr "ไม่พบคำสั่ง gksu-run-helper หรือเรียกทำงานไม่ได้"
 
-#: ../libgksu/libgksu.c:1920 ../libgksu/libgksu.c:2420
+#: ../libgksu/libgksu.c:2102 ../libgksu/libgksu.c:2678
+#, c-format
 msgid "Unable to copy the user's Xauthorization file."
 msgstr "ไม่สามารถคัดลอกแฟ้ม Xauthorization ของผู้ใช้"
 
-#: ../libgksu/libgksu.c:1966 ../libgksu/libgksu.c:2554
+#: ../libgksu/libgksu.c:2150 ../libgksu/libgksu.c:2848
 #, c-format
 msgid "Failed to fork new process: %s"
 msgstr "ไม่สามารถ fork โพรเซสใหม่: %s"
 
-#: ../libgksu/libgksu.c:2109
+#: ../libgksu/libgksu.c:2299
+#, c-format
 msgid "Wrong password got from keyring."
 msgstr "ได้รับรหัสผ่านที่ผิดจากพวงกุญแจ"
 
-#: ../libgksu/libgksu.c:2113 ../libgksu/libgksu.c:2706
+#: ../libgksu/libgksu.c:2303 ../libgksu/libgksu.c:3033
+#, c-format
 msgid "Wrong password."
 msgstr "รหัสผ่านผิด"
 
-#: ../libgksu/libgksu.c:2168 ../libgksu/libgksu.c:2182
+#: ../libgksu/libgksu.c:2360 ../libgksu/libgksu.c:2374
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -183,7 +199,7 @@ msgstr ""
 "แต่ต้องการ:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2174
+#: ../libgksu/libgksu.c:2366
 #, c-format
 msgid ""
 "Failed to communicate with gksu-run-helper.\n"
@@ -196,130 +212,143 @@ msgstr ""
 "ได้รับสตริงที่ไม่ถูกต้อง ในขณะที่ต้องการ:\n"
 " %s"
 
-#: ../libgksu/libgksu.c:2274
+#: ../libgksu/libgksu.c:2475
 #, c-format
 msgid "su terminated with %d status"
 msgstr "su จบการทำงานด้วยสถานะ %d"
 
-#: ../libgksu/libgksu.c:2388
+#: ../libgksu/libgksu.c:2646
+#, c-format
 msgid "gksu_sudo_run needs a command to be run, none was provided."
 msgstr "gksu_sudo_run ต้องระบุคำสั่งที่จะเรียกทำงานด้วย ซึ่งไม่มี"
 
-#: ../libgksu/libgksu.c:2535 ../libgksu/libgksu.c:2544
+#: ../libgksu/libgksu.c:2808 ../libgksu/libgksu.c:2816
 #, c-format
 msgid "Error creating pipe: %s"
 msgstr "เกิดข้อผิดพลาดขณะสร้างไปป์: %s"
 
-#: ../libgksu/libgksu.c:2570
+#: ../libgksu/libgksu.c:2840
 #, c-format
 msgid "Failed to exec new process: %s"
 msgstr "ไม่สามารถ exec โพรเซสใหม่: %s"
 
-#: ../libgksu/libgksu.c:2587 ../libgksu/libgksu.c:2597
+#: ../libgksu/libgksu.c:2871 ../libgksu/libgksu.c:2881
 #, c-format
 msgid "Error opening pipe: %s"
 msgstr "เกิดข้อผิดพลาดขณะเปิดไปป์: %s"
 
-#: ../libgksu/libgksu.c:2655
+#: ../libgksu/libgksu.c:2957
 msgid "Password: "
 msgstr "รหัสผ่าน: "
 
-#: ../libgksu/libgksu.c:2709 ../libgksu/libgksu.c:2723
+#: ../libgksu/libgksu.c:3045 ../libgksu/libgksu.c:3112
+#, c-format
 msgid ""
 "The underlying authorization mechanism (sudo) does not allow you to run this "
 "program. Contact the system administrator."
-msgstr "กลไกการยืนยันตัวบุคคลที่ใช้ (sudo) ไม่อนุญาตให้คุณเรียกใช้โปรแกรมนี้ กรุณาติดต่อผู้ดูแลระบบ"
+msgstr ""
+"กลไกการยืนยันตัวบุคคลที่ใช้ (sudo) ไม่อนุญาตให้คุณเรียกใช้โปรแกรมนี้ "
+"กรุณาติดต่อผู้ดูแลระบบ"
 
-#: ../libgksu/libgksu.c:2773
+#: ../libgksu/libgksu.c:3132
 #, c-format
 msgid "sudo terminated with %d status"
 msgstr "sudo จบการทำงานด้วยสถานะ %d"
 
-#: ../libgksuui/gksuui-dialog.c:149
+#: ../libgksuui/gksuui-dialog.c:150
 msgid "<b>You have capslock on</b>"
 msgstr "<b>ปุ่ม CapsLock ติดอยู่</b>"
 
-#: ../libgksuui/gksuui-dialog.c:219
+#: ../libgksuui/gksuui-dialog.c:220
 msgid "Remember password"
 msgstr "จำรหัสผ่าน"
 
-#: ../libgksuui/gksuui-dialog.c:236
+#: ../libgksuui/gksuui-dialog.c:237
 msgid "Save for this session"
 msgstr "จำไว้ใช้ตลอดวาระนี้"
 
-#: ../libgksuui/gksuui-dialog.c:241
+#: ../libgksuui/gksuui-dialog.c:242
 msgid "Save in the keyring"
 msgstr "เก็บเข้าพวงกุญแจ"
 
 #. label
-#: ../libgksuui/gksuui-dialog.c:335
-msgid "<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
-msgstr "<span weight=\"bold\" size=\"larger\">กรุณาป้อนรหัสผ่านของ root</span>\n"
+#: ../libgksuui/gksuui-dialog.c:772
+msgid ""
+"<span weight=\"bold\" size=\"larger\">Type the root password.</span>\n"
+msgstr ""
+"<span weight=\"bold\" size=\"larger\">กรุณาป้อนรหัสผ่านของ root</span>\n"
 
 #. entry label
-#: ../libgksuui/gksuui-dialog.c:356
+#: ../libgksuui/gksuui-dialog.c:793
 msgid "Password:"
 msgstr "รหัสผ่าน:"
 
-#: ../gksu-properties/gksu-properties.c:248
-msgid "Failed to load glade file; please check your installation."
-msgstr "โหลดแฟ้ม glade ไม่สำเร็จ กรุณาตรวจสอบการติดตั้งของคุณว่าครบถ้วนหรือไม่"
+#: ../gksu-properties/gksu-properties.c:259
+msgid "Failed to load gtkui file; please check your installation."
+msgstr ""
 
 #: ../gksu-properties/gksu-properties.desktop.in.h:1
-msgid "Configure behavior of the privilege-granting tool"
-msgstr "ตั้งค่าพฤติกรรมของเครื่องมืออนุญาตสิทธิ์พิเศษ"
-
-#: ../gksu-properties/gksu-properties.desktop.in.h:2
 msgid "Privilege granting"
 msgstr "การอนุญาตสิทธิ์พิเศษ"
 
-#: ../gksu-properties/gksu-properties.glade.h:1
-msgid "<b>Behavior</b>"
-msgstr "<b>พฤติกรรม</b>"
+#: ../gksu-properties/gksu-properties.desktop.in.h:2
+msgid "Configure behavior of the privilege-granting tool"
+msgstr "ตั้งค่าพฤติกรรมของเครื่องมืออนุญาตสิทธิ์พิเศษ"
 
-#: ../gksu-properties/gksu-properties.glade.h:2
-msgid "<b>Screen Grabbing</b>"
-msgstr "<b>การยึดครองหน้าจอ</b>"
+#: ../gksu-properties/gksu-properties.ui.h:1
+msgid "enable"
+msgstr ""
 
-#: ../gksu-properties/gksu-properties.glade.h:3
+#: ../gksu-properties/gksu-properties.ui.h:2
+msgid "disable"
+msgstr ""
+
+#: ../gksu-properties/gksu-properties.ui.h:3
+msgid "force enable"
+msgstr ""
+
+#: ../gksu-properties/gksu-properties.ui.h:4
+msgid "prompt"
+msgstr ""
+
+#: ../gksu-properties/gksu-properties.ui.h:5
+msgid "su"
+msgstr ""
+
+#: ../gksu-properties/gksu-properties.ui.h:6
+msgid "sudo"
+msgstr ""
+
+#: ../gksu-properties/gksu-properties.ui.h:7
 msgid "_Authentication mode:"
 msgstr "รูปแบบการยืนยัน_ตัวบุคคล:"
 
-#: ../gksu-properties/gksu-properties.glade.h:4
+#: ../gksu-properties/gksu-properties.ui.h:8
 msgid "_Grab mode:"
 msgstr "รูปแบบการยึด_ครอง:"
 
-#: ../gksu-properties/gksu-properties.glade.h:5
-msgid ""
-"enable\n"
-"disable\n"
-"force enable\n"
-"prompt\n"
-msgstr ""
-"เปิดใช้\n"
-"ปิด\n"
-"บังคับเปิดใช้\n"
-"ถาม\n"
+#: ../gksu-properties/gksu-properties.ui.h:9
+msgid "<b>Screen Grabbing</b>"
+msgstr "<b>การยึดครองหน้าจอ</b>"
 
-#: ../gksu-properties/gksu-properties.glade.h:10
-msgid "gtk-close"
-msgstr "gtk-close"
-
-#: ../gksu-properties/gksu-properties.glade.h:11
-msgid ""
-"su\n"
-"sudo"
-msgstr ""
-"su\n"
-"sudo"
+#: ../gksu-properties/gksu-properties.ui.h:10
+msgid "<b>Behavior</b>"
+msgstr "<b>พฤติกรรม</b>"
 
 #: ../gksu.schemas.in.h:1
 msgid "Disable keyboard and mouse grab"
 msgstr "ปิดการยึดครองแป้นพิมพ์และเมาส์"
 
 #: ../gksu.schemas.in.h:2
-msgid "Display information message when no password is needed"
-msgstr "แสดงข้อความแจ้งเตือนเมื่อไม่จำเป็นต้องใช้รหัสผ่าน"
+msgid ""
+"Whether the keyboard and mouse grabbing should be turned off. This will make "
+"it possible for other X applications to listen to keyboard input events, "
+"thus making it not possible to shield from malicious applications which may "
+"be running."
+msgstr ""
+"กำหนดว่าจะปิดการยึดครองแป้นพิมพ์และเมาส์หรือไม่ "
+"การปิดนี้จะเป็นการเปิดโอกาสให้โปรแกรม X อื่นดักเหตุการณ์การกดแป้นพิมพ์ได้ "
+"ซึ่งจะทำให้ไม่สามารถป้องกันโปรแกรมที่ไม่ประสงค์ดีที่อาจทำงานอยู่ได้"
 
 #: ../gksu.schemas.in.h:3
 msgid "Force keyboard and mouse grab"
@@ -332,29 +361,35 @@ msgid ""
 msgstr "ยึดครองแป้นพิมพ์และเมาส์เสมอ แม้จะระบุตัวเลือก -g ในบรรทัดคำสั่ง"
 
 #: ../gksu.schemas.in.h:5
-msgid "Keyring to which passwords will be saved"
-msgstr "พวงกุญแจที่จะใช้เก็บรหัสผ่าน"
-
-#: ../gksu.schemas.in.h:6
-msgid "Prompt for grabbing"
-msgstr "ถามการยึดครอง"
-
-#: ../gksu.schemas.in.h:7
-msgid "Save password to gnome-keyring"
-msgstr "เก็บรหัสผ่านใน gnome-keyring"
-
-#: ../gksu.schemas.in.h:8
 msgid "Sudo mode"
 msgstr "โหมด sudo"
 
-#: ../gksu.schemas.in.h:9
+#: ../gksu.schemas.in.h:6
 msgid ""
-"The name of the keyring gksu should use. Usual values are \"session\", which "
-"saves the password for the session, and \"default\", which saves the "
-"password with no timeout."
+"Whether sudo should be the default backend method. This method is otherwise "
+"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
 msgstr ""
-"ชื่อของพวงกุญแจที่จะให้ gksu ใช้ ค่าโดยทั่วไปคือ \"session\" ซึ่งจะเก็บรหัสผ่านไว้ใช้จนจบวาระ "
-"และ \"default\" ซึ่งจะเก็บรหัสผ่านโดยไม่มีกำหนดหมดอายุ"
+"กำหนดว่า จะใช้ sudo เป็นวิธีปริยายหรือไม่ หากไม่กำหนด "
+"ก็ยังสามารถเรียกใช้วิธีนี้ได้ ผ่านตัวเลือก -S หรือโดยเรียกคำสั่ง 'gksudo' "
+"แทน 'gksu'"
+
+#: ../gksu.schemas.in.h:7
+msgid "Prompt for grabbing"
+msgstr "ถามการยึดครอง"
+
+#: ../gksu.schemas.in.h:8
+msgid ""
+"This option will make gksu prompt the user if he wants to have the screen "
+"grabbed before entering the password. Notice that this only has an effect if "
+"force-grab is disabled."
+msgstr ""
+"ตัวเลือกนี้จะทำให้ gksu ถามผู้ใช้ว่าต้องการให้ยึดครองหน้าจอหรือไม่ "
+"ก่อนที่จะป้อนรหัสผ่าน สังเกตว่าค่านี้จะมีผลก็ต่อเมื่อตัวเลือก force-grab "
+"ปิดอยู่เท่านั้น"
+
+#: ../gksu.schemas.in.h:9
+msgid "Display information message when no password is needed"
+msgstr "แสดงข้อความแจ้งเตือนเมื่อไม่จำเป็นต้องใช้รหัสผ่าน"
 
 #: ../gksu.schemas.in.h:10
 msgid ""
@@ -366,40 +401,32 @@ msgstr ""
 "ว่ากำลังจะเรียกโปรแกรมโดยไม่จำเป็นต้องถามรหัสผ่านด้วยเหตุผลบางประการ"
 
 #: ../gksu.schemas.in.h:11
-msgid ""
-"This option will make gksu prompt the user if he wants to have the screen "
-"grabbed before entering the password. Notice that this only has an effect if "
-"force-grab is disabled."
-msgstr ""
-"ตัวเลือกนี้จะทำให้ gksu ถามผู้ใช้ว่าต้องการให้ยึดครองหน้าจอหรือไม่ ก่อนที่จะป้อนรหัสผ่าน "
-"สังเกตว่าค่านี้จะมีผลก็ต่อเมื่อตัวเลือก force-grab ปิดอยู่เท่านั้น"
+msgid "Save password to gnome-keyring"
+msgstr "เก็บรหัสผ่านใน gnome-keyring"
 
 #: ../gksu.schemas.in.h:12
-msgid ""
-"Whether sudo should be the default backend method. This method is otherwise "
-"accessed though the -S switch or by running 'gksudo' instead of 'gksu'."
-msgstr ""
-"กำหนดว่า จะใช้ sudo เป็นวิธีปริยายหรือไม่ หากไม่กำหนด ก็ยังสามารถเรียกใช้วิธีนี้ได้ ผ่านตัวเลือก "
-"-S หรือโดยเรียกคำสั่ง 'gksudo' แทน 'gksu'"
-
-#: ../gksu.schemas.in.h:13
-msgid ""
-"Whether the keyboard and mouse grabbing should be turned off. This will make "
-"it possible for other X applications to listen to keyboard input events, "
-"thus making it not possible to shield from malicious applications which may "
-"be running."
-msgstr ""
-"กำหนดว่าจะปิดการยึดครองแป้นพิมพ์และเมาส์หรือไม่ การปิดนี้จะเป็นการเปิดโอกาสให้โปรแกรม X "
-"อื่นดักเหตุการณ์การกดแป้นพิมพ์ได้ ซึ่งจะทำให้ไม่สามารถป้องกันโปรแกรมที่ไม่ประสงค์ดีที่อาจทำงานอยู่ได้"
-
-#: ../gksu.schemas.in.h:14
 msgid ""
 "gksu can save the password you type to the gnome-keyring so you'll not be "
 "asked everytime"
 msgstr ""
-"gksu สามารถเก็บรหัสผ่านที่คุณป้อนเข้าใน gnome-keyring ได้ เพื่อที่คุณจะไม่ต้องป้อนรหัสผ่านทุกครั้ง"
+"gksu สามารถเก็บรหัสผ่านที่คุณป้อนเข้าใน gnome-keyring ได้ "
+"เพื่อที่คุณจะไม่ต้องป้อนรหัสผ่านทุกครั้ง"
 
-#: ../libgksu/gksu-run-helper.c:149
+#: ../gksu.schemas.in.h:13
+msgid "Keyring to which passwords will be saved"
+msgstr "พวงกุญแจที่จะใช้เก็บรหัสผ่าน"
+
+#: ../gksu.schemas.in.h:14
+msgid ""
+"The name of the keyring gksu should use. Usual values are \"session\", which "
+"saves the password for the session, and \"default\", which saves the "
+"password with no timeout."
+msgstr ""
+"ชื่อของพวงกุญแจที่จะให้ gksu ใช้ ค่าโดยทั่วไปคือ \"session\" "
+"ซึ่งจะเก็บรหัสผ่านไว้ใช้จนจบวาระ และ \"default\" "
+"ซึ่งจะเก็บรหัสผ่านโดยไม่มีกำหนดหมดอายุ"
+
+#: ../libgksu/gksu-run-helper.c:167
 #, c-format
 msgid "Failed to obtain xauth key: xauth binary not found at usual locations"
 msgstr "ไม่สามารถดึงกุญแจ xauth: ไม่พบแฟ้มโปรแกรม xauth ในตำแหน่งปกติ"
