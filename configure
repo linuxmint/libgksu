@@ -10919,7 +10919,7 @@ $as_echo "yes" >&6; }
 fi
 
 # Checks for library functions.
-ALL_LINGUAS="ca cs da de es eu fr hu it ja ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"
+ALL_LINGUAS="ca cs da de es eu fr hr hu it ja ko lt pl pt_BR ro ru sk sv nb nl th zh_CN"
 
 
 $as_echo "#define GETTEXT_PACKAGE libgksu" >>confdefs.h
