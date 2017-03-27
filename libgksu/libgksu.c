@@ -2596,7 +2596,9 @@ gksu_sudo_fuller (GksuContext *context,
 	  fprintf (stderr, "%s", buffer);
 	}
 
-      if (g_str_has_prefix (buffer, "Sorry, try again.") || g_str_has_prefix (buffer, "GNOME_SUDO_PASSSorry, try again."))
+      char * translated_string = dgettext ("sudoers", "Sorry, try again.");
+
+      if (g_str_has_prefix (buffer, "Sorry, try again.") || g_str_has_prefix (buffer, "GNOME_SUDO_PASSSorry, try again.") || g_str_has_prefix (buffer, translated_string))
 	g_set_error (error, gksu_quark, GKSU_ERROR_WRONGPASS,
 		     _("Wrong password."));
       else
