@@ -1,3 +1,15 @@
+libgksu (2.0.13~pre1-7linuxmint5) sonya; urgency=medium
+
+  [ gogogogi ]
+  * Add hr.po
+  * Update configure.ac
+  * Update configure
+
+  [ Clement Lefebvre ]
+  * Fix password retry mechanism for locales other than English
+
+ -- Clement Lefebvre <root@linuxmint.com>  Mon, 27 Mar 2017 13:20:06 +0100
+
 libgksu (2.0.13~pre1-7linuxmint4) sarah; urgency=medium
 
   [ tomoe-musashi ]
